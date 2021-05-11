@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+	--yellow: #ffff00;
+	--blue: #7df9ff;
+	--pink: #ff29c9;
+}
+
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+	background: black;
+	color: white;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p {
+	font-family: "Noto Serif", serif;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	line-height: 1.6;
+}
+
+a,
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: blue;
+	transition: 0.4s;
+}
+
+/* ---------- HERO SECTION ---------- */
+#hero {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__img {
+	position: absolute;
+}
+
+.hero__mobileImage__container {
+	display: none;
+}
+
+.title {
+	width: 30%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.fa-angle-down {
+	font-size: 1.5em;
+	animation-delay: 5s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform-origin: bottom;
+	animation-name: fa-angle-down;
+	animation-timing-function: ease;
+}
+
+@keyframes fa-angle-down {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* ---------- INTRO SECTION ---------- */
+article {
+	margin: 300px auto 300px;
+	width: 80%;
+	max-width: 600px;
+}
+
+.byline {
+	font-family: "Noto sans", sans-serif;
+	font-weight: bold;
+	margin-bottom: 2.5em;
+}
+
+/* ----------- SKIP LINK ----------- */
+#skip-button {
+	height: fit-content;
+	width: fit-content;
+	padding: 0 10px;
+	position: sticky;
+	left: 10px;
+	top: 14vh;
+	z-index: 9;
+	font-size: 0.6em;
+	font-family: "Noto sans", sans-serif;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0.8;
+	visibility: hidden;
+}
+
+/* ---------- TIMELINE ---------- */
+#chart {
+	height: 100px;
+	background: black;
+	position: sticky;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+
+.x-axis,
+.horizontal-lines {
+	opacity: 0.4;
+}
+
+.tooltip {
+	font-family: "Noto sans", sans-serif;
+}
+
+/* ---------- VIDEO ---------- */
+
+#video {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+video {
+	border: 10px solid rgb(255, 255, 0, 0.3);
+}
+
+.video-explore {
+	transform: translate(50vw, 30vh);
+	width: 45%;
+}
+
+/* ---------- MAP SECTION ---------- */
+/* #time {
+	position: sticky;
+	left: 100;
+	top: 20vh;
+	background: rgba(0, 0, 0, 0.6);
+} */
+
+#map {
+	height: 85vh;
+	/* max-height: 1500px; */
+	width: 98vw;
+	position: sticky;
+	left: 0;
+	top: 15vh;
+}
+#features {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.hidden {
+	visibility: hidden;
+}
+.righty {
+	width: 33%;
+	margin-left: 62%;
+}
+.dark {
+	color: white;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.step {
+	padding-bottom: 50vh;
+	/* margin-bottom: 10vh; */
+	opacity: 0.25;
+}
+.step.active {
+	opacity: 0.9;
+}
+
+.step div {
+	padding: 25px 50px;
+}
+
+.step img {
+	width: 100%;
+}
+
+.highlighter::before,
+.highlighter::after {
+	content: "　";
+	font-size: 0.2em;
+}
+
+.yellow-highlighter {
+	background: rgb(255, 255, 0, 0.5);
+}
+
+.blue-highlighter {
+	background: rgb(125, 249, 255, 0.5);
+}
+
+.pink-highlighter {
+	background: rgb(255, 41, 201, 0.5);
+}
+
+.gray-highlighter {
+	background: rgba(210, 210, 210, 0.5);
+}
+
+@media (max-width: 750px) {
+	.centered,
+	.lefty,
+	.righty,
+	.fully {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan
+	.mapboxgl-canvas {
+	touch-action: unset;
+}
+
+@media (max-width: 750px) {
+	.title {
+		width: 80%;
+		margin: 2em auto;
+	}
+
+	.hero__mobileImage__container {
+		display: inline;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.hero__mobileImage__container > img {
+		width: 49%;
+	}
+
+	#skip-button {
+		display: none;
+	}
+
+	#video {
+		background: black;
+	}
+
+	#map {
+		height: 60vh;
+		top: 40vh;
+	}
+}

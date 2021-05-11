@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Boston Police body cam footage</title>
+		<meta
+			name="viewport"
+			content="initial-scale=1,maximum-scale=1,user-scalable=no"
+		/>
+		<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+		<link
+			href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
+
+		<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+		<script src="https://unpkg.com/scrollama"></script>
+	</head>
+	<body>
+		<div id="hero">
+			<div class="hero__mobileImage__container">
+				<img src="assets/thumbnail_reduced/10_main.jpeg" alt="" />
+				<img src="assets/thumbnail_reduced/12_main.jpeg" alt="" />
+			</div>
+			<div class="title">
+				<h2>
+					Boston Police body cam footage shows confrontations during
+					the protests following the death of George Floyd
+				</h2>
+				<p>
+					Demonstrations in downtown Boston on May 31, 2020 turned
+					into violent clashes between protesters and police.
+				</p>
+				<p>
+					I tracked key moments between protesters and police that
+					night using body camera footage revealed by
+					<a
+						href="https://theappeal.org/bodycam-video-shows-mob-mentality-of-boston-police-who-responded-to-george-floyd-protests-lawyer-says/"
+						target="_blank"
+						>The Appeal</a
+					>.
+				</p>
+
+				<i class="fas fa-angle-down"></i>
+			</div>
+			<div class="hero__mobileImage__container">
+				<img src="assets/thumbnail_reduced/08.jpeg" alt="" />
+				<img src="assets/thumbnail_reduced/14_main.jpeg" alt="" />
+			</div>
+		</div>
+		<div id="intro">
+			<article>
+				<p class="byline">April 2021 | By Yuriko Schumacher</p>
+				<p>
+					On the night of May 31, 2020, a week after the death of
+					George Floyd, crowds of people took to the streets in
+					downtown Boston to protest against police brutality.
+				</p>
+				<p>
+					Peaceful demonstrations turned into violent clashes as the
+					night went on, with news outlets and witnesses reporting an
+					extensive use of tear gas, pepper spray and physical
+					violence by the police.
+				</p>
+				<p>
+					<a
+						href="https://theappeal.org/bodycam-video-shows-mob-mentality-of-boston-police-who-responded-to-george-floyd-protests-lawyer-says/"
+						target="_blank"
+						>The Appeal</a
+					>, a news and commentary website about the justice system,
+					exclusively obtained a copy of Boston Police officers’ body
+					camera footage.
+				</p>
+			</article>
+		</div>
+		<div id="mapbox">
+			<div id="chart"></div>
+			<div id="skip-button"></div>
+			<div id="map"></div>
+			<div id="video"></div>
+			<div id="story"></div>
+		</div>
+		<div id="outro">
+			<article>
+				<p>
+					<a
+						href="https://yuriko-schumacher.github.io/"
+						target="_blank"
+						>Yuriko Schumacher</a
+					>
+					is a journalism graduate student at
+					<a
+						href="https://camd.northeastern.edu/program/journalism-ma-2/"
+						target="_blank"
+						>Northeastern University's School of Journalism</a
+					>. This project is part of a class assignment.
+				</p>
+				<p>
+					BPD's body camera footage was exclusively obtained by
+					<a
+						href="https://theappeal.org/bodycam-video-shows-mob-mentality-of-boston-police-who-responded-to-george-floyd-protests-lawyer-says/"
+						target="_blank"
+						>The Appeal</a
+					>. For this project, videos were downloaded through
+					<a
+						href="https://www.youtube.com/channel/UCrC9AIUJ9c-52bam2iXajmQ"
+						target="_blank"
+						>YouTube</a
+					>
+					and edited into pieces.
+				</p>
+				<p>
+					According to The Appeal, times on the bodycam footage are
+					set for UTC and they are translated to EST. Locations are
+					identified by using Google Street View. Locations on some
+					video clips are estimate.
+				</p>
+				<p>
+					I'd like to give a special thanks to
+					<a href="https://www.danzedek.com/" target="_blank"
+						>Professor Dan Zedek</a
+					>
+					for his editing work and valuable feedbacks on story ideas
+					and design.
+				</p>
+				<p><a href="#hero">GO BACK TO TOP</a></p>
+			</article>
+		</div>
+		<script src="scripts/hero.js"></script>
+		<script src="scripts/timeline.js"></script>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/config.js"></script>
+		<script src="scripts/setup.js"></script>
+	</body>
+</html>
