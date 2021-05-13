@@ -373,11 +373,11 @@ const config = {
 			onChapterExit: [],
 		},
 		{
-			id: "step-7",
+			id: "step-7-1",
 			alignment: "right",
 			title: "",
 			description:
-				'By this time, trains are already bypassing Park Street and Downtown Crossing stations.<br><br><span style="font-size:0.8em;"> ❌ </span> signs on the map indicates T stations being bypassed at the time.<br><br>With the area turning into a battlefield, police post two tweets, <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267269715275198464" target="_blank">urging people to vacate the area.</a></span>',
+				'Many protesters didn’t have the means to go home from downtown because the <a href="https://twitter.com/MBTA/status/1267265253022277635" target="_blank">MBTA closed more than 10 stations</a> throughout the night even though trains were still running.<br><br> The T said the decision was for "the safety of transit riders," <a href="https://www.bostonmagazine.com/news/2020/06/01/protesters-mbta-george-floyd-boston/" target="_blank">Boston Magazine reported.</a>',
 			location: {
 				center: [-71.06286, 42.35569],
 				zoom: 13.72,
@@ -393,6 +393,30 @@ const config = {
 					opacity: 0,
 					duration: 1,
 				},
+				{
+					layer: "T1",
+					opacity: 0,
+					duration: 1,
+				},
+			],
+			onChapterExit: [],
+		},
+		{
+			id: "step-7",
+			alignment: "right",
+			title: "",
+			description:
+				'By 9:30 p.m., Park Street and Downtown Crossing stations were being bypassed. <span style="font-size:0.8em;"><br><br> ❌ </span> signs on the map indicates T stations being bypassed at the time.<br><br>With the area turning into a battlefield, police post two tweets, <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267269715275198464" target="_blank">urging people to vacate the area.</a></span>',
+			location: {
+				center: [-71.06286, 42.35569],
+				zoom: 13.72,
+				pitch: 0,
+				bearing: 0,
+			},
+			mapAnimation: "flyTo",
+			rotateAnimation: false,
+			callback: "stepFn",
+			onChapterEnter: [
 				{
 					layer: "T1",
 					opacity: 1,

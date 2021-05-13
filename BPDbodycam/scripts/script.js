@@ -41,6 +41,7 @@ const steps = [
 	"step-6-1-1",
 	"step-6-1-2",
 	"step-6-2",
+	"step-7-1",
 	"step-7",
 	"step-8-1",
 	"step-8-2",
