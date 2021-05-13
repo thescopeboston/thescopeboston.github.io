@@ -107,6 +107,24 @@ a:hover {
 	}
 }
 
+@media (max-width: 750px) {
+	#hero {
+		height: unset;
+	}
+
+	#nav {
+		height: 100px;
+	}
+
+	.logo {
+		margin-left: 10%;
+	}
+
+	.fa-angle-down {
+		height: 40px;
+	}
+}
+
 /* ---------- INTRO SECTION ---------- */
 article {
 	margin: 200px auto 200px;
@@ -175,6 +193,12 @@ video {
 .video-explore {
 	transform: translate(50vw, 30vh);
 	width: 45%;
+}
+
+@media (max-width: 750px) {
+	#video {
+		z-index: 99;
+	}
 }
 
 /* ---------- MAP SECTION ---------- */
