@@ -309,7 +309,7 @@ const config = {
 			alignment: "right",
 			title: "",
 			description:
-				'Just south there at 9:26 p.m., multiple bike patrol officers <span class="highlighter yellow-highlighter">run towards a protester</span> who was throwing things at the police.',
+				'Just south there at 9:26 p.m., multiple bike patrol officers can be seen <span class="highlighter yellow-highlighter">running towards a protester</span> who was throwing things at the police.',
 			location: {
 				center: [-71.06352, 42.35476],
 				zoom: 18.11,
