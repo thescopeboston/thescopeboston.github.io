@@ -10,7 +10,7 @@ const config = {
 			alignment: "right",
 			title: "The night of May 31",
 			description:
-				"<span class='highlighter pink-highlighter'>Peaceful protests</span> ended a little before 9 p.m.<br><br>Throughout the night, Boston Police Department posted <span class='highlighter blue-highlighter'>a series of tweets,</span> asking for people to go home.<br><br>The chart above shows the timeline of these and the <span class='highlighter yellow-highlighter'>BPD’s body camera footage</span>.",
+				"Peaceful protests ended a little before 9 p.m.<br><br>Throughout the night, Boston Police Department posted a series of tweets, asking for people to go home.",
 			location: {
 				center: [-71.06286, 42.35569],
 				zoom: 12,
@@ -112,6 +112,24 @@ const config = {
 					duration: 1,
 				},
 			],
+			onChapterExit: [],
+		},
+		{
+			id: "step-1-2",
+			alignment: "right",
+			title: "",
+			description:
+				"The chart above shows the timeline of <span class='highlighter pink-highlighter'>protesters' movements</span>, <span class='highlighter blue-highlighter'>BPD's tweets</span>, and the <span class='highlighter yellow-highlighter'>body camera footage</span>.",
+			location: {
+				center: [-71.06286, 42.35569],
+				zoom: 12,
+				pitch: 0,
+				bearing: 0,
+			},
+			mapAnimation: "flyTo",
+			rotateAnimation: false,
+			callback: "illuminateTimeline",
+			onChapterEnter: [],
 			onChapterExit: [],
 		},
 		{
@@ -291,7 +309,7 @@ const config = {
 			alignment: "right",
 			title: "",
 			description:
-				'Just south there at 9:26 p.m., multiple bike patrol officers <span class="highlighter yellow-highlighter">aggressively run towards a protester</span> who was throwing things at police.',
+				'Just south there at 9:26 p.m., multiple bike patrol officers <span class="highlighter yellow-highlighter">run towards a protester</span> who was throwing things at the police.',
 			location: {
 				center: [-71.06352, 42.35476],
 				zoom: 18.11,
@@ -471,7 +489,7 @@ const config = {
 			alignment: "right",
 			title: "",
 			description:
-				'At 9:52 p.m. on Washington Street., an officer with a pepper spray on his hand says, <span class="highlighter yellow-highlighter">"I wanna hit this asshole."</span><br><br>Around 10 p.m., BPD tweets that protestors "have <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267274567388626947" target="_blank">surrendered the moral high ground."</a></span>',
+				'At 9:52 p.m. on Washington Street., an officer with a pepper spray on his hand can be heard, <span class="highlighter yellow-highlighter">"I wanna hit this asshole."</span><br><br>Around 10 p.m., BPD tweets that protestors "have <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267274567388626947" target="_blank">surrendered the moral high ground."</a></span>',
 			location: {
 				center: [-71.05886, 42.35708],
 				zoom: 18.11,
@@ -510,7 +528,7 @@ const config = {
 			alignment: "right",
 			title: "",
 			description:
-				'Some more intense moments are captured on the camera. At 10:08 p.m., an officer approached the crowd and <span class="highlighter yellow-highlighter">pushed a protester down with a nightstick.</span>',
+				'Some more intense moments are captured on the camera. At 10:08 p.m., an officer can be seen on video approaching the crowd and <span class="highlighter yellow-highlighter">pushing a protester down with a nightstick.</span>',
 			location: {
 				center: [-71.06143, 42.35715],
 				zoom: 18.11,
@@ -554,7 +572,7 @@ const config = {
 			alignment: "right",
 			title: "",
 			description:
-				'At 10:20 p.m., around Downtown Crossing station, an officer talks about <span class="highlighter yellow-highlighter">using a police vehicle to attack demonstrators.</span><br><br>BPD again posted two consecutive tweets, stressing the <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267282825881010176" target="_blank">"officers are fighting to protect"</a></span> the city.',
+				'At 10:20 p.m., around Downtown Crossing station, an officer can be heard on video talking about <span class="highlighter yellow-highlighter">using a police vehicle to attack demonstrators.</span><br><br>BPD again posted two consecutive tweets, stressing the <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267282825881010176" target="_blank">"officers are fighting to protect"</a></span> the city.',
 			location: {
 				center: [-71.06044, 42.35588],
 				zoom: 18.11,

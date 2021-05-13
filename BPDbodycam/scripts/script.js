@@ -1,7 +1,7 @@
 // -------------------- TIMELINE CHART ---------------------
 const $chart = d3.select("#chart");
-const size = { w: windowW, h: 100 };
-const margin = { t: 40, r: windowW * 0.1, b: 30, l: windowW * 0.1 };
+const size = { w: windowW, h: 68 };
+const margin = { t: 10, r: windowW * 0.1, b: 30, l: windowW * 0.1 };
 const timeSvg = $chart
 	.append("svg")
 	.attr("width", size.w)
@@ -33,6 +33,7 @@ const skipButton = d3
 // -------------------- STEPS ---------------------
 const steps = [
 	"step-1",
+	"step-1-2",
 	"step-2",
 	"step-3",
 	"step-4",
@@ -54,7 +55,7 @@ const steps = [
 
 let prevStep = null;
 let currentStep = "step-1";
-let nextStep = "step-2";
+let nextStep = "step-1-2";
 
 const dotsG = d3.select(".time-container");
 const video = d3.select("#video");
@@ -66,9 +67,10 @@ const videoG = video.append("g").classed("video-container", true);
 // ---------------- STEP FUNCTION -----------------
 // ---------------- FIRST STEP -----------------
 function firstStep() {
-	skipButton.style("visibility", "hidden");
 	video.classed("video-explore", false);
 	videoG.selectAll("video").remove();
+	d3.select("h4.timeline-title").style("opacity", 0.75);
+	d3.selectAll("g.x-axis, g.horizontal-lines").style("opacity", 0.4);
 	dotsG
 		.selectAll("circle")
 		.classed("active-circles", false)
@@ -77,6 +79,20 @@ function firstStep() {
 }
 
 // ---------------- MIDDLE STEPS -----------------
+function illuminateTimeline() {
+	skipButton.style("visibility", "hidden");
+	video.classed("video-explore", false);
+	videoG.selectAll("video").remove();
+	d3.selectAll("h4.timeline-title, g.x-axis, g.horizontal-lines").style(
+		"opacity",
+		1
+	);
+	dotsG
+		.selectAll("circle")
+		.classed("active-circles", false)
+		.attr("r", 5)
+		.attr("fill-opacity", 1);
+}
 
 function stepFn() {
 	if (windowW <= 750) {
@@ -85,6 +101,8 @@ function stepFn() {
 		d3.select("#step-14").style("display", "none");
 		d3.select("#step-15").style("display", "none");
 	}
+	d3.select("h4.timeline-title").style("opacity", 0.75);
+	d3.selectAll("g.x-axis, g.horizontal-lines").style("opacity", 0.4);
 	skipButton.style("visibility", "visible");
 	dotsG
 		.selectAll("circle")

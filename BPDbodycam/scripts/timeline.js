@@ -56,6 +56,8 @@ function Timeline() {
 			.domain(categories)
 			.range(["#ff29c9", "#7df9ff", "#ffff00"]);
 
+		this.drawAxes(xScale, yScale);
+
 		let dotSel = this._selection.selectAll("a").data(this._data);
 
 		dotSel
@@ -79,8 +81,6 @@ function Timeline() {
 			.attr("r", 5)
 			.attr("fill", (d) => colorScale(d.category))
 			.attr("fill-opacity", 0.3);
-
-		this.drawAxes(xScale, yScale);
 	};
 
 	this.drawAxes = function (xScale, yScale) {
