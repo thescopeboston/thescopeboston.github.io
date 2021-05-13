@@ -241,7 +241,7 @@ const config = {
 			alignment: "right",
 			title: "",
 			description:
-				'At 9:21 p.m. on Tremont Street, an officer says, <span class="highlighter yellow-highlighter">"Start spraying the fuckers."</span>',
+				'At 9:21 p.m. on Tremont Street, an officer can be heard saying, <span class="highlighter yellow-highlighter">"Start spraying the fuckers."</span>',
 			location: {
 				center: [-71.06213, 42.35633],
 				zoom: 18.11,
@@ -489,7 +489,7 @@ const config = {
 			alignment: "right",
 			title: "",
 			description:
-				'At 9:52 p.m. on Washington Street., an officer with a pepper spray on his hand can be heard, <span class="highlighter yellow-highlighter">"I wanna hit this asshole."</span><br><br>Around 10 p.m., BPD tweets that protestors "have <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267274567388626947" target="_blank">surrendered the moral high ground."</a></span>',
+				'At 9:52 p.m. on Washington Street., an officer with a pepper spray on his hand can be heard, <span class="highlighter yellow-highlighter">"I wanna hit this asshole."</span><br><br>Around 10 p.m., BPD tweets that protestors have <span class="highlighter blue-highlighter"><a href="https://twitter.com/bostonpolice/status/1267274567388626947" target="_blank">"surrendered the moral high ground."</a></span>',
 			location: {
 				center: [-71.05886, 42.35708],
 				zoom: 18.11,
