@@ -26,7 +26,7 @@ const heroImages = [
 		id: "hero__img04",
 		src: "assets/thumbnail_reduced/04.jpeg",
 		x: 529,
-		y: 802,
+		y: 842,
 	},
 	{
 		id: "hero__img05",
@@ -132,7 +132,7 @@ if (windowW > 750) {
 			.attr("alt", "bodycam thumbnail")
 			.style("opacity", 0)
 			.style("left", `${(img.x / 1440) * windowW}px`)
-			.style("top", `${(img.y / 1024) * windowH}px`)
+			.style("top", `${70 + (img.y / 1024) * (windowH - 70)}px`)
 			.transition()
 			.duration(500)
 			.delay(index * 150 + 1000)
