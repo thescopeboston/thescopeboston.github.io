@@ -120,7 +120,7 @@ const heroImages = [
 	},
 ];
 
-if (windowW > 750) {
+if (windowW > 1000) {
 	const heroImagesG = hero.append("g").classed("hero__imgG", true);
 	heroImages.forEach((img, index) => {
 		heroImagesG

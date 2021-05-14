@@ -89,9 +89,9 @@ function Timeline() {
 	};
 
 	this.drawAxisX = function (xScale) {
-		let tickNumbers = windowW > 576 ? 12 : 6;
+		let tickNumbers = windowW > 750 ? 12 : 6;
 		let tickFormats =
-			windowW > 576 ? d3.timeFormat("%I:%M %p") : d3.timeFormat("%I %p");
+			windowW > 750 ? d3.timeFormat("%I:%M %p") : d3.timeFormat("%I %p");
 		const xAxis = d3
 			.axisBottom(xScale)
 			.ticks(tickNumbers)

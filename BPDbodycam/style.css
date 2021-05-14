@@ -78,14 +78,21 @@ a:hover {
 	display: none;
 }
 
-.title {
+.title__container {
 	width: 38%;
+	margin: 0 auto;
 	text-align: center;
-	background: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.title {
+	padding: 1rem;
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .fa-angle-down {
 	height: 70px;
+	text-align: center;
 	font-size: 1.5em;
 	animation-delay: 5s;
 	animation-duration: 2s;
@@ -108,21 +115,6 @@ a:hover {
 }
 
 @media (max-width: 750px) {
-	#hero {
-		height: unset;
-	}
-
-	#nav {
-		height: 100px;
-	}
-
-	.logo {
-		margin-left: 10%;
-	}
-
-	.fa-angle-down {
-		height: 40px;
-	}
 }
 
 /* ---------- INTRO SECTION ---------- */
@@ -195,12 +187,6 @@ video {
 	width: 45%;
 }
 
-@media (max-width: 750px) {
-	#video {
-		z-index: 99;
-	}
-}
-
 /* ---------- MAP SECTION ---------- */
 
 #map {
@@ -211,17 +197,21 @@ video {
 	left: 0;
 	top: 100px;
 }
+
 #features {
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 }
+
 .hidden {
 	visibility: hidden;
 }
+
 .righty {
 	width: 33%;
 	margin-left: 62%;
 }
+
 .dark {
 	color: white;
 	background: rgba(0, 0, 0, 0.7);
@@ -229,9 +219,9 @@ video {
 
 .step {
 	padding-bottom: 50vh;
-	/* margin-bottom: 10vh; */
 	opacity: 0.25;
 }
+
 .step.active {
 	opacity: 0.9;
 }
@@ -243,12 +233,6 @@ video {
 .step img {
 	width: 100%;
 }
-
-/* .highlighter::before,
-.highlighter::after {
-	content: "　";
-	font-size: 0.2em;
-} */
 
 .yellow-highlighter {
 	background: rgb(255, 255, 0, 0.5);
@@ -262,23 +246,30 @@ video {
 	background: rgb(255, 41, 201, 0.5);
 }
 
-@media (max-width: 750px) {
-	.righty,
-	.fully {
-		width: 90%;
-		margin: 0 auto;
-	}
-}
-
-/* Fix issue on mobile browser where scroll breaks  */
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan
 	.mapboxgl-canvas {
 	touch-action: unset;
 }
 
-@media (max-width: 750px) {
-	.title {
+@media (max-width: 1000px) {
+	#hero {
+		height: unset;
+	}
+
+	#nav {
+		height: 100px;
+	}
+
+	.logo {
+		margin-left: 10%;
+	}
+
+	.fa-angle-down {
+		height: 40px;
+	}
+
+	.title__container {
 		width: 80%;
 		margin: 2em auto;
 	}
@@ -292,18 +283,34 @@ video {
 	.hero__mobileImage__container > img {
 		width: 49%;
 	}
+}
 
+@media (max-width: 750px) {
 	#skip-button {
 		display: none;
 	}
 
+	#chart {
+		background: black;
+	}
 	#video {
+		z-index: 99;
 		background: black;
 	}
 
 	#map {
 		height: 60vh;
 		top: 40vh;
+	}
+
+	.step div {
+		padding: 8px 25px;
+	}
+
+	.righty,
+	.fully {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 
