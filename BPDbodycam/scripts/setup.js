@@ -98,7 +98,7 @@ map.on("load", function () {
 	scroller
 		.setup({
 			step: ".step",
-			offset: windowW > 750 ? 0.55 : 0.85,
+			offset: windowW > 750 ? 0.55 : 0.75,
 			progress: true,
 		})
 		.onStepEnter((response) => {
