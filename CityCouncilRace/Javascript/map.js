@@ -14,6 +14,7 @@ let tooltip = d3.select("body")
         .style("border-radius", "6px");
 
 let aside = d3.select("aside");
+let p = d3.select("#disclaimer");
 let p1 = d3.select("#hover1");
 let p2 = d3.select("#neighborhood1");
 let p3 = d3.select("#img1");
@@ -56,6 +57,7 @@ d3.json("Javascript/district.geojson", function(error, data) {
             //     .style("top", (height/3.7) + "px")
             //     .style("opacity", 0.8)
             //     .style("padding", "8px 10px");
+            p.html("Candidates appear in alphabetical order.");
             p1.html(`Candidates for District ${d.properties.DISTRICT}`);
             p2.html(`District ${d.properties.DISTRICT} includes ${tooltipInfo[d.properties.DISTRICT].Gray.neighborhood}`);
             p3.attr("src", tooltipInfo[d.properties.DISTRICT].Gray.img);
