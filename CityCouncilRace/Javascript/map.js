@@ -57,7 +57,7 @@ d3.json("Javascript/district.geojson", function(error, data) {
             //     .style("top", (height/3.7) + "px")
             //     .style("opacity", 0.8)
             //     .style("padding", "8px 10px");
-            p.html(`Candidates appear in alphabetical order.`);
+            p.html("Candidates appear in alphabetical order.");
             p1.html(`Candidates for District ${d.properties.DISTRICT}`);
             p2.html(`District ${d.properties.DISTRICT} includes ${tooltipInfo[d.properties.DISTRICT].Gray.neighborhood}`);
             p3.attr("src", tooltipInfo[d.properties.DISTRICT].Gray.img);
