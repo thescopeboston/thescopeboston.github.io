@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css"/> 
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+/>
+  </head>
+
+  <body>
+    <div id="head">
+        <h1>Boston City Council Race 2021</h1>
+    </div>
+    <!-- <div class="row">
+        <div class="col-md-8"> 
+            <svg id="viz">
+                <g id="map"></g>
+            </svg>
+        </div>
+        <div class="col-md-4" id = "info">
+            <div class="icon">
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="hover" id="hover1">Hover mouse over your District to see who's running</p>
+            <p class="neighborhood" id="neighborhood1"></p>      
+            <img id="img1"/>  
+            <p class="name" id="name1"></p>      
+            <p class="bio" id="bio1"></p>      
+                
+            <img id="img2"/>  
+            <p class="name" id="name2"></p>      
+            <p class="bio" id="bio2"></p>   
+        </div>
+    </div> -->
+
+    <div class="sticky-container">
+        <div class="sticky-graphic"> 
+            <svg id="viz">
+                <g id="map"></g>
+            </svg>
+        </div>
+        <div class="sticky-content" id = "info">
+            <div class="icon">
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="hover" id="hover1">Hover mouse over your District to see who's running</p>
+            <p id="disclaimer"></p>
+            <p class="neighborhood" id="neighborhood1"></p>      
+            <img id="img1"/>  
+            <p class="name" id="name1"></p>      
+            <p class="bio" id="bio1"></p>      
+                
+            <img id="img2"/>  
+            <p class="name" id="name2"></p>      
+            <p class="bio" id="bio2"></p>   
+        </div>
+    </div>
+
+    <div class="end">End of Map</div>
+ 
+  <!-- <main class="story">
+        <section class="container two-column">
+            <div class="right-col">
+                <svg id="viz">
+                    <g id="map"></g>
+                </svg>
+            </div>
+            <aside class="content intro">
+                <p id="one">Hover mouse over your District to see who's running</p>
+                <p class="neighborhood" id="neighborhood1"></p>      
+                <img id="img1"/>  
+                <p class="name" id="name1"></p>      
+                <p class="bio" id="bio1"></p>      
+                <img id="img2"/>  
+                <p class="name" id="name2"></p>      
+                <p class="bio" id="bio2"></p>   
+            </aside>
+        </section>
+    </main> -->
+    <!-- <div class="end">End of Map</div> -->
+
+    <script src="Javascript/map.js"></script>
+  </body>
+</html>
