@@ -177,64 +177,64 @@ function drawMap(error, neighborhoodData, districtData) {
             pImg.attr("src", tooltipInfo[d.properties.DISTRICT].First.img);
             pName.html(`${tooltipInfo[d.properties.DISTRICT].First.name}`);
             pNeighborhood.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].First.neighborhood}`);
-            pKeyIssue.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].First.issue}</b>`);
-            pLearnMore.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].First.issue}.</b>`);
+            pLearnMore.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
             // 2nd Candidate 
             pImg2.attr("src", tooltipInfo[d.properties.DISTRICT].Second.img);
             pName2.html(`${tooltipInfo[d.properties.DISTRICT].Second.name}`);
             pNeighborhood2.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Second.neighborhood}`);
-            pKeyIssue2.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Second.issue}</i></b>`);
-            pLearnMore2.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue2.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Second.issue}.</b>`);
+            pLearnMore2.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite2.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
             // 3rd Candidate
             pImg3.attr("src", tooltipInfo[d.properties.DISTRICT].Third.img);
             pName3.html(`${tooltipInfo[d.properties.DISTRICT].Third.name}`);
             pNeighborhood3.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Third.neighborhood}`);
-            pKeyIssue3.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Third.issue}</i></b>`);
-            pLearnMore3.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue3.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Third.issue}.</b>`);
+            pLearnMore3.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite3.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
 
             pImg4.attr("src", tooltipInfo[d.properties.DISTRICT].Fourth.img);
             pName4.html(`${tooltipInfo[d.properties.DISTRICT].Fourth.name}`);
             pNeighborhood4.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Fourth.neighborhood}`);
-            pKeyIssue4.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Fourth.issue}</i></b>`);
-            pLearnMore4.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue4.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Fourth.issue}.</b>`);
+            pLearnMore4.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite4.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
 
             pImg5.attr("src", tooltipInfo[d.properties.DISTRICT].Fifth.img);
             pName5.html(`${tooltipInfo[d.properties.DISTRICT].Fifth.name}`);
             pNeighborhood5.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Fifth.neighborhood}`);
-            pKeyIssue5.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Fifth.issue}</i></b>`);
-            pLearnMore5.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue5.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Fifth.issue}.</b>`);
+            pLearnMore5.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite5.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
            
             pImg6.attr("src", tooltipInfo[d.properties.DISTRICT].Sixth.img);
             pName6.html(`${tooltipInfo[d.properties.DISTRICT].Sixth.name}`);
             pNeighborhood6.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Sixth.neighborhood}`);
-            pKeyIssue6.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Sixth.issue}</i></b>`);
-            pLearnMore6.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue6.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Sixth.issue}.</b>`);
+            pLearnMore6.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite6.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
 
             pImg7.attr("src", tooltipInfo[d.properties.DISTRICT].Seventh.img);
             pName7.html(`${tooltipInfo[d.properties.DISTRICT].Seventh.name}`);
             pNeighborhood7.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Seventh.neighborhood}`);
-            pKeyIssue7.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Seventh.issue}</i></b>`);
-            pLearnMore7.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue7.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Seventh.issue}.</b>`);
+            pLearnMore7.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite7.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
 
             pImg8.attr("src", tooltipInfo[d.properties.DISTRICT].Eigth.img);
             pName8.html(`${tooltipInfo[d.properties.DISTRICT].Eigth.name}`);
             pNeighborhood8.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Eigth.neighborhood}`);
-            pKeyIssue8.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Eigth.issue}</i></b>`);
-            pLearnMore8.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue8.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Eigth.issue}.</b>`);
+            pLearnMore8.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite8.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
 
             pImg9.attr("src", tooltipInfo[d.properties.DISTRICT].Ninth.img);
             pName9.html(`${tooltipInfo[d.properties.DISTRICT].Ninth.name}`);
             pNeighborhood9.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Ninth.neighborhood}`);
-            pKeyIssue9.html(`Key platform issue: <b><i>${tooltipInfo[d.properties.DISTRICT].Ninth.issue}</i></b>`);
-            pLearnMore9.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope."</a>`);
+            pKeyIssue9.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Ninth.issue}.</b>`);
+            pLearnMore9.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite9.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
         });
         // .on("mouseout", function() {
