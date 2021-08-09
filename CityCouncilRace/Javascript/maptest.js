@@ -1,4 +1,4 @@
-let width = window.innerWidth/1.5;
+let width = window.innerWidth/1.57;
 let height = window.innerHeight/1.1;
 let svg = d3.select("#viz")
     .attr("width", width)
