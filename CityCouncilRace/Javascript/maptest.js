@@ -16,7 +16,9 @@ let tooltip = d3.select("body")
 let aside = d3.select("aside");
 let pDisclaimer = d3.select("#disclaimer");
 let pHover = d3.select("#hover");
+let pclick = d3.select("#click");
 
+let confines = d3.select("#confines");
 let pImg = d3.select("#img");
 let pName = d3.select("#name");
 let pNeighborhood = d3.select("#neighborhood");
@@ -92,16 +94,17 @@ function drawMap(error, neighborhoodData, districtData) {
     // console.log(data);
     let tooltipInfo = 
     {"1" : 
-        {"First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
+        {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
         }, 
     "2" : 
-        {"First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "", "website": "https://www.edforboston.com/"}, "interview": ""
+        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "", "website": "https://www.edforboston.com/"}, "interview": ""
         }, 
     "3" : 
-        {"First": {"name":"Stephen McBride", "img": "Photo/McBride.jpeg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery, Education, Public Health, Racial Wealth Gap", "website": "https://www.mcbrideforboston.com/", "interview": "https://thescopeboston.org/6258/2021-boston-elections/city-council-race-stephen-mcbride-running-for-district-3/"}
+        {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", "First": {"name":"Stephen McBride", "img": "Photo/McBride.jpeg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery, Education, Public Health, Racial Wealth Gap", "website": "https://www.mcbrideforboston.com/", "interview": "https://thescopeboston.org/6258/2021-boston-elections/city-council-race-stephen-mcbride-running-for-district-3/"}
         }, 
     "4" :  
-        {"First": 
+        {"confines":"Parts of Dorchester, Mattapan, Roslindale and Jamaica Plain", 
+        "First": 
             {"name":"Evandro Carvalho", "img": "Photo/Carvalho.jpeg", "neighborhood": "Dorchester", "issue": "Economic Empowerment, Homeownership, Police Reforms", "website": "https://twitter.com/evandro4boston?lang=en", "interview": "https://thescopeboston.org/6729/2021-boston-elections/city-council-race-evandro-carvalho-running-for-district-4/"}, 
         "Second": 
             {"name":"Nikkia Jean-Charles", "img": "Photo/Charles.jpg", "neighborhood": "Mattapan", "issue": "Public Peace, Food Abundance, Transparency & Accountability", "website": "https://nikkia4boston.com/", "interview": "https://thescopeboston.org/6531/2021-boston-elections/city-council-race-nikkia-jean-charles-running-for-district-4/"}, 
@@ -121,11 +124,13 @@ function drawMap(error, neighborhoodData, districtData) {
             {"name":"Brian Worrell", "img": "Photo/Worrell.jpeg", "neighborhood": "Unknown", "issue": "Covid-19 Recovery", "website": "https://www.facebook.com/VoteWorrell/", "interview": "https://thescopeboston.org/6568/2021-boston-elections/city-council-race-brian-worrell-running-for-district-4/"}
         },
     "5" :
-        {"First": 
+        {"confines":"Hyde Park, parts of Roslindale and Mattapan",
+        "First": 
             {"name":"", "img": "", "neighborhood": "", "issue": "", "website": "", "interview": ""}
         },
     "6" :
-        {"First": 
+        {"confines":"Parts of Jamaica Plain and West Roxbury",
+        "First": 
             {"name":"Winnie Eke", "img": "Photo/Eke.png", "neighborhood": "West Roxbury", "issue": "Education", "website": "No website found", "interview": "https://thescopeboston.org/6667/2021-boston-elections/city-council-race-winnie-eke-for-district-6/"},
         "Second": 
             {"name":"Kendra Hicks", "img": "Photo/Hicks.jpg", "neighborhood": "Jamaica Plain", "issue": "Justice, Education, Community Safety, Affordable Housing, Climate Change, Equitable economy", "website": "https://www.hicksfordistrictsix.com/", "interview": "https://thescopeboston.org/6108/2021-boston-elections/city-council-race-kendra-hicks-running-for-district-6/"},
@@ -133,7 +138,8 @@ function drawMap(error, neighborhoodData, districtData) {
             {"name":"Mary Tamer", "img": "Photo/Tamer.jpg", "neighborhood": "West Roxbury", "issue": "Covid-19 Recovery, Education, Climate Change", "website": "https://www.marytamer.com/", "interview": "https://thescopeboston.org/6357/2021-boston-elections/city-council-race-mary-tamer-running-for-district-6/"}
         },
     "7" :
-        {"First": 
+        {"confines":"Parts of Fenway, Roxbury and the South End",
+        "First": 
             {"name":"Tania Fernandes Anderson", "img": "Photo/Anderson.jpeg", "neighborhood": "West Roxbury", "issue": "Education", "website": "https://taniaford7.com/", "interview": "https://thescopeboston.org/6719/2021-boston-elections/city-council-race-tania-fernandes-anderson-for-district-7/"},
         "Second": 
             {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
@@ -141,11 +147,13 @@ function drawMap(error, neighborhoodData, districtData) {
             {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
         },
     "8" :
-        {"First": 
+        {"confines":"West End, parts of Fenway/Kenmore, Back Bay and Allston ",
+        "First": 
             {"name":"Kenzie Bok", "img": "Photo/Bok.jpg", "neighborhood": "Bay Village", "issue": "Affordable Housing, Transportation Infrastructure, Climate Change, Historic Preservation", "website": "https://www.kenziebok.com/", "interview": "https://thescopeboston.org/6552/2021-boston-elections/city-council-race-kenzie-bok-running-for-reelection-in-district-8/"}
         },
     "9" :
-        {"First": 
+        {"confines":"Brighton, parts of Allston",
+        "First": 
             {"name":"", "img": "", "neighborhood": "", "issue": "", "website": "", "interview": ""}
         },
     };
@@ -162,86 +170,222 @@ function drawMap(error, neighborhoodData, districtData) {
         .enter()
         .append("path")
         .attr("d", path)
-        .attr("stroke","#dbdbdb")
+        .attr("stroke","white")
         .attr("fill", "#0aaef5")
         .style("opacity", "0.8")
         .on("mouseover", function(d, i) {
-            console.log(d);
             d3.selectAll("path").style("opacity", 0.3);
-            d3.select(this).style("opacity", 0.8);
+            d3.select(this).style("opacity", 1);
+        
         })
         .on("click", function(d, i) {
-            pDisclaimer.html("(Candidates appear in alphabetical order)");
-            pHover.html(`Candidates for District ${d.properties.DISTRICT}`);
+            d3.selectAll("path").style("opacity", 0.3);
+            d3.select(this).style("opacity", 1)
+            pHover.html(`District ${d.properties.DISTRICT}`);
+            pDisclaimer.html("");
+            pclick.html("");
             // 1st Candidate 
-            pImg.attr("src", tooltipInfo[d.properties.DISTRICT].First.img);
+            confines.html("");
+            pImg.html("");
+            pName.html("");
+            pNeighborhood.html("");
+            pKeyIssue.html("");
+            pLearnMore.html("");
+            pWebsite.html("")
+            // 2nd Candidate 
+            pImg2.html("");
+            pName2.html("");
+            pNeighborhood2.html("");
+            pKeyIssue2.html("");
+            pLearnMore2.html("");
+            pWebsite2.html("")
+            // 3rd Candidate
+            pImg3.html("");
+            pName3.html("");
+            pNeighborhood3.html("");
+            pKeyIssue3.html("");
+            pLearnMore3.html("");
+            pWebsite3.html("")
+            // 4th Candidate
+            pImg4.html("");
+            pName4.html("");
+            pNeighborhood4.html("");
+            pKeyIssue4.html("");
+            pLearnMore4.html("");
+            pWebsite4.html("")
+            // 5th Candidate
+            pImg5.html("");
+            pName5.html("");
+            pNeighborhood5.html("");
+            pKeyIssue5.html("");
+            pLearnMore5.html("");
+            pWebsite5.html("")
+           
+            pImg6.html("");
+            pName6.html("");
+            pNeighborhood6.html("");
+            pKeyIssue6.html("");
+            pLearnMore6.html("");
+            pWebsite6.html("")
+
+            pImg7.html("");
+            pName7.html("");
+            pNeighborhood7.html("");
+            pKeyIssue7.html("");
+            pLearnMore7.html("");
+            pWebsite7.html("")
+
+            pImg8.html("");
+            pName8.html("");
+            pNeighborhood8.html("");
+            pKeyIssue8.html("");
+            pLearnMore8.html("");
+            pWebsite8.html("")
+
+            pImg9.html("");
+            pName9.html("");
+            pNeighborhood9.html("");
+            pKeyIssue9.html("");
+            pLearnMore9.html("");
+            pWebsite9.html("")
+
+            pDisclaimer.html("(Candidates appear in alphabetical order)");
+            // pHover.html(`District ${d.properties.DISTRICT}`);
+            // 1st Candidate 
+            confines.html(`District ${d.properties.DISTRICT} includes: ${tooltipInfo[d.properties.DISTRICT].confines}`);
+            pImg.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].First.img}"/>`);
             pName.html(`${tooltipInfo[d.properties.DISTRICT].First.name}`);
             pNeighborhood.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].First.neighborhood}`);
             pKeyIssue.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].First.issue}.</b>`);
             pLearnMore.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
             pWebsite.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
             // 2nd Candidate 
-            pImg2.attr("src", tooltipInfo[d.properties.DISTRICT].Second.img);
+            pImg2.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Second.img}"/>`);
             pName2.html(`${tooltipInfo[d.properties.DISTRICT].Second.name}`);
             pNeighborhood2.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Second.neighborhood}`);
             pKeyIssue2.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Second.issue}.</b>`);
-            pLearnMore2.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite2.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
+            pLearnMore2.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Second.interview}"> interview with The Scope.</a>`);
+            pWebsite2.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Second.website}">Visit their website</a>`)
             // 3rd Candidate
-            pImg3.attr("src", tooltipInfo[d.properties.DISTRICT].Third.img);
+            pImg3.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Third.img}"/>`);
             pName3.html(`${tooltipInfo[d.properties.DISTRICT].Third.name}`);
             pNeighborhood3.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Third.neighborhood}`);
             pKeyIssue3.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Third.issue}.</b>`);
-            pLearnMore3.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite3.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
-
-            pImg4.attr("src", tooltipInfo[d.properties.DISTRICT].Fourth.img);
+            pLearnMore3.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Third.interview}"> interview with The Scope.</a>`);
+            pWebsite3.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Third.website}">Visit their website</a>`)
+            // 4th Candidate
+            pImg4.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Fourth.img}"/>`);
             pName4.html(`${tooltipInfo[d.properties.DISTRICT].Fourth.name}`);
             pNeighborhood4.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Fourth.neighborhood}`);
             pKeyIssue4.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Fourth.issue}.</b>`);
-            pLearnMore4.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite4.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
-
-            pImg5.attr("src", tooltipInfo[d.properties.DISTRICT].Fifth.img);
+            pLearnMore4.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Fourth.interview}"> interview with The Scope.</a>`);
+            pWebsite4.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Fourth.website}">Visit their website</a>`)
+            
+            pImg5.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Fifth.img}"/>`);
             pName5.html(`${tooltipInfo[d.properties.DISTRICT].Fifth.name}`);
             pNeighborhood5.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Fifth.neighborhood}`);
             pKeyIssue5.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Fifth.issue}.</b>`);
-            pLearnMore5.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite5.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
+            pLearnMore5.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Fifth.interview}"> interview with The Scope.</a>`);
+            pWebsite5.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Fifth.website}">Visit their website</a>`)
            
-            pImg6.attr("src", tooltipInfo[d.properties.DISTRICT].Sixth.img);
+            pImg6.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Sixth.img}"/>`);
             pName6.html(`${tooltipInfo[d.properties.DISTRICT].Sixth.name}`);
             pNeighborhood6.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Sixth.neighborhood}`);
             pKeyIssue6.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Sixth.issue}.</b>`);
-            pLearnMore6.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite6.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
+            pLearnMore6.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Sixth.interview}"> interview with The Scope.</a>`);
+            pWebsite6.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Sixth.website}">Visit their website</a>`)
 
-            pImg7.attr("src", tooltipInfo[d.properties.DISTRICT].Seventh.img);
+            pImg7.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Seventh.img}"/>`);
             pName7.html(`${tooltipInfo[d.properties.DISTRICT].Seventh.name}`);
             pNeighborhood7.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Seventh.neighborhood}`);
             pKeyIssue7.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Seventh.issue}.</b>`);
-            pLearnMore7.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite7.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
+            pLearnMore7.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Seventh.interview}"> interview with The Scope.</a>`);
+            pWebsite7.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Seventh.website}">Visit their website</a>`)
 
-            pImg8.attr("src", tooltipInfo[d.properties.DISTRICT].Eigth.img);
+            pImg8.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Eigth.img}"/>`);
             pName8.html(`${tooltipInfo[d.properties.DISTRICT].Eigth.name}`);
             pNeighborhood8.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Eigth.neighborhood}`);
             pKeyIssue8.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Eigth.issue}.</b>`);
-            pLearnMore8.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite8.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
+            pLearnMore8.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Eigth.interview}"> interview with The Scope.</a>`);
+            pWebsite8.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Eigth.website}">Visit their website</a>`)
 
-            pImg9.attr("src", tooltipInfo[d.properties.DISTRICT].Ninth.img);
+            pImg9.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Ninth.img}"/>`);
             pName9.html(`${tooltipInfo[d.properties.DISTRICT].Ninth.name}`);
             pNeighborhood9.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Ninth.neighborhood}`);
             pKeyIssue9.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Ninth.issue}.</b>`);
-            pLearnMore9.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.interview}"> interview with The Scope.</a>`);
-            pWebsite9.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].First.website}">Visit their website</a>`)
-        });
+            pLearnMore9.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Ninth.interview}"> interview with The Scope.</a>`);
+            pWebsite9.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Ninth.website}">Visit their website</a>`)
+        })
         // .on("mouseout", function() {
-        //     d3.select(this).style("opacity", 0.8)
-        //     d3.selectAll("path").style("opacity", 0.8)
-        //     d3.select(this).html("")
-        //     .style("padding", "0");
+        //     d3.select(this).style("opacity", 1)
+        //     d3.selectAll("path").style("opacity", 1)
+        //     pDisclaimer.html("");
+        //     pHover.html("");
+        //     // 1st Candidate 
+        //     pImg.html("");
+        //     pName.html("");
+        //     pNeighborhood.html("");
+        //     pKeyIssue.html("");
+        //     pLearnMore.html("");
+        //     pWebsite.html("")
+        //     // 2nd Candidate 
+        //     pImg2.html("");
+        //     pName2.html("");
+        //     pNeighborhood2.html("");
+        //     pKeyIssue2.html("");
+        //     pLearnMore2.html("");
+        //     pWebsite2.html("")
+        //     // 3rd Candidate
+        //     pImg3.html("");
+        //     pName3.html("");
+        //     pNeighborhood3.html("");
+        //     pKeyIssue3.html("");
+        //     pLearnMore3.html("");
+        //     pWebsite3.html("")
+        //     // 4th Candidate
+        //     pImg4.html("");
+        //     pName4.html("");
+        //     pNeighborhood4.html("");
+        //     pKeyIssue4.html("");
+        //     pLearnMore4.html("");
+        //     pWebsite4.html("")
+            
+        //     pImg5.html("");
+        //     pName5.html("");
+        //     pNeighborhood5.html("");
+        //     pKeyIssue5.html("");
+        //     pLearnMore5.html("");
+        //     pWebsite5.html("")
+           
+        //     pImg6.html("");
+        //     pName6.html("");
+        //     pNeighborhood6.html("");
+        //     pKeyIssue6.html("");
+        //     pLearnMore6.html("");
+        //     pWebsite6.html("")
+
+        //     pImg7.html("");
+        //     pName7.html("");
+        //     pNeighborhood7.html("");
+        //     pKeyIssue7.html("");
+        //     pLearnMore7.html("");
+        //     pWebsite7.html("")
+
+        //     pImg8.html("");
+        //     pName8.html("");
+        //     pNeighborhood8.html("");
+        //     pKeyIssue8.html("");
+        //     pLearnMore8.html("");
+        //     pWebsite8.html("")
+
+        //     pImg9.html("");
+        //     pName9.html("");
+        //     pNeighborhood9.html("");
+        //     pKeyIssue9.html("");
+        //     pLearnMore9.html("");
+        //     pWebsite9.html("")
+        //     // d3.select(this).html("")
+            
         // });
     map.selectAll('text')
         .data(neighborhoodData.features)

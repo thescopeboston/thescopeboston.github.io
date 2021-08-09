@@ -8,17 +8,54 @@
     <script src="https://unpkg.com/topojson@3"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css"/> 
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-/>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="icon" href="Photo/icon.png"> 
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"/>
   </head>
 
   <body>
+    <header>
+        <p class="tagline">Independent. Committed to fair reporting. Stories of hope, justice and resilience from Greater Boston communities.</p>
+        <a href="https://thescopeboston.org/"><img id ="logo" class="center" src="Photo/logo.png" alt="The Scope logo"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm box2" id="circle">
+                    <a href="https://thescopeboston.org/tag/coronavirus/">
+                        <div class ="menu">&nbsp &nbsp CORONAVIRUS</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/5718/news/covid-19-vaccine-updates/">
+                        <div class ="menu">COVID VACCINE UPDATE</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/4146/news/where-are-bostons-testing-sites/">
+                        <div class ="menu">&nbsp &nbsp &nbsp &nbsp FIND A TESTING SITE</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/3628/news/city-of-bostons-response-to-covid-19-the-latest-updates/">
+                        <div class ="menu">&nbsp &nbsp &nbsp BOSTON REOPENING</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/category/roundup-boston-city-council-meetings/">
+                        <div class ="menu">&nbsp &nbsp &nbsp &nbspCITY WATCH</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/category/q-a-changemakers/">
+                        <div class ="menu">CHANGEMAKER</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
     <div id="head">
-        <h1>Boston City Council Race 2021</h1>
-        <p class="subhead">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
+        <h1>Boston's 2021 City Council Race</h1>
+        <p class="subhead">Not sure who is running this upcoming election? Use this tool to find what City Council District you're in and who are running for a councilor seat in that District this September.</p>
     </div>
     <!-- <div class="row">
         <div class="col-md-8"> 
@@ -41,7 +78,8 @@
             <p class="bio" id="bio2"></p>   
         </div>
     </div> -->
-
+    <!-- End At large section -->
+    <h2>Districts Candidates</h2>
     <div class="sticky-container">
         <div class="sticky-graphic"> 
             <svg id="viz">
@@ -53,9 +91,11 @@
                 <i class="fas fa-angle-down"></i>
             </div>
             <p id="hover">Click on your neighborhood to see what your district is and who's running</p>
+            <p id="click"></p>
             <p id="disclaimer"></p>
 
-            <img id="img"/>  
+            <p class="confinesClass" id="confines"></p>      
+            <p id="img"></p>  
             <p class="nameClass" id="name"></p>      
             <p class="neighborhoodClass" id="neighborhood"></p>      
             <p class="keyIssueClass" id="keyIssues"></p>      
@@ -64,7 +104,7 @@
 
             <br>
 
-            <img id="img2"/>  
+            <p id="img2"></p> 
             <p class="nameClass" id="name2"></p>      
             <p class="neighborhoodClass" id="neighborhood2"></p>      
             <p class="keyIssueClass" id="keyIssues2"></p>      
@@ -73,7 +113,7 @@
             
             <br>
 
-            <img id="img3"/>  
+            <p id="img3"></p> 
             <p class="nameClass" id="name3"></p>      
             <p class="neighborhoodClass" id="neighborhood3"></p>      
             <p class="keyIssueClass" id="keyIssues3"></p>      
@@ -82,7 +122,7 @@
 
             <br>
 
-            <img id="img4"/>  
+            <p id="img4"></p>
             <p class="nameClass" id="name4"></p>      
             <p class="neighborhoodClass" id="neighborhood4"></p>      
             <p class="keyIssueClass" id="keyIssues4"></p>      
@@ -91,7 +131,7 @@
 
             <br>
 
-            <img id="img5"/>  
+            <p id="img5"></p>
             <p class="nameClass" id="name5"></p>      
             <p class="neighborhoodClass" id="neighborhood5"></p>      
             <p class="keyIssueClass" id="keyIssues5"></p>      
@@ -100,7 +140,7 @@
 
             <br>
 
-            <img id="img6"/>  
+            <p id="img6"></p>
             <p class="nameClass" id="name6"></p>      
             <p class="neighborhoodClass" id="neighborhood6"></p>      
             <p class="keyIssueClass" id="keyIssues6"></p>      
@@ -109,7 +149,7 @@
            
             <br>
 
-            <img id="img7"/>  
+            <p id="img7"></p>
             <p class="nameClass" id="name7"></p>      
             <p class="neighborhoodClass" id="neighborhood7"></p>      
             <p class="keyIssueClass" id="keyIssues7"></p>      
@@ -118,7 +158,7 @@
             
             <br>
 
-            <img id="img8"/>  
+            <p id="img8"></p>
             <p class="nameClass" id="name8"></p>      
             <p class="neighborhoodClass" id="neighborhood8"></p>      
             <p class="keyIssueClass" id="keyIssues8"></p>      
@@ -127,7 +167,7 @@
 
             <br>
 
-            <img id="img9"/>  
+            <p id="img9"></p>
             <p class="nameClass" id="name9"></p>      
             <p class="neighborhoodClass" id="neighborhood9"></p>      
             <p class="keyIssueClass" id="keyIssues9"></p>      
@@ -135,6 +175,148 @@
             <p class="websiteClass" id="website9"></p>  
         </div>
     </div>
+
+     <!-- At large section -->
+     <div>
+        <h2>At-large Candidates</h2>
+        <p class="subhead2">Seventeen candidates are running to fill four at-large seats in the Council. Two incumbents, Councilor Michael Flaherty and Julia Mejia, are running for re-election while Michelle Wu and Annissa Essaibi George is running for mayor, leaving two slots up for grabs. Click on the candidates' profile to read their interview with The Scope or visit their campaign website.</p>
+    </div>
+     <div  class="atlarge" class="container">
+        <div class="row">
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6203/news/city-council-race-said-abdikarim-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Abdikarim.png" width="100px">
+                    <div class ="category">Said	Abdikarim</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6354/2021-boston-elections/city-council-race-kelly-bates-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Bates.jpg" width="100px">
+                    <div class ="category">Kelly Bates</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="">
+                    <img class="profilePic" src="Photo/Colimon.jpg" width="100px">
+                    <div class ="category">James Reginald Colimon</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6811/2021-boston-elections/city-council-race-domingos-darosa-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Darosa.png" width="100px">
+                    <div class ="category">Domingos DaRosa</div>
+                </a>
+            </div>  
+
+            <div class="col-sm box">
+                <a href="http://www.michaelflaherty.com/">
+                    <img class="profilePic" src="Photo/user.png">
+                    <div class ="category">Michael Flaherty</div>
+                </a>
+            </div>  
+
+            <div class="col-sm box">
+                <a href="https://ballotpedia.org/Althea_Garrison">
+                    <img class="profilePic" src="Photo/user.png" >
+                    <div class ="category">Althea Garrison</div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+          
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6215/2021-boston-elections/city-council-race-alex-gray-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/gray.jpeg" width="100px">
+                    <div class ="category">Alex Gray</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6734/2021-boston-elections/city-council-race-david-halbert-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Halbert.png">
+                    <div class ="category">David Halbert</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6287/2021-boston-elections/city-council-race-ruthzee-louijeune-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Ruthzee.jpg">
+                    <div class ="category">Ruthzee Louijeune</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6673/2021-boston-elections/city-council-race-julia-mejia-running-for-reelection-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Mejia.jpeg">
+                    <div class ="category">Julia Mejia</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6776/2021-boston-elections/city-council-race-carla-b-monteiro-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Monteiro.jpeg" >
+                    <div class ="category">Carla B. Monteiro</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://erinforboston.com/">
+                    <img class="profilePic" src="Photo/user.png" >
+                    <div class ="category">Erin Murphy</div>
+                </a>
+            </div>
+
+        </div>
+        
+        <div class="row">
+
+          
+
+            <div class="col-sm box">
+                <a href="https://bridgetneewalsh.com/">
+                    <img class="profilePic" src="Photo/user.png" >
+                    <div class ="category">Bridget Nee-Walsh</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6783/2021-boston-elections/city-council-race-jon-spillane-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Spillane.png" >
+                    <div class ="category">Jon Spillane</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="http://www.royowensboston.mysite.com/">
+                    <img class="profilePic" src="Photo/user.png" >
+                    <div class ="category">Roy Owens</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://www.palmeratlarge.org/">
+                    <img class="profilePic" src="Photo/user.png" >
+                    <div class ="category">Donnie Palmer</div>
+                </a>
+            </div>
+
+            <div class="col-sm box">
+                <a href="https://thescopeboston.org/6125/2021-boston-elections/city-council-race-nicholas-vance-running-for-at-large-seat/">
+                    <img class="profilePic" src="Photo/Vance.jpeg">
+                    <div class ="category">Nick	Vance</div>
+                </a>
+            </div>
+        
+        </div>
+    </div>
+
 
     <div class="end">Visit <a href="https://thescopeboston.org/category/2021-boston-elections/" target="_blank">here</a> for more of The Scope's Boston 2021 elections coverage.</div>
  
