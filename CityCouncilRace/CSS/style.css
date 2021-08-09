@@ -225,10 +225,13 @@ a {
 
 .menu {
     color: rgb(37, 12, 80);
-    padding-top: 15%;
     font-size: 14px;
 }
 
+hr.menuLine {
+    border: 1px solid #ffde59;
+    opacity: 0.8;
+}
 
 .tagline {
     text-transform: uppercase;
@@ -279,3 +282,4 @@ h2 {
     text-align: center;
     font-size: 14px;
 }
+
