@@ -284,3 +284,15 @@ h2 {
     font-size: 14px;
 }
 
+.profilePic:hover {
+    box-shadow: 5px 12px 25px 5px rgba(89, 89, 90, 0.9);
+}
+
+.byline {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: rgb(37, 12, 80);
+    opacity: 0.9;
+    padding-top: 2%;
+}

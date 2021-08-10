@@ -154,8 +154,12 @@ function drawMap(error, neighborhoodData, districtData) {
     "9" :
         {"confines":"Brighton, parts of Allston",
         "First": 
-            {"name":"", "img": "", "neighborhood": "", "issue": "", "website": "", "interview": ""}
-        },
+            {"name":"Michael Bianchi", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": ""},
+        "Second": 
+            {"name":"Liz Breadon", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Housing, Transportation, Environment, Education, Artist Community", "website": "https://www.liz4ab.com/", "interview": ""},
+        "Third": 
+            {"name":"Eric Porter", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
+        },     
     };
 
     
