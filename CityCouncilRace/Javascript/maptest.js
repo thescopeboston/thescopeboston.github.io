@@ -97,7 +97,7 @@ function drawMap(error, neighborhoodData, districtData) {
         {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
         }, 
     "2" : 
-        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "", "website": "https://www.edforboston.com/"}, "interview": ""
+        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/"}, "interview": ""
         }, 
     "3" : 
         {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", "First": {"name":"Stephen McBride", "img": "Photo/McBride.jpeg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery, Education, Public Health, Racial Wealth Gap", "website": "https://www.mcbrideforboston.com/", "interview": "https://thescopeboston.org/6258/2021-boston-elections/city-council-race-stephen-mcbride-running-for-district-3/"}
@@ -126,7 +126,9 @@ function drawMap(error, neighborhoodData, districtData) {
     "5" :
         {"confines":"Hyde Park, parts of Roslindale and Mattapan",
         "First": 
-            {"name":"", "img": "", "neighborhood": "", "issue": "", "website": "", "interview": ""}
+            {"name":"Ricardo Arroyo", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "", "website": "http://votearroyo.com/", "interview": ""},
+        "Second": 
+            {"name":"John White", "img": "Photo/user.png", "neighborhood": "Roslindale", "issue": "Employment, Education, Housing and Healthcare", "website": "", "interview": ""}
         },
     "6" :
         {"confines":"Parts of Jamaica Plain and West Roxbury",
@@ -140,10 +142,12 @@ function drawMap(error, neighborhoodData, districtData) {
     "7" :
         {"confines":"Parts of Fenway, Roxbury and the South End",
         "First": 
-            {"name":"Tania Fernandes Anderson", "img": "Photo/Anderson.jpeg", "neighborhood": "West Roxbury", "issue": "Education", "website": "https://taniaford7.com/", "interview": "https://thescopeboston.org/6719/2021-boston-elections/city-council-race-tania-fernandes-anderson-for-district-7/"},
+            {"name":"Tania Fernandes Anderson", "img": "Photo/Anderson.jpeg", "neighborhood": "Roxbury", "issue": "Housing", "website": "https://taniaford7.com/", "interview": "https://thescopeboston.org/6719/2021-boston-elections/city-council-race-tania-fernandes-anderson-for-district-7/"},
         "Second": 
-            {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
+            {"name":"Angelina “Angie” Camacho", "img": "Photo/Camacho.png", "neighborhood": "Roxbury", "issue": "Financial Empowerment, Workforce Development, Affordable Housing, Education", "website": "https://www.camacho4community.com/", "interview": "https://thescopeboston.org/6846/2021-boston-elections/city-council-race-angelina-angie-camacho-running-for-district-9/"},
         "Third": 
+            {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
+        "Fourth": 
             {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
         },
     "8" :
@@ -158,6 +162,8 @@ function drawMap(error, neighborhoodData, districtData) {
         "Second": 
             {"name":"Liz Breadon", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Housing, Transportation, Environment, Education, Artist Community", "website": "https://www.liz4ab.com/", "interview": ""},
         "Third": 
+            {"name":"Sarah Iwany", "img": "Photo/Iwany.jpeg", "neighborhood": "Allston-Brighton", "issue": "Affordable Housing, Arts, Education", "website": "https://twitter.com/sarahiwanyford9", "interview": "https://thescopeboston.org/6841/2021-boston-elections/city-council-race-sarah-iwany-running-for-district-9/"},
+        "Fourth": 
             {"name":"Eric Porter", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
         },     
     };
