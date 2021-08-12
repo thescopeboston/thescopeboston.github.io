@@ -126,7 +126,7 @@ function drawMap(error, neighborhoodData, districtData) {
     "5" :
         {"confines":"Hyde Park, parts of Roslindale and Mattapan",
         "First": 
-            {"name":"Ricardo Arroyo", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "", "website": "http://votearroyo.com/", "interview": ""},
+            {"name":"Ricardo Arroyo (interview coming soon)", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "unknown", "website": "http://votearroyo.com/", "interview": ""},
         "Second": 
             {"name":"John White", "img": "Photo/user.png", "neighborhood": "Roslindale", "issue": "Employment, Education, Housing and Healthcare", "website": "", "interview": ""}
         },
@@ -158,13 +158,13 @@ function drawMap(error, neighborhoodData, districtData) {
     "9" :
         {"confines":"Brighton, parts of Allston",
         "First": 
-            {"name":"Michael Bianchi", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": ""},
+            {"name":"Michael Bianchi", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Addressing the needs of Boston's neglected and underserved communities, Bringing better future for children and small businesses, Equality for all", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": ""},
         "Second": 
-            {"name":"Liz Breadon", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Housing, Transportation, Environment, Education, Artist Community", "website": "https://www.liz4ab.com/", "interview": ""},
+            {"name":"Liz Breadon (multiple requests for interview received no response)", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Housing, Transportation, Environment, Education, Artist Community", "website": "https://www.liz4ab.com/", "interview": ""},
         "Third": 
             {"name":"Sarah Iwany", "img": "Photo/Iwany.jpeg", "neighborhood": "Allston-Brighton", "issue": "Affordable Housing, Arts, Education", "website": "https://twitter.com/sarahiwanyford9", "interview": "https://thescopeboston.org/6841/2021-boston-elections/city-council-race-sarah-iwany-running-for-district-9/"},
         "Fourth": 
-            {"name":"Eric Porter", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
+            {"name":"Eric Porter (interview coming soon)", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
         },     
     };
 
