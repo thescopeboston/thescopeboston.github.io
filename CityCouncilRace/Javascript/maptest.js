@@ -144,10 +144,12 @@ function drawMap(error, neighborhoodData, districtData) {
         "First": 
             {"name":"Tania Fernandes Anderson", "img": "Photo/Anderson.jpeg", "neighborhood": "Roxbury", "issue": "Housing", "website": "https://taniaford7.com/", "interview": "https://thescopeboston.org/6719/2021-boston-elections/city-council-race-tania-fernandes-anderson-for-district-7/"},
         "Second": 
-            {"name":"Angelina “Angie” Camacho", "img": "Photo/Camacho.png", "neighborhood": "Roxbury", "issue": "Financial Empowerment, Workforce Development, Affordable Housing, Education", "website": "https://www.camacho4community.com/", "interview": "https://thescopeboston.org/6846/2021-boston-elections/city-council-race-angelina-angie-camacho-running-for-district-9/"},
+            {"name":"Brandy Brooks", "img": "Photo/Brooks.jpeg", "neighborhood": "Roxbury", "issue": "Education, Housing, Small Businesses", "website": "https://brandybrooks4d7.com/", "interview": "https://thescopeboston.org/6858/2021-boston-elections/city-council-race-brandy-brooks-running-for-district-7/"},
         "Third": 
-            {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
+            {"name":"Angelina “Angie” Camacho", "img": "Photo/Camacho.png", "neighborhood": "Roxbury", "issue": "Financial Empowerment, Workforce Development, Affordable Housing, Education", "website": "https://www.camacho4community.com/", "interview": "https://thescopeboston.org/6846/2021-boston-elections/city-council-race-angelina-angie-camacho-running-for-district-9/"},
         "Fourth": 
+            {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
+        "Fifth": 
             {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
         },
     "8" :
