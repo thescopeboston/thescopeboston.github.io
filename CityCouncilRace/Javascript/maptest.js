@@ -183,7 +183,7 @@ function drawMap(error, neighborhoodData, districtData) {
         .append("path")
         .attr("d", path)
         .attr("stroke","white")
-        .attr("fill", "#0aaef5")
+        .attr("fill", "#edbe02")
         .style("opacity", "0.8")
         .on("mouseover", function(d, i) {
             d3.selectAll("path").style("opacity", 0.3);

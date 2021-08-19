@@ -3,12 +3,18 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 3%;
-    margin-right: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
     width: 90%;
     line-height: 2em;
     background-color: white;
 }
+
+a {
+    color: rgb(83, 35, 165);
+
+}
+
 /* svg {
     position: sticky;
     position: -webkit-sticky;
@@ -66,8 +72,17 @@ h2 {
     text-align: center;
     padding-left: 25%;
     padding-right: 25%;
+    padding-bottom: 20px;
     /* padding-bottom: 4%; */
     font-style: italic;
+}
+
+.subhead2 {
+    font-family: 'Roboto Slab', serif;    
+    font-size: 17px;
+    padding-left: 23%;
+    padding-right: 23%;
+    padding-bottom: 4%;
 }
 /* .content {
     line-height: 170%;
@@ -89,6 +104,15 @@ h2 {
 .profilePic {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profilePicMayoral {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: block;
     margin-left: auto;
@@ -242,25 +266,19 @@ hr.menuLine {
     padding-top: 4%;
 }
 
-.subhead2 {
-    font-family: 'Roboto Slab', serif;    
-    font-size: 16px;
-    padding-left: 23%;
-    padding-right: 23%;
-    padding-bottom: 4%;
-}
+
 
 h2 {
     font-size: 35px;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-top: 4%;
+    color: #edbe02;
 
 }
 
 .category {
     padding-top: 3%;
     color: rgb(37, 12, 80);
-
 }
 
 .box {
@@ -273,10 +291,20 @@ h2 {
     border-radius: 4px;
 }
 
+.boxM {
+    text-align: center;
+    /* border: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 8px 16px 0 rgba(109, 109, 109, 0.5); */
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
 .atlarge {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 7%;
 }
 
 .confinesClass {
@@ -295,4 +323,17 @@ h2 {
     color: rgb(37, 12, 80);
     opacity: 0.9;
     padding-top: 2%;
+}
+
+.title {
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: rgb(37, 12, 80);
+
+}
+
+.bioList {
+    text-align: left;
 }

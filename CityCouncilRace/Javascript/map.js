@@ -73,7 +73,7 @@ d3.json("Javascript/district.geojson", function(error, data) {
         //     tooltip.html("")
         //     .style("padding", "0");
         // });
-
+    
     map.selectAll('text')
         .data(data.features)
         .enter()
