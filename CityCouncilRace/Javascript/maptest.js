@@ -128,7 +128,7 @@ function drawMap(error, neighborhoodData, districtData) {
         "First": 
             {"name":"Ricardo Arroyo (interview coming soon)", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "unknown", "website": "http://votearroyo.com/", "interview": ""},
         "Second": 
-            {"name":"John White", "img": "Photo/user.png", "neighborhood": "Roslindale", "issue": "Employment, Education, Housing and Healthcare", "website": "", "interview": ""}
+            {"name":"John E. White", "img": "Photo/White.jpeg", "neighborhood": "Roslindale", "issue": "Housing, Public Safety, Jobs, Health Insurance, Pensions", "website": "", "interview": "https://thescopeboston.org/6873/2021-boston-elections/city-council-race-john-e-white-running-for-district-5/"}
         },
     "6" :
         {"confines":"Parts of Jamaica Plain and West Roxbury",
@@ -147,9 +147,11 @@ function drawMap(error, neighborhoodData, districtData) {
             {"name":"Brandy Brooks", "img": "Photo/Brooks.jpeg", "neighborhood": "Roxbury", "issue": "Education, Housing, Small Businesses", "website": "https://brandybrooks4d7.com/", "interview": "https://thescopeboston.org/6858/2021-boston-elections/city-council-race-brandy-brooks-running-for-district-7/"},
         "Third": 
             {"name":"Angelina “Angie” Camacho", "img": "Photo/Camacho.png", "neighborhood": "Roxbury", "issue": "Financial Empowerment, Workforce Development, Affordable Housing, Education", "website": "https://www.camacho4community.com/", "interview": "https://thescopeboston.org/6846/2021-boston-elections/city-council-race-angelina-angie-camacho-running-for-district-9/"},
-        "Fourth": 
-            {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
+        "Fourth":
+            {"name":"Joao DePina", "img": "Photo/DePina.jpeg", "neighborhood": "Roxbury", "issue": "Economic Development, Small Businesses, Public Safety, Mental Health, Housing", "website": "https://depinaforboston.com/", "interview": "https://thescopeboston.org/6865/2021-boston-elections/city-council-race-joao-depina-running-for-district-7/"},
         "Fifth": 
+            {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
+        "Sixth": 
             {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
         },
     "8" :
