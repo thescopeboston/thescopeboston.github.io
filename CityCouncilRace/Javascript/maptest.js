@@ -82,6 +82,13 @@ let pKeyIssue9 = d3.select("#keyIssues9");
 let pLearnMore9 = d3.select("#learnMore9");
 let pWebsite9 = d3.select("#website9");
 
+let pImg10 = d3.select("#img10");
+let pName10 = d3.select("#name10");
+let pNeighborhood10 = d3.select("#neighborhood10");
+let pKeyIssue10 = d3.select("#keyIssues10");
+let pLearnMore10 = d3.select("#learnMore10");
+let pWebsite10 = d3.select("#website10");
+
 
 d3.queue()
   .defer(d3.json, "Javascript/neighborhoods.geojson")
@@ -117,10 +124,12 @@ function drawMap(error, neighborhoodData, districtData) {
         "Sixth": 
             {"name":"Trevour Smith", "img": "Photo/Smith.jpeg", "neighborhood": "Dorchester", "issue": "Education, Transportation", "website": "https://www.trevoursmithford4.com/", "interview": "https://thescopeboston.org/6443/2021-boston-elections/city-council-race-trevour-smith-running-for-district-4/"}, 
         "Seventh": 
-            {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Unknown", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
+            {"name":"Troy Smith (hasn't responded to interview request)", "img": "Photo/user.jpeg", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
         "Eigth": 
-            {"name":"Josette Williams", "img": "Photo/Williams.jpg", "neighborhood": "Unknown", "issue": "Civic engagement", "website": "https://www.voteforjosette.com/", "interview": "https://thescopeboston.org/6340/2021-boston-elections/city-council-race-josette-williams-running-for-district-4/"}, 
+            {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Unknown", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
         "Ninth": 
+            {"name":"Josette Williams", "img": "Photo/Williams.jpg", "neighborhood": "Unknown", "issue": "Civic engagement", "website": "https://www.voteforjosette.com/", "interview": "https://thescopeboston.org/6340/2021-boston-elections/city-council-race-josette-williams-running-for-district-4/"}, 
+        "Tenth": 
             {"name":"Brian Worrell", "img": "Photo/Worrell.jpeg", "neighborhood": "Unknown", "issue": "Covid-19 Recovery", "website": "https://www.facebook.com/VoteWorrell/", "interview": "https://thescopeboston.org/6568/2021-boston-elections/city-council-race-brian-worrell-running-for-district-4/"}
         },
     "5" :
@@ -152,7 +161,9 @@ function drawMap(error, neighborhoodData, districtData) {
         "Fifth": 
             {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
         "Sixth": 
-            {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
+            {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"},
+        "Seventh": 
+            {"name":"Lorraine Payne Wheeler (declined interview)", "img": "Photo/Wheeler.jpeg", "neighborhood": "Roxbury", "issue": "Affordable Housing, Economic Development in Neighborhoods, Social and Health Inequity, Violence Prevention, Education and Post High School Opportunities", "website": "https://www.lorrainefordistrict7.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
         },
     "8" :
         {"confines":"West End, parts of Fenway/Kenmore, Back Bay and Allston ",
@@ -205,63 +216,70 @@ function drawMap(error, neighborhoodData, districtData) {
             pNeighborhood.html("");
             pKeyIssue.html("");
             pLearnMore.html("");
-            pWebsite.html("")
+            pWebsite.html("");
             // 2nd Candidate 
             pImg2.html("");
             pName2.html("");
             pNeighborhood2.html("");
             pKeyIssue2.html("");
             pLearnMore2.html("");
-            pWebsite2.html("")
+            pWebsite2.html("");
             // 3rd Candidate
             pImg3.html("");
             pName3.html("");
             pNeighborhood3.html("");
             pKeyIssue3.html("");
             pLearnMore3.html("");
-            pWebsite3.html("")
+            pWebsite3.html("");
             // 4th Candidate
             pImg4.html("");
             pName4.html("");
             pNeighborhood4.html("");
             pKeyIssue4.html("");
             pLearnMore4.html("");
-            pWebsite4.html("")
+            pWebsite4.html("");
             // 5th Candidate
             pImg5.html("");
             pName5.html("");
             pNeighborhood5.html("");
             pKeyIssue5.html("");
             pLearnMore5.html("");
-            pWebsite5.html("")
+            pWebsite5.html("");
            
             pImg6.html("");
             pName6.html("");
             pNeighborhood6.html("");
             pKeyIssue6.html("");
             pLearnMore6.html("");
-            pWebsite6.html("")
+            pWebsite6.html("");
 
             pImg7.html("");
             pName7.html("");
             pNeighborhood7.html("");
             pKeyIssue7.html("");
             pLearnMore7.html("");
-            pWebsite7.html("")
+            pWebsite7.html("");
 
             pImg8.html("");
             pName8.html("");
             pNeighborhood8.html("");
             pKeyIssue8.html("");
             pLearnMore8.html("");
-            pWebsite8.html("")
+            pWebsite8.html("");
 
             pImg9.html("");
             pName9.html("");
             pNeighborhood9.html("");
             pKeyIssue9.html("");
             pLearnMore9.html("");
-            pWebsite9.html("")
+            pWebsite9.html("");
+
+            pImg10.html("");
+            pName10.html("");
+            pNeighborhood10.html("");
+            pKeyIssue10.html("");
+            pLearnMore10.html("");
+            pWebsite10.html("");
 
             pDisclaimer.html("(Candidates appear in alphabetical order)");
             // pHover.html(`District ${d.properties.DISTRICT}`);

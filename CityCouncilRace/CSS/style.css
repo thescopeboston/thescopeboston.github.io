@@ -254,6 +254,12 @@ a {
     font-size: 14px;
 }
 
+.decline {
+    font-style: italic;
+    font-size: 13px;
+    color: rgb(37, 12, 80);
+}
+
 hr.menuLine {
     border: 1px solid #ffde59;
     opacity: 0.8;
@@ -266,10 +272,6 @@ hr.menuLine {
     text-align: center;
     padding-top: 4%;
 }
-
-
-
-
 
 .category {
     padding-top: 3%;
