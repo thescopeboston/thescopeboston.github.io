@@ -278,6 +278,12 @@ hr.menuLine {
     color: rgb(37, 12, 80);
 }
 
+.update {
+    text-align: center;
+    color: red;
+    font-size: 15px;
+}
+
 .box {
     text-align: center;
     /* border: 1px solid rgb(224, 224, 224);
