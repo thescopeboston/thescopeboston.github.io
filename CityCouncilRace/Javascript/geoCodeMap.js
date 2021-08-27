@@ -24,7 +24,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaGF0YTE5OTQiLCJhIjoiY2ptaTl6MnV0MDF6ejNxbXc4a
                 type: "geojson",
                 data: "Javascript/district.geojson"
             });
-        // Add a new layer to visualize the polygon.
+
+            // Add a new layer to visualize the polygon.
             map2.addLayer({
                 'id': 'districtData',
                 'type': 'fill',
