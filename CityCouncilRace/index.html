@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="icon" href="Photo/icon.png"> 
     <link rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"/>
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"/><script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
   </head>
 
   <body>
@@ -89,7 +93,7 @@
     </div> -->
     <!-- End At large section -->
     <h2>Districts Candidates</h2>
-    <p class="subhead"> Use this tool to find what City Council District you're in and who is running for a councilor seat in that District.</p>
+    <p class="subhead">Click on your neighborhood to find out who is running for a councilor seat in your District with. Not sure what your District is? Use <b><a href="#finderTool">this tool</a></b> to find out.</p>
 
     <div class="sticky-container">
         <div class="sticky-graphic"> 
@@ -451,30 +455,26 @@
         </div> -->
     </div>
 
-
+    <div >
+        <h2 id="finderTool" class="finder">Find Your District</h2>
+        <p class="subhead3">Enter your address in the map's search box to see what your district is</p>
+    </div>
+    <div class="buttonContainer">
+        <div class="buttonCenter">
+            <a href="#head"><button class="button button1"><span>Back to Top</span></button></a>
+        </div>
+    </div>
+    <div class="relative">
+        <div id="map2"></div>
+        <div class='map-overlay' id='features'>
+            <p>Enter your address in the search box above to identify your district</p>
+        </div>
+    </div>
+    
     <div class="end">Visit <a href="https://thescopeboston.org/category/2021-boston-elections/" target="_blank">here</a> for more of The Scope's Boston 2021 elections coverage.</div>
- 
-  <!-- <main class="story">
-        <section class="container two-column">
-            <div class="right-col">
-                <svg id="viz">
-                    <g id="map"></g>
-                </svg>
-            </div>
-            <aside class="content intro">
-                <p id="one">Hover mouse over your District to see who's running</p>
-                <p class="neighborhood" id="neighborhood1"></p>      
-                <img id="img1"/>  
-                <p class="name" id="name1"></p>      
-                <p class="bio" id="bio1"></p>      
-                <img id="img2"/>  
-                <p class="name" id="name2"></p>      
-                <p class="bio" id="bio2"></p>   
-            </aside>
-        </section>
-    </main> -->
-    <!-- <div class="end">End of Map</div> -->
 
     <script src="Javascript/maptest.js"></script>
+    <script src="Javascript/geoCodeMap.js"></script>
+
   </body>
 </html>
