@@ -5,7 +5,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaGF0YTE5OTQiLCJhIjoiY2ptaTl6MnV0MDF6ejNxbXc4a
         center: [-71.029, 42.316], // starting position
         zoom: 10.7 // starting zoom
         });
-        // map2.scrollZoom.disable();
+        map2.scrollZoom.disable();
         // map2.addControl(new mapboxgl.NavigationControl());
         const nav = new mapboxgl.NavigationControl({
             visualizePitch: true
