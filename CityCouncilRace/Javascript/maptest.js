@@ -1,5 +1,6 @@
 let width = window.innerWidth/1.57;
 let height = window.innerHeight/1.1;
+
 let svg = d3.select("#viz")
     .attr("width", width)
     .attr("height", height);
@@ -124,7 +125,7 @@ function drawMap(error, neighborhoodData, districtData) {
         "Sixth": 
             {"name":"Trevour Smith", "img": "Photo/Smith.jpeg", "neighborhood": "Dorchester", "issue": "Education, Transportation", "website": "https://www.trevoursmithford4.com/", "interview": "https://thescopeboston.org/6443/2021-boston-elections/city-council-race-trevour-smith-running-for-district-4/"}, 
         "Seventh": 
-            {"name":"Troy Smith (hasn't responded to interview request)", "img": "Photo/user.jpeg", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
+            {"name":"Troy Smith (hasn't responded to interview request)", "img": "Photo/user.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
         "Eigth": 
             {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Unknown", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
         "Ninth": 
@@ -173,13 +174,13 @@ function drawMap(error, neighborhoodData, districtData) {
     "9" :
         {"confines":"Brighton, parts of Allston",
         "First": 
-            {"name":"Michael Bianchi (interview coming soon)", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Addressing the needs of Boston's neglected and underserved communities, Bringing better future for children and small businesses, Equality for all", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": ""},
+            {"name":"Michael Bianchi", "img": "Photo/Bianchi.jpeg", "neighborhood": "Allston-Brighton", "issue": "Teaching financial literacy, trades and AP courses in Boston Public Schools, protecting green spaces and creating dog parks", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": "https://thescopeboston.org/7001/2021-boston-elections/city-council-race-michael-bianchi-running-for-district-9/?fbclid=IwAR139ropTjeQutc62X9n4IL5q9g9VSvOxmYR3BeYGX8Dr-2Ecu4-YqNRvy4"},
         "Second": 
             {"name":"Liz Breadon (multiple requests for interview received no response)", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Housing, Transportation, Environment, Education, Artist Community", "website": "https://www.liz4ab.com/", "interview": ""},
         "Third": 
             {"name":"Sarah Iwany", "img": "Photo/Iwany.jpeg", "neighborhood": "Allston-Brighton", "issue": "Affordable Housing, Arts, Education", "website": "https://twitter.com/sarahiwanyford9", "interview": "https://thescopeboston.org/6841/2021-boston-elections/city-council-race-sarah-iwany-running-for-district-9/"},
         "Fourth": 
-            {"name":"Eric Porter (interview coming soon)", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
+            {"name":"Eric Porter (declined interview)", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
         },     
     };
 

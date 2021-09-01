@@ -35,11 +35,16 @@ h1 {
 h2 {
     font-size: 35px;
     padding-bottom: 1%;
-    padding-top: 3%;
+    padding-top: 8%;
     color: #edbe02;
     text-align: center;
     font-weight: bold;
 
+}
+
+hr {
+    opacity: 0.2;
+    border: 2px;
 }
 
 .mapText {
@@ -48,7 +53,7 @@ h2 {
     font-size: 15px;
 }
 
-.tooltip {
+/* .tooltip {
     grid-area: tooltip;
     background-color: #676d70;
     border-radius: 10px;
@@ -60,6 +65,22 @@ h2 {
 
 .tooltipText {
     color: white;
+} */
+
+/* .bars {
+    fill: #edbe02;
+} */
+
+.tooltipText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 .subhead {
@@ -80,6 +101,21 @@ h2 {
     padding-right: 23%;
     padding-bottom: 4%;
 }
+
+.subhead3 {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.subhead4 {
+    font-family: 'Roboto Slab', serif;    
+    text-align: center;
+    font-size: 17px;
+    padding-left: 23%;
+    padding-right: 23%;
+    margin-bottom: -5%;
+}
+
 
 .profilePic {
     width: 100px;
@@ -166,7 +202,7 @@ h2 {
     top: 200;
     text-align: center;
     font-size: 20px;
-    padding-top: 2%;
+    margin-top: 15%;
     padding-bottom: 5%;
     color: rgb(37, 12, 80);
 }
@@ -179,6 +215,7 @@ a {
     text-align: center;
     font-family: 'Roboto Slab', serif;    
     font-weight: lighter;
+    font-size: 15px;
 }
 
 .sticky-container {
@@ -288,7 +325,7 @@ hr.menuLine {
 
 .confinesClass {
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .profilePic:hover {
@@ -364,55 +401,63 @@ hr.menuLine {
     cursor: pointer;
   }
 
-  .button:hover {
+.button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
-  }
-  
-  .button span {
+}
+
+.button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.3s;
-  }
-  
-  .button span:after {
+}
+
+.button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.3s;
-  }
-  
-  .button:hover span {
+}
+
+.button:hover span {
     padding-right: 25px;
-  }
-  
-  .button:hover span:after {
+}
+
+.button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 
-  .buttonContainer { 
+.buttonContainer { 
     height: 70px;
     position: relative;
-  }
-  
-  .buttonCenter {
+}
+
+.buttonCenter {
     margin: 0;
     position: absolute;
     top: 20%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
 
-  .finder {
+.finder {
     text-align: center;
-  }
+}
 
-  .subhead3 {
+#dataviz {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 90vh;
     text-align: center;
-    padding-bottom: 1%;
-  }
+}
+
+
+
+
+  

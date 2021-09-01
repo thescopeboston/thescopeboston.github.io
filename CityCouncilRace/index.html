@@ -9,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css"/>
@@ -17,8 +20,6 @@
     href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"/><script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
-    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
   </head>
 
   <body>
@@ -66,32 +67,11 @@
         <h1>A Guide to Boston's 2021 Mayoral & City Council Race</h1>
         <p class="subhead">Not sure who is running for what office in this upcoming election in Boston? Use our guide to find out your district candidates, at-large candidates and mayoral contenders. </p>
         <h3 class="byline"><a target="_blank" href="https://thescopeboston.org/staff_name/ha-ta/"> Ha Ta</a>, Reporter</h3>
-        <p class="update">Last updated at 5p.m., August 24.</p>
+        <p class="update">Last updated at 12p.m., September 1.</p>
 
 
     </div>
-    <!-- <div class="row">
-        <div class="col-md-8"> 
-            <svg id="viz">
-                <g id="map"></g>
-            </svg>
-        </div>
-        <div class="col-md-4" id = "info">
-            <div class="icon">
-                <i class="fas fa-angle-down"></i>
-            </div>
-            <p class="hover" id="hover1">Hover mouse over your District to see who's running</p>
-            <p class="neighborhood" id="neighborhood1"></p>      
-            <img id="img1"/>  
-            <p class="name" id="name1"></p>      
-            <p class="bio" id="bio1"></p>      
-                
-            <img id="img2"/>  
-            <p class="name" id="name2"></p>      
-            <p class="bio" id="bio2"></p>   
-        </div>
-    </div> -->
-    <!-- End At large section -->
+    
     <h2>Districts Candidates</h2>
     <p class="subhead">Find out who is running for a councilor seat in your District. Not sure what your District is? Use <b><a href="#finderTool">this tool</a></b> to find out.</p>
     <p class="subhead3">(This map is best viewed on a desktop)</p>
@@ -316,13 +296,6 @@
                 </a>
             </div>
 
-            <!-- <div class="col-sm box">
-                <a target="_blank" href="http://www.royowensboston.mysite.com/">
-                    <img class="profilePic" src="Photo/user.png" >
-                    <div class ="category">Roy Owens</div>
-                </a>
-            </div> -->
-
             <div class="col-sm box">
                 <a target="_blank" href="https://www.palmeratlarge.org/">
                     <img class="profilePic" src="Photo/user.png" >
@@ -374,16 +347,17 @@
                 </a>
                 <p class="title">Former Chief of Economic Development under Marty Walsh’s administration</p>
                 <ul class="bioList">
-                    <li>Former executive director of the Dudley Street Neighborhood Initiative, member of the Boston School Committee under Mayor Menino’s administration and co-owner of Restaurante Cesaria in Dorchester.</li>
-                    <li>Top issues: reopening the economy in a safe and equitable way, creating more affordable housing, and making sure public schools work for Boston students.</li>
+                    <li>Former executive director of the Dudley Street Neighborhood Initiative and co-owner of Restaurante Cesaria in Dorchester.</li>
+                    <!-- <li>Former member of the Boston School Committee under Mayor Menino’s administration </li> -->
+                    <li>Top issues: reopening the economy safely and equitably, creating more affordable housing, and making sure public schools work for Boston students.</li>
                     <li>Ran for mayor in 2013 and placed sixth out of twelve candidates.</li>
                 </ul>
-                <a class="link" href="https://thescopeboston.org/6315/2021-boston-elections/mayoral-race-qa-with-john-barros/" target="_blank"><p>Read Barros's interview with the Scope</p></a>
-                <a class="link" href="https://www.barrosformayor.com/" target="_blank"><p>See Janey's campaign platform</p></a>
+                <a class="link" href="https://thescopeboston.org/6315/2021-boston-elections/mayoral-race-qa-with-john-barros/" target="_blank"><p>Read Barros' interview with the Scope</p></a>
+                <a class="link" href="https://www.barrosformayor.com/" target="_blank"><p>See Barros' campaign platform</p></a>
             </div>
 
             <div class="col-sm boxM" id="circle">
-                <a target="_blank" href="https://mayorjaney.com/">
+                <a target="_blank" href="https://thescopeboston.org/6941/2021-boston-elections/kim-janey-talks-mayoral-campaign-bps-elected-school-committee-and-welcoming-refugees/">
                     <img class="profilePicMayoral" src="Photo/janey.jpg">
                     <h4 class ="category">Kim Janey</h4>
                 </a>
@@ -394,7 +368,7 @@
                     <li>First woman and the first Black mayor in the city’s history and first woman to represent District 7 on the council.</li>
                     <!-- <li>Named one of Boston’s Most Impactful Black Women in 2021.</li> -->
                 </ul>
-                <a class="link" href="https://thescopeboston.org/6337/news/kim-janey-enters-mayoral-race/#image" target="_blank"><p>Read Janey's mayoral bid announcement on the Scope (interview coming soon)</p></a>
+                <a class="link" href="https://thescopeboston.org/6941/2021-boston-elections/kim-janey-talks-mayoral-campaign-bps-elected-school-committee-and-welcoming-refugees/" target="_blank"><p>Read Janey's interview with the Scope</p></a>
                 <a class="link" href="https://mayorjaney.com/" target="_blank"><p>See Janey's campaign platform</p></a>
             </div>
            
@@ -454,7 +428,6 @@
             </div>
         </div> -->
     </div>
-
     <div >
         <h2 id="finderTool" class="finder">Find Your District</h2>
         <p class="subhead3">Enter your address in the map's search box to see what your district is</p>
@@ -470,11 +443,20 @@
             <p>Enter your address in the search box above to identify your district</p>
         </div>
     </div>
-    
-    <div class="end">Visit <a href="https://thescopeboston.org/category/2021-boston-elections/" target="_blank">here</a> for more of The Scope's Boston 2021 elections coverage.</div>
 
+    <!-- <div class="container">
+        <h2>What issues do city council candidates prioritize?</h2>
+        <p class="subhead4">Between November 2020 and August 2021, The Scope asks the candidates running for Boston City Council in 2021: “What are your campaign’s top issues?” <br> Here’s their answers.</p>
+        <div id="dataviz"></div> -->
+        <div class="end">Visit <a href="https://thescopeboston.org/category/2021-boston-elections/" target="_blank">here</a> for more of The Scope's Boston 2021 elections coverage.</div>
+    <!-- </div> -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="Javascript/maptest.js"></script>
     <script src="Javascript/geoCodeMap.js"></script>
+    <script src="Javascript/radial.js"></script>
+
 
   </body>
 </html>
