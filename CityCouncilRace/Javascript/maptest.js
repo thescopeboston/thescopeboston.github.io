@@ -90,6 +90,13 @@ let pKeyIssue10 = d3.select("#keyIssues10");
 let pLearnMore10 = d3.select("#learnMore10");
 let pWebsite10 = d3.select("#website10");
 
+let pImg11 = d3.select("#img11");
+let pName11 = d3.select("#name11");
+let pNeighborhood11 = d3.select("#neighborhood11");
+let pKeyIssue11 = d3.select("#keyIssues11");
+let pLearnMore11 = d3.select("#learnMore11");
+let pWebsite11 = d3.select("#website11");
+
 
 d3.queue()
   .defer(d3.json, "Javascript/neighborhoods.geojson")
@@ -119,20 +126,22 @@ function drawMap(error, neighborhoodData, districtData) {
         "Second": 
             {"name":"Nikkia Jean-Charles", "img": "Photo/Charles.jpg", "neighborhood": "Mattapan", "issue": "Public Peace, Food Abundance, Transparency & Accountability", "website": "https://nikkia4boston.com/", "interview": "https://thescopeboston.org/6531/2021-boston-elections/city-council-race-nikkia-jean-charles-running-for-district-4/"}, 
         "Third": 
-            {"name":"Deeqo Jibril", "img": "Photo/Jibril.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Education, Small Business, Racism", "website": "https://www.deeqo.org/", "interview": "https://thescopeboston.org/6724/2021-boston-elections/citycouncil-race-deeqo-jibril-running-for-district-4/"}, 
+            {"name":"William Dickerson III", "img": "Photo/Dickerson.png", "neighborhood": "Dorchester and Mattapan", "issue": "Public Safety, Mental Health, Economic Development", "website": "https://www.facebook.com/WillForDistrict4/", "interview": "https://thescopeboston.org/7009/2021-boston-elections/city-council-race-william-dickerson-iii-running-for-district-4/"}, 
         "Fourth": 
-            {"name":"Leonard Lee", "img": "Photo/Lee.jpg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery", "website": "https://leonardlee4citycouncil.com/", "interview": "https://thescopeboston.org/6297/2021-boston-elections/city-council-race-leonard-lee-running-for-district-4/"}, 
+            {"name":"Deeqo Jibril", "img": "Photo/Jibril.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Education, Small Business, Racism", "website": "https://www.deeqo.org/", "interview": "https://thescopeboston.org/6724/2021-boston-elections/citycouncil-race-deeqo-jibril-running-for-district-4/"}, 
         "Fifth": 
-            {"name":"Joel Richards", "img": "Photo/Richards.jpeg", "neighborhood": "Dorchester", "issue": "Education, Housing, Small Business", "website": "https://www.moreford4.com/", "interview": "https://thescopeboston.org/6065/2021-boston-elections/city-council-race-joel-richards-running-for-district-4/"}, 
+            {"name":"Leonard Lee", "img": "Photo/Lee.jpg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery", "website": "https://leonardlee4citycouncil.com/", "interview": "https://thescopeboston.org/6297/2021-boston-elections/city-council-race-leonard-lee-running-for-district-4/"}, 
         "Sixth": 
-            {"name":"Trevour Smith", "img": "Photo/Smith.jpeg", "neighborhood": "Dorchester", "issue": "Education, Transportation", "website": "https://www.trevoursmithford4.com/", "interview": "https://thescopeboston.org/6443/2021-boston-elections/city-council-race-trevour-smith-running-for-district-4/"}, 
+            {"name":"Joel Richards", "img": "Photo/Richards.jpeg", "neighborhood": "Dorchester", "issue": "Education, Housing, Small Business", "website": "https://www.moreford4.com/", "interview": "https://thescopeboston.org/6065/2021-boston-elections/city-council-race-joel-richards-running-for-district-4/"}, 
         "Seventh": 
-            {"name":"Troy Smith (non-responsive to interview request)", "img": "Photo/user.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
+            {"name":"Trevour Smith", "img": "Photo/Smith.jpeg", "neighborhood": "Dorchester", "issue": "Education, Transportation", "website": "https://www.trevoursmithford4.com/", "interview": "https://thescopeboston.org/6443/2021-boston-elections/city-council-race-trevour-smith-running-for-district-4/"}, 
         "Eigth": 
-            {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Unknown", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
+            {"name":"Troy Smith (non-responsive to interview request)", "img": "Photo/user.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
         "Ninth": 
-            {"name":"Josette Williams", "img": "Photo/Williams.jpg", "neighborhood": "Unknown", "issue": "Civic engagement", "website": "https://www.voteforjosette.com/", "interview": "https://thescopeboston.org/6340/2021-boston-elections/city-council-race-josette-williams-running-for-district-4/"}, 
+            {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Unknown", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
         "Tenth": 
+            {"name":"Josette Williams", "img": "Photo/Williams.jpg", "neighborhood": "Unknown", "issue": "Civic engagement", "website": "https://www.voteforjosette.com/", "interview": "https://thescopeboston.org/6340/2021-boston-elections/city-council-race-josette-williams-running-for-district-4/"}, 
+        "Eleventh": 
             {"name":"Brian Worrell", "img": "Photo/Worrell.jpeg", "neighborhood": "Unknown", "issue": "Covid-19 Recovery", "website": "https://www.facebook.com/VoteWorrell/", "interview": "https://thescopeboston.org/6568/2021-boston-elections/city-council-race-brian-worrell-running-for-district-4/"}
         },
     "5" :
@@ -284,6 +293,13 @@ function drawMap(error, neighborhoodData, districtData) {
             pLearnMore10.html("");
             pWebsite10.html("");
 
+            pImg11.html("");
+            pName11.html("");
+            pNeighborhood11.html("");
+            pKeyIssue11.html("");
+            pLearnMore11.html("");
+            pWebsite11.html("");
+
             pDisclaimer.html("(Candidates appear in alphabetical order)");
             // pHover.html(`District ${d.properties.DISTRICT}`);
             // 1st Candidate 
@@ -350,6 +366,20 @@ function drawMap(error, neighborhoodData, districtData) {
             pKeyIssue9.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Ninth.issue}.</b>`);
             pLearnMore9.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Ninth.interview}"> interview with The Scope.</a>`);
             pWebsite9.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Ninth.website}">Visit their website</a>`)
+
+            pImg10.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Tenth.img}"/>`);
+            pName10.html(`${tooltipInfo[d.properties.DISTRICT].Tenth.name}`);
+            pNeighborhood10.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Tenth.neighborhood}`);
+            pKeyIssue10.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Tenth.issue}.</b>`);
+            pLearnMore10.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Tenth.interview}"> interview with The Scope.</a>`);
+            pWebsite10.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Tenth.website}">Visit their website</a>`)
+
+            pImg11.html(`<img class="profilePic" src="${tooltipInfo[d.properties.DISTRICT].Eleventh.img}"/>`);
+            pName11.html(`${tooltipInfo[d.properties.DISTRICT].Eleventh.name}`);
+            pNeighborhood11.html(`Candidate's home neighborhood: ${tooltipInfo[d.properties.DISTRICT].Eleventh.neighborhood}`);
+            pKeyIssue11.html(`Key platform issue: <b>${tooltipInfo[d.properties.DISTRICT].Eleventh.issue}.</b>`);
+            pLearnMore11.html(`Learn more about the candidate's platform in their <a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Eleventh.interview}"> interview with The Scope.</a>`);
+            pWebsite11.html(`<a target="_blank" href="${tooltipInfo[d.properties.DISTRICT].Eleventh.website}">Visit their website</a>`)
         })
         // .on("mouseout", function() {
         //     d3.select(this).style("opacity", 1)
