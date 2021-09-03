@@ -105,10 +105,12 @@ function drawMap(error, neighborhoodData, districtData) {
         {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
         }, 
     "2" : 
-        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/"}, "interview": ""
+        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/", "interview": ""}
         }, 
     "3" : 
-        {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", "First": {"name":"Stephen McBride", "img": "Photo/McBride.jpeg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery, Education, Public Health, Racial Wealth Gap", "website": "https://www.mcbrideforboston.com/", "interview": "https://thescopeboston.org/6258/2021-boston-elections/city-council-race-stephen-mcbride-running-for-district-3/"}
+        {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", 
+        "First": {"name":"Frank Baker (non-responsive to interview request)", "img": "Photo/Baker.jpeg", "neighborhood": "Dorchester", "issue": "Education, Public Safety, Substance Abuse Services, Housing and Economic Development", "website": "https://www.boston.gov/departments/city-council/frank-baker", "interview": ""},
+        "Second": {"name":"Stephen McBride", "img": "Photo/McBride.jpeg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery, Education, Public Health, Racial Wealth Gap", "website": "https://www.mcbrideforboston.com/", "interview": "https://thescopeboston.org/6258/2021-boston-elections/city-council-race-stephen-mcbride-running-for-district-3/"}
         }, 
     "4" :  
         {"confines":"Parts of Dorchester, Mattapan, Roslindale and Jamaica Plain", 
@@ -125,7 +127,7 @@ function drawMap(error, neighborhoodData, districtData) {
         "Sixth": 
             {"name":"Trevour Smith", "img": "Photo/Smith.jpeg", "neighborhood": "Dorchester", "issue": "Education, Transportation", "website": "https://www.trevoursmithford4.com/", "interview": "https://thescopeboston.org/6443/2021-boston-elections/city-council-race-trevour-smith-running-for-district-4/"}, 
         "Seventh": 
-            {"name":"Troy Smith (hasn't responded to interview request)", "img": "Photo/user.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
+            {"name":"Troy Smith (non-responsive to interview request)", "img": "Photo/user.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
         "Eigth": 
             {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Unknown", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
         "Ninth": 
@@ -136,7 +138,7 @@ function drawMap(error, neighborhoodData, districtData) {
     "5" :
         {"confines":"Hyde Park, parts of Roslindale and Mattapan",
         "First": 
-            {"name":"Ricardo Arroyo (interview coming soon)", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "unknown", "website": "http://votearroyo.com/", "interview": ""},
+            {"name":"Ricardo Arroyo (non-responsive to interview request)", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "unknown", "website": "http://votearroyo.com/", "interview": ""},
         "Second": 
             {"name":"John E. White", "img": "Photo/White.jpeg", "neighborhood": "Roslindale", "issue": "Housing, Public Safety, Jobs, Health Insurance, Pensions", "website": "", "interview": "https://thescopeboston.org/6873/2021-boston-elections/city-council-race-john-e-white-running-for-district-5/"}
         },
@@ -164,7 +166,7 @@ function drawMap(error, neighborhoodData, districtData) {
         "Sixth": 
             {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"},
         "Seventh": 
-            {"name":"Lorraine Payne Wheeler (declined interview)", "img": "Photo/Wheeler.jpeg", "neighborhood": "Roxbury", "issue": "Affordable Housing, Economic Development in Neighborhoods, Social and Health Inequity, Violence Prevention, Education and Post High School Opportunities", "website": "https://www.lorrainefordistrict7.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
+            {"name":"Lorraine Payne Wheeler (declined interview)", "img": "Photo/user.png", "neighborhood": "Roxbury", "issue": "Affordable Housing, Economic Development in Neighborhoods, Social and Health Inequity, Violence Prevention, Education and Post High School Opportunities", "website": "https://www.lorrainefordistrict7.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
         },
     "8" :
         {"confines":"West End, parts of Fenway/Kenmore, Back Bay and Allston ",
@@ -176,11 +178,11 @@ function drawMap(error, neighborhoodData, districtData) {
         "First": 
             {"name":"Michael Bianchi", "img": "Photo/Bianchi.jpeg", "neighborhood": "Allston-Brighton", "issue": "Teaching financial literacy, trades and AP courses in Boston Public Schools, protecting green spaces and creating dog parks", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": "https://thescopeboston.org/7001/2021-boston-elections/city-council-race-michael-bianchi-running-for-district-9/?fbclid=IwAR139ropTjeQutc62X9n4IL5q9g9VSvOxmYR3BeYGX8Dr-2Ecu4-YqNRvy4"},
         "Second": 
-            {"name":"Liz Breadon (multiple requests for interview received no response)", "img": "Photo/user.png", "neighborhood": "Brighton", "issue": "Housing, Transportation, Environment, Education, Artist Community", "website": "https://www.liz4ab.com/", "interview": ""},
+            {"name":"Liz Breadon", "img": "Photo/Breadon.jpeg", "neighborhood": "Brighton", "issue": "Affordable Housing, Climate Change, Public Transit, Adequate HVAC for buildings, Developing workforce pipeline for students to get better paying science jobs", "website": "https://www.liz4ab.com/", "interview": "https://thescopeboston.org/7017/2021-boston-elections/city-council-race-liz-breadon-running-for-reelection-in-district-9/"},
         "Third": 
             {"name":"Sarah Iwany", "img": "Photo/Iwany.jpeg", "neighborhood": "Allston-Brighton", "issue": "Affordable Housing, Arts, Education", "website": "https://twitter.com/sarahiwanyford9", "interview": "https://thescopeboston.org/6841/2021-boston-elections/city-council-race-sarah-iwany-running-for-district-9/"},
         "Fourth": 
-            {"name":"Eric Porter (declined interview)", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
+            {"name":"Eric Porter", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
         },     
     };
 
