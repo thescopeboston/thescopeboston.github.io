@@ -457,6 +457,10 @@ hr.menuLine {
     text-align: center;
 }
 
+.text {
+    text-shadow: 0.5px 0.5px #9b9a9a;
+    color: rgb(37, 12, 80);
+}
 
 
 
