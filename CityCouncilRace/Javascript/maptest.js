@@ -112,7 +112,7 @@ function drawMap(error, neighborhoodData, districtData) {
         {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
         }, 
     "2" : 
-        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/", "interview": ""}
+        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn (interview coming soon)", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/", "interview": ""}
         }, 
     "3" : 
         {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", 
