@@ -112,7 +112,7 @@ function drawMap(error, neighborhoodData, districtData) {
         {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
         }, 
     "2" : 
-        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/", "interview": ""}
+        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn (interview coming soon)", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/", "interview": ""}
         }, 
     "3" : 
         {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", 
@@ -191,7 +191,7 @@ function drawMap(error, neighborhoodData, districtData) {
         "Third": 
             {"name":"Sarah Iwany", "img": "Photo/Iwany.jpeg", "neighborhood": "Allston-Brighton", "issue": "Affordable Housing, Arts, Education", "website": "https://twitter.com/sarahiwanyford9", "interview": "https://thescopeboston.org/6841/2021-boston-elections/city-council-race-sarah-iwany-running-for-district-9/"},
         "Fourth": 
-            {"name":"Eric Porter", "img": "Photo/user.png", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
+            {"name":"Eric Porter (interview coming soon)", "img": "Photo/Porter.jpeg", "neighborhood": "Allston", "issue": "Safety and Infrastructure, Accountability to Allston-Brighton Residents, Transportation, Taxes and Improvements, Environment", "website": "https://ericforboston.com/", "interview": ""}
         },     
     };
 
