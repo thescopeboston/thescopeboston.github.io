@@ -464,8 +464,14 @@ hr.menuLine {
 
 
 .fb-share-button {
-    margin-top: 5%;
+    display: inline-block;
 }
+
+.twitter-share-button2 {
+    display: inline-block;
+
+}
+
 
 .social {
     width: 60px;
