@@ -112,7 +112,7 @@ function drawMap(error, neighborhoodData, districtData) {
         {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
         }, 
     "2" : 
-        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn (interview coming soon)", "img": "Photo/user.png", "neighborhood": "", "issue": "Public Education, Street Safety,  Public Transit Improvement, Affordable Housing, Reliable, Effective Constituents Services, Uniting District 2", "website": "https://www.edforboston.com/", "interview": ""}
+        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/Flynn.jpg", "neighborhood": "South Boston", "issue": "COVID-19 Recovery, Stand with working families in organized labor, Language Access, Fighting Discrimination Against the AAPI community,", "website": "https://www.edforboston.com/", "interview": "https://thescopeboston.org/7053/2021-boston-elections/city-council-race-edward-flynn-running-for-reelection-for-district-2/"}
         }, 
     "3" : 
         {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", 
@@ -138,11 +138,11 @@ function drawMap(error, neighborhoodData, districtData) {
         "Eigth": 
             {"name":"Troy Smith (non-responsive to interview request)", "img": "Photo/user.png", "neighborhood": "Dorchester", "issue": "Affordable Housing, Small Business Resources & Funding, Healthy Food Choices, Affordable Healthcare, Employment Training, Criminal Justice Reform", "website": "https://www.votetroydistrict4.com/", "interview": ""},
         "Ninth": 
-            {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Unknown", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
+            {"name":"Jacob Urena", "img": "Photo/Urena.jpeg", "neighborhood": "Boston", "issue": "Public Health, Public Safety", "website": "https://www.jacobforboston.com/", "interview": "https://thescopeboston.org/5355/2021-boston-elections/changemaker-local-minister-blm-activist-and-leader-in-faneuil-hall-name-change-effort-runs-for-city-council/"}, 
         "Tenth": 
-            {"name":"Josette Williams", "img": "Photo/Williams.jpg", "neighborhood": "Unknown", "issue": "Civic engagement", "website": "https://www.voteforjosette.com/", "interview": "https://thescopeboston.org/6340/2021-boston-elections/city-council-race-josette-williams-running-for-district-4/"}, 
+            {"name":"Josette Williams", "img": "Photo/Williams.jpg", "neighborhood": "Boston", "issue": "Civic engagement", "website": "https://www.voteforjosette.com/", "interview": "https://thescopeboston.org/6340/2021-boston-elections/city-council-race-josette-williams-running-for-district-4/"}, 
         "Eleventh": 
-            {"name":"Brian Worrell", "img": "Photo/Worrell.jpeg", "neighborhood": "Unknown", "issue": "Covid-19 Recovery", "website": "https://www.facebook.com/VoteWorrell/", "interview": "https://thescopeboston.org/6568/2021-boston-elections/city-council-race-brian-worrell-running-for-district-4/"}
+            {"name":"Brian Worrell", "img": "Photo/Worrell.jpeg", "neighborhood": "Boston", "issue": "Covid-19 Recovery", "website": "https://www.facebook.com/VoteWorrell/", "interview": "https://thescopeboston.org/6568/2021-boston-elections/city-council-race-brian-worrell-running-for-district-4/"}
         },
     "5" :
         {"confines":"Hyde Park, parts of Roslindale and Mattapan",
