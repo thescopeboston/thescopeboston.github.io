@@ -122,9 +122,9 @@ function drawMap(error, neighborhoodData, districtData) {
     "4" :  
         {"confines":"Parts of Dorchester, Mattapan, Roslindale and Jamaica Plain", 
         "First": 
-            {"name":"Evandro Carvalho", "img": "Photo/Carvalho.jpeg", "neighborhood": "Dorchester", "issue": "Economic Empowerment, Homeownership, Police Reforms", "website": "https://twitter.com/evandro4boston?lang=en", "interview": "https://thescopeboston.org/6729/2021-boston-elections/city-council-race-evandro-carvalho-running-for-district-4/"}, 
+            {"name":"Evandro Carvalho (Advanced to Nov. 2 Election)", "img": "Photo/Carvalho.jpeg", "neighborhood": "Dorchester", "issue": "Economic Empowerment, Homeownership, Police Reforms", "website": "https://twitter.com/evandro4boston?lang=en", "interview": "https://thescopeboston.org/6729/2021-boston-elections/city-council-race-evandro-carvalho-running-for-district-4/"}, 
         "Second": 
-            {"name":"Nikkia Jean-Charles", "img": "Photo/Charles.jpg", "neighborhood": "Mattapan", "issue": "Public Peace, Food Abundance, Transparency & Accountability", "website": "https://nikkia4boston.com/", "interview": "https://thescopeboston.org/6531/2021-boston-elections/city-council-race-nikkia-jean-charles-running-for-district-4/"}, 
+            {"name":"Brian Worrell (Advanced to Nov. 2 Election)", "img": "Photo/Worrell.jpeg", "neighborhood": "Boston", "issue": "Covid-19 Recovery", "website": "https://www.facebook.com/VoteWorrell/", "interview": "https://thescopeboston.org/6568/2021-boston-elections/city-council-race-brian-worrell-running-for-district-4/"},
         "Third": 
             {"name":"William Dickerson III", "img": "Photo/Dickerson.png", "neighborhood": "Dorchester and Mattapan", "issue": "Public Safety, Mental Health, Economic Development", "website": "https://www.facebook.com/WillForDistrict4/", "interview": "https://thescopeboston.org/7009/2021-boston-elections/city-council-race-william-dickerson-iii-running-for-district-4/"}, 
         "Fourth": 
@@ -142,7 +142,7 @@ function drawMap(error, neighborhoodData, districtData) {
         "Tenth": 
             {"name":"Josette Williams", "img": "Photo/Williams.jpg", "neighborhood": "Boston", "issue": "Civic engagement", "website": "https://www.voteforjosette.com/", "interview": "https://thescopeboston.org/6340/2021-boston-elections/city-council-race-josette-williams-running-for-district-4/"}, 
         "Eleventh": 
-            {"name":"Brian Worrell", "img": "Photo/Worrell.jpeg", "neighborhood": "Boston", "issue": "Covid-19 Recovery", "website": "https://www.facebook.com/VoteWorrell/", "interview": "https://thescopeboston.org/6568/2021-boston-elections/city-council-race-brian-worrell-running-for-district-4/"}
+            {"name":"Nikkia Jean-Charles", "img": "Photo/Charles.jpg", "neighborhood": "Mattapan", "issue": "Public Peace, Food Abundance, Transparency & Accountability", "website": "https://nikkia4boston.com/", "interview": "https://thescopeboston.org/6531/2021-boston-elections/city-council-race-nikkia-jean-charles-running-for-district-4/"}
         },
     "5" :
         {"confines":"Hyde Park, parts of Roslindale and Mattapan",
@@ -154,27 +154,29 @@ function drawMap(error, neighborhoodData, districtData) {
     "6" :
         {"confines":"Parts of Jamaica Plain and West Roxbury",
         "First": 
-            {"name":"Winnie Eke", "img": "Photo/Eke.png", "neighborhood": "West Roxbury", "issue": "Education", "website": "No website found", "interview": "https://thescopeboston.org/6667/2021-boston-elections/city-council-race-winnie-eke-for-district-6/"},
+            {"name":"Kendra Hicks (Advanced to Nov. 2 Election)", "img": "Photo/Hicks.jpg", "neighborhood": "Jamaica Plain", "issue": "Justice, Education, Community Safety, Affordable Housing, Climate Change, Equitable economy", "website": "https://www.hicksfordistrictsix.com/", "interview": "https://thescopeboston.org/6108/2021-boston-elections/city-council-race-kendra-hicks-running-for-district-6/"},
         "Second": 
-            {"name":"Kendra Hicks", "img": "Photo/Hicks.jpg", "neighborhood": "Jamaica Plain", "issue": "Justice, Education, Community Safety, Affordable Housing, Climate Change, Equitable economy", "website": "https://www.hicksfordistrictsix.com/", "interview": "https://thescopeboston.org/6108/2021-boston-elections/city-council-race-kendra-hicks-running-for-district-6/"},
+            {"name":"Mary Tamer (Advanced to Nov. 2 Election)", "img": "Photo/Tamer.jpg", "neighborhood": "West Roxbury", "issue": "Covid-19 Recovery, Education, Climate Change", "website": "https://www.marytamer.com/", "interview": "https://thescopeboston.org/6357/2021-boston-elections/city-council-race-mary-tamer-running-for-district-6/"},
         "Third": 
-            {"name":"Mary Tamer", "img": "Photo/Tamer.jpg", "neighborhood": "West Roxbury", "issue": "Covid-19 Recovery, Education, Climate Change", "website": "https://www.marytamer.com/", "interview": "https://thescopeboston.org/6357/2021-boston-elections/city-council-race-mary-tamer-running-for-district-6/"}
+            {"name":"Winnie Eke", "img": "Photo/Eke.png", "neighborhood": "West Roxbury", "issue": "Education", "website": "No website found", "interview": "https://thescopeboston.org/6667/2021-boston-elections/city-council-race-winnie-eke-for-district-6/"}
         },
     "7" :
         {"confines":"Parts of Fenway, Roxbury and the South End",
         "First": 
             {"name":"Tania Fernandes Anderson", "img": "Photo/Anderson.jpeg", "neighborhood": "Roxbury", "issue": "Housing", "website": "https://taniaford7.com/", "interview": "https://thescopeboston.org/6719/2021-boston-elections/city-council-race-tania-fernandes-anderson-for-district-7/"},
         "Second": 
-            {"name":"Brandy Brooks", "img": "Photo/Brooks.jpeg", "neighborhood": "Roxbury", "issue": "Education, Housing, Small Businesses", "website": "https://brandybrooks4d7.com/", "interview": "https://thescopeboston.org/6858/2021-boston-elections/city-council-race-brandy-brooks-running-for-district-7/"},
+            {"name":"Roy Owens Sr.", "img": "Photo/user.png", "neighborhood": "Boston", "issue": "Unknown", "website": "http://royowensboston.mysite.com/", "interview": ""},
         "Third": 
-            {"name":"Angelina “Angie” Camacho", "img": "Photo/Camacho.png", "neighborhood": "Roxbury", "issue": "Financial Empowerment, Workforce Development, Affordable Housing, Education", "website": "https://www.camacho4community.com/", "interview": "https://thescopeboston.org/6846/2021-boston-elections/city-council-race-angelina-angie-camacho-running-for-district-9/"},
+            {"name":"Brandy Brooks", "img": "Photo/Brooks.jpeg", "neighborhood": "Roxbury", "issue": "Education, Housing, Small Businesses", "website": "https://brandybrooks4d7.com/", "interview": "https://thescopeboston.org/6858/2021-boston-elections/city-council-race-brandy-brooks-running-for-district-7/"},
         "Fourth":
-            {"name":"Joao DePina", "img": "Photo/DePina.jpeg", "neighborhood": "Roxbury", "issue": "Economic Development, Small Businesses, Public Safety, Mental Health, Housing", "website": "https://depinaforboston.com/", "interview": "https://thescopeboston.org/6865/2021-boston-elections/city-council-race-joao-depina-running-for-district-7/"},
+            {"name":"Angelina “Angie” Camacho", "img": "Photo/Camacho.png", "neighborhood": "Roxbury", "issue": "Financial Empowerment, Workforce Development, Affordable Housing, Education", "website": "https://www.camacho4community.com/", "interview": "https://thescopeboston.org/6846/2021-boston-elections/city-council-race-angelina-angie-camacho-running-for-district-9/"},
         "Fifth": 
-            {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
+            {"name":"Joao DePina", "img": "Photo/DePina.jpeg", "neighborhood": "Roxbury", "issue": "Economic Development, Small Businesses, Public Safety, Mental Health, Housing", "website": "https://depinaforboston.com/", "interview": "https://thescopeboston.org/6865/2021-boston-elections/city-council-race-joao-depina-running-for-district-7/"},
         "Sixth": 
-            {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"},
+        {"name":"Marisa Luse", "img": "Photo/Luse.jpeg", "neighborhood": "Roxbury", "issue": "Constituent Services, Civic Engagement, Community Engagement in Neighborhood Development", "website": "https://twitter.com/MarisaforBoston", "interview": "https://thescopeboston.org/6789/2021-boston-elections/city-council-race-marissa-luse-running-for-district-7/"},
         "Seventh": 
+            {"name":"Santiago Leon Rivera", "img": "Photo/Rivera.jpeg", "neighborhood": "Roxbury", "issue": "Housing, Homelessness, The Opioid Crisis, Education", "website": "https://leonrivera.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"},
+        "Eigth": 
             {"name":"Lorraine Payne Wheeler (declined interview)", "img": "Photo/user.png", "neighborhood": "Roxbury", "issue": "Affordable Housing, Economic Development in Neighborhoods, Social and Health Inequity, Violence Prevention, Education and Post High School Opportunities", "website": "https://www.lorrainefordistrict7.com/", "interview": "https://thescopeboston.org/6656/2021-boston-elections/city-council-race-leon-rivera-running-for-district-7/"}
         },
     "8" :
@@ -185,9 +187,9 @@ function drawMap(error, neighborhoodData, districtData) {
     "9" :
         {"confines":"Brighton, parts of Allston",
         "First": 
-            {"name":"Michael Bianchi", "img": "Photo/Bianchi.jpeg", "neighborhood": "Allston-Brighton", "issue": "Teaching financial literacy, trades and AP courses in Boston Public Schools, protecting green spaces and creating dog parks", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": "https://thescopeboston.org/7001/2021-boston-elections/city-council-race-michael-bianchi-running-for-district-9/?fbclid=IwAR139ropTjeQutc62X9n4IL5q9g9VSvOxmYR3BeYGX8Dr-2Ecu4-YqNRvy4"},
+            {"name":"Michael Bianchi (Advanced to Nov. 2 Election)", "img": "Photo/Bianchi.jpeg", "neighborhood": "Allston-Brighton", "issue": "Teaching financial literacy, trades and AP courses in Boston Public Schools, protecting green spaces and creating dog parks", "website": "https://twitter.com/bianchi4boston?lang=en", "interview": "https://thescopeboston.org/7001/2021-boston-elections/city-council-race-michael-bianchi-running-for-district-9/?fbclid=IwAR139ropTjeQutc62X9n4IL5q9g9VSvOxmYR3BeYGX8Dr-2Ecu4-YqNRvy4"},
         "Second": 
-            {"name":"Liz Breadon", "img": "Photo/Breadon.jpeg", "neighborhood": "Brighton", "issue": "Affordable Housing, Climate Change, Public Transit, Adequate HVAC for buildings, Developing workforce pipeline for students to get better paying science jobs", "website": "https://www.liz4ab.com/", "interview": "https://thescopeboston.org/7017/2021-boston-elections/city-council-race-liz-breadon-running-for-reelection-in-district-9/"},
+            {"name":"Liz Breadon (Advanced to Nov. 2 Election)", "img": "Photo/Breadon.jpeg", "neighborhood": "Brighton", "issue": "Affordable Housing, Climate Change, Public Transit, Adequate HVAC for buildings, Developing workforce pipeline for students to get better paying science jobs", "website": "https://www.liz4ab.com/", "interview": "https://thescopeboston.org/7017/2021-boston-elections/city-council-race-liz-breadon-running-for-reelection-in-district-9/"},
         "Third": 
             {"name":"Sarah Iwany", "img": "Photo/Iwany.jpeg", "neighborhood": "Allston-Brighton", "issue": "Affordable Housing, Arts, Education", "website": "https://twitter.com/sarahiwanyford9", "interview": "https://thescopeboston.org/6841/2021-boston-elections/city-council-race-sarah-iwany-running-for-district-9/"},
         "Fourth": 

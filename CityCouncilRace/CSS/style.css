@@ -506,4 +506,15 @@ h5 {
     padding-top: 6px;
 
 }
+
+.electionStatus {
+    font-family: 'Roboto Slab', serif;    
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}   
+
   
