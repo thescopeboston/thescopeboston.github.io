@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+        Boston's 2021 City Council Race
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="icon" href="Photo/icon.png"> 
+
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="MIFAfie3"></script>
+    <header>
+        <p class="tagline">Independent. Committed to fair reporting. Stories of hope, justice and resilience from Greater Boston communities.</p>
+        <a href="https://thescopeboston.org/"><img id ="logo" class="center" src="Photo/logo.png" alt="The Scope logo"></a>
+        <div class="container">
+            <hr class="menuLine">
+            <div class="row">
+                <div class="col-sm box2" id="circle">
+                    <a href="https://thescopeboston.org/tag/coronavirus/">
+                        <div class ="menu">&nbsp &nbsp CORONAVIRUS</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/5718/news/covid-19-vaccine-updates/">
+                        <div class ="menu">COVID VACCINE UPDATE</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/4146/news/where-are-bostons-testing-sites/">
+                        <div class ="menu">&nbsp &nbsp &nbsp &nbsp FIND A TESTING SITE</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/3628/news/city-of-bostons-response-to-covid-19-the-latest-updates/">
+                        <div class ="menu">&nbsp &nbsp &nbsp BOSTON REOPENING</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/category/roundup-boston-city-council-meetings/">
+                        <div class ="menu">&nbsp &nbsp &nbsp &nbspCITY WATCH</div>
+                    </a>
+                </div>
+                <div class="col-sm box2">
+                    <a href="https://thescopeboston.org/category/q-a-changemakers/">
+                        <div class ="menu">CHANGEMAKER</div>
+                    </a>
+                </div>
+            </div>
+            <hr class="menuLine">
+        </div>
+    </header>
+    <div id="head">
+        <h1>Results: 2021 Boston Mayoral Election</h1>
+        <p class="subhead">Precinct by precinct result of the 2021 Boston Mayoral Election</p>
+        <h3 class="byline"><a target="_blank" href="https://thescopeboston.org/staff_name/ha-ta/"> Ha Ta</a>, Reporter</h3>
+        <!-- <p class="update">Last updated at 12p.m., September 3.</p> -->
+        <div id="socialmedia">
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fthescopeboston.org%2F7023%2Ffeatures%2Fa-guide-to-bostons-2021-mayoral-city-council-race%2F&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>          
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Not sure who is running for what office in this upcoming election in Boston? Use this guide to find out your district candidates, at-large candidates and mayoral contenders" data-url="https://bit.ly/3BVzyhg" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>          
+        </div>
+    </div>
+    <div class="mapContainer">
+        <h2>Overall Results</h2>
+        <div class="container">
+            <svg id="overallBarchart"></svg>
+        </div>
+        <h2>Results: 2021 Boston Mayoral Election</h2>
+        <p class="subhead3">(This map is best viewed on a desktop)</p>
+        <p class="subhead3">Results by precinct. Colors correspond to the top vote-getter in that precinct. Voters can select up to two candidates. A candidate’s percentage is the share of ballots on which the candidate was picked. Click on each precinct to see details.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <svg preserveAspectRatio="xMidYMid meet" x="0" y="0" id="electionMap" >
+                        <g id="map"></g>
+                    </svg>
+                </div>
+                <div class="col-md-5">
+                    <svg id="tipDiv"></svg>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Voter Turnout by Precinct</h2>
+
+        <div class="container" id="map2Div">
+            <svg preserveAspectRatio="xMidYMid meet" x="0" y="0" id="voterTurnoutMap">
+                <defs>
+                    <linearGradient id="colorGradient">
+                      
+                    </linearGradient>
+                </defs>
+                <g preserveAspectRatio="xMidYMid meet" x="0" y="0" id="scale">
+                    <rect id="scaleRect" fill="url(#colorGradient)"/>
+                    <g id="scaleAxis"></g>
+                </g> 
+                <g id="map2"></g>
+            </svg>
+        </div>
+    </div>
+
+    <div id="pageend">
+        <div id="socialmedia">
+          <h5>Did you find this page helpful? Share it with friends:</h5>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fthescopeboston.org%2F7023%2Ffeatures%2Fa-guide-to-bostons-2021-mayoral-city-council-race%2F&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>          
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Not sure who is running for what office in this upcoming election in Boston? Use this guide to find out your district candidates, at-large candidates and mayoral contenders" data-url="https://bit.ly/3BVzyhg" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    
+    <div class="end">Visit <a href="https://thescopeboston.org/category/2021-boston-elections/" target="_blank">here</a> for more of The Scope's Boston 2021 elections coverage.</div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="Javascript/resultMap.js"></script>
+    <script src="Javascript/voterTurnoutMap.js"></script>
+
+  </body>
+</html>
