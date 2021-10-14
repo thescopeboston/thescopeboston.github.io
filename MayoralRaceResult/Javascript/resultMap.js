@@ -4,7 +4,7 @@ let height = window.innerHeight/1.3;
 let barchartWidth =  window.innerWidth/8;
 let barchartHeight = window.innerHeight/2;
 
-let margin = {top: 60, right: 110, bottom: 60, left: 90};
+let margin = {top: 60, right: 140, bottom: 60, left: 90};
 
 let svg = d3.select("#electionMap")
     .attr("viewBox", `0 0 ${width} ${height}`)
@@ -126,7 +126,15 @@ function drawMap(error, geoData, resultData) {
         .data(sortedbarchartData)
     .enter().append("rect")
         .attr("class", "bar")
-        .attr("width", d => x(d.votecount))
+        .attr("width", function(d) {
+            for (property in sortedbarchartData) {
+                if (property === "precinct") {
+                    continue;
+                } else {
+                    return x(d.votecount);
+                }
+            }
+        })
         .attr("height", y.bandwidth() - 15)
         .attr("y", d => y(d.candidate) + 28)
         .attr("x", -8)
@@ -150,8 +158,28 @@ function drawMap(error, geoData, resultData) {
         .attr("class", "g-bar");
     
     let barLabels = labelGroup.append("text") 
-        .text(function(d) {return d.votecount+ " (" + d.percent + "%)"; })
-        .attr("x", d => x(d.votecount))
+        .text(function(d) {
+            for (property in sortedbarchartData) {
+                if (property === "precinct") {
+                    continue;
+                } else {
+                    return d.votecount+ " (" + d.percent + "%)"; 
+                }
+            }
+        })
+        .attr("x", function(d) {
+            for (property in sortedbarchartData) {
+                if (property === "precinct") {
+                    continue;
+                } else {
+                    if (d.candidate === "Michelle Wu" || d.candidate === "Annissa Essaibi George") {
+                        return x(d.votecount) + 25;
+                    } else {
+                        return x(d.votecount);
+                    }
+                }
+            }
+        })
         .attr("y", d => y(d.candidate) + 45)
         .attr("class", "g-labels");   
 
@@ -165,15 +193,23 @@ function drawMap(error, geoData, resultData) {
         .attr("border-radius", "50%")
         .attr("class", "g-image");   
     
-    // let winnerTick = labelGroup.append("image") 
-    //     .attr("xlink:href", "Photo/tick.png")
-    //     .attr("class", "profilePhoto")
-    //     .attr("x", -55)
-    //     .attr("y", d => y(d.candidate) + 10)
-    //     .attr("width", "10")
-    //     .attr("height", "10")
-    //     .attr("border-radius", "50%")
-    //     .attr("class", "g-image");   
+    let barTick = labelGroup.append("image") 
+        .attr("xlink:href", function(d) {
+            if (d.candidate === "Michelle Wu") {
+                return "Photo/tick.png";
+            } else if (d.candidate === "Annissa Essaibi George") {
+                return "Photo/tick.png";
+            } else {
+                return "";
+            }
+        })
+        .attr("class", "profilePhoto")
+        .attr("x", d => x(d.votecount))
+        .attr("y", d => y(d.candidate) + 29)
+        .attr("width", "20")
+        .attr("height", "20")
+        .attr("border-radius", "50%")
+        .attr("class", "g-image");  
     
     map.selectAll("path")
         .data(geoData.features)
@@ -241,7 +277,13 @@ function drawMap(error, geoData, resultData) {
             
             let barLabels = labelGroup.append("text") 
                 .text(function(d) {return d.votecount+ " (" + d.percent + "%)"; })
-                .attr("x", d => x(d.votecount))
+                .attr("x", function(d) {
+                    if (d.candidate === "Michelle Wu" || d.candidate === "Annissa Essaibi George") {
+                        return x(d.votecount) + 25;
+                    } else {
+                        return x(d.votecount);
+                    }
+                })                
                 .attr("y", d => y(d.candidate) + 45)
                 .attr("class", "g-labels");   
         
@@ -253,7 +295,25 @@ function drawMap(error, geoData, resultData) {
                 .attr("width", "40")
                 .attr("height", "40")
                 .attr("border-radius", "50%")
-                .attr("class", "g-image");   
+                .attr("class", "g-image");  
+            
+            let winnerTick = labelGroup.append("image") 
+                .attr("xlink:href", function(d) {
+                    if (d.candidate === "Michelle Wu") {
+                        return "Photo/tick.png";
+                    } else if (d.candidate === "Annissa Essaibi George") {
+                        return "Photo/tick.png";
+                    } else {
+                        return "";
+                    }
+                })
+                .attr("class", "profilePhoto")
+                .attr("x", d => x(d.votecount))
+                .attr("y", d => y(d.candidate) + 29)
+                .attr("width", "20")
+                .attr("height", "20")
+                .attr("border-radius", "50%")
+                .attr("class", "g-image");  
         
         }); 
     };
