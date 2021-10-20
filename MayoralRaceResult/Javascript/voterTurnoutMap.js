@@ -1,11 +1,11 @@
-let widthofMap2 = window.innerWidth/3 ;
-let heightofMap2 = window.innerHeight/2.4;
+let widthofMap2 = window.innerWidth/3.5 ;
+let heightofMap2 = window.innerHeight/2.9;
 
 let marginMap2 = {
     top: 20,
     right: 50,
     bottom: 80,
-    left: widthofMap2/2.8
+    left: widthofMap2/3
   };
 
 let svgTurnout = d3.select("#voterTurnoutMap")
