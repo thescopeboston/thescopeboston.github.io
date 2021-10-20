@@ -36,7 +36,7 @@ h2 {
     font-size: 35px;
     padding-bottom: 1%;
     padding-top: 8%;
-    color: #edbe02;
+    color: rgb(37, 12, 80);
     text-align: center;
     font-weight: bold;
 
@@ -105,6 +105,8 @@ hr {
 .subhead3 {
     text-align: center;
     padding-bottom: 1%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .subhead4 {
@@ -549,6 +551,14 @@ hr.menuLine {
     padding-bottom: 4%;
 }
 
+.barchartTitle2 {
+    font-size: 30px;
+    padding-bottom: 4%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
 .mapContainer {
     width: 70%;
     margin-left: 15%;
@@ -567,3 +577,18 @@ hr.menuLine {
     padding-bottom: 40px;
 }
 
+#axisCouncilChart {
+    font-size: 20px;
+}
+
+.cityCouncilChartContainer {
+    background-color: rgb(252, 244, 233);
+}
+
+.scaleAxis {
+    font-size: 8px;
+}
+
+#scaleRect {
+    stroke: rgb(158, 158, 158, 0.5);
+}

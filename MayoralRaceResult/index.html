@@ -61,7 +61,7 @@
         </div>
     </header>
     <div id="head">
-        <h1>Results: 2021 Boston Mayoral Election</h1>
+        <h1>Results: 2021 Boston Elections</h1>
         <p class="subhead">Precinct by precinct result of the 2021 Boston Mayoral Election</p>
         <h3 class="byline"><a target="_blank" href="https://thescopeboston.org/staff_name/ha-ta/"> Ha Ta</a>, Reporter</h3>
         <!-- <p class="update">Last updated at 12p.m., September 3.</p> -->
@@ -71,9 +71,9 @@
         </div>
     </div>
     <div class="mapContainer">
-        <h2>Results: 2021 Boston Mayoral Election</h2>
-        <p class="subhead3">(This map is best viewed on a desktop)</p>
-        <p class="subhead3">Results by precinct. Colors correspond to the top vote-getter in that precinct. Voters can select up to two candidates. A candidate’s percentage is the share of ballots on which the candidate was picked. Click on each precinct to see details.</p>
+        <h2>Mayoral Election</h2>
+        <p class="subhead3">(Map best viewed on desktop)</p>
+        <p class="subhead3">Precinct-by-precinct results. Color of each precinct corresponds to the candidate receiving more votes in that precinct. Click on each precinct to see details.</p>
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
@@ -88,22 +88,24 @@
         </div>
         
         <h2>Voter Turnout by Precinct</h2>
-
+        <p class="subhead3">Precinct-by-precinct results. Opacity of each precinct corresponds to voter turnout percentage in that precinct. Darker shades represent higher voter turnouts. Hover over each precinct to see details.</p>
         <div class="container" id="map2Div">
             <svg preserveAspectRatio="xMidYMid meet" x="0" y="0" id="voterTurnoutMap">
+                <g id="map2"></g>
                 <defs>
                     <linearGradient id="colorGradient">
-                    
                     </linearGradient>
                 </defs>
                 <g preserveAspectRatio="xMidYMid meet" x="0" y="0" id="scale">
                     <rect id="scaleRect" fill="url(#colorGradient)"/>
                     <g id="scaleAxis"></g>
                 </g> 
-                <g id="map2"></g>
             </svg>                
         </div>
-    </div>
+        <h2>City Council Race Results</h2>
+        <div class="cityCouncilChartContainer">
+            <svg id="cityCouncilChart"></svg>
+        </div>
 
     <div id="pageend">
         <div id="socialmedia">
@@ -120,6 +122,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="Javascript/resultMap.js"></script>
     <script src="Javascript/voterTurnoutMap.js"></script>
+    <script src="Javascript/cityCouncilChart.js"></script>
 
   </body>
 </html>

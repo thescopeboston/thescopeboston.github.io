@@ -1,10 +1,10 @@
 let width = window.innerWidth/2.9;
 let height = window.innerHeight/1.3;
 
-let barchartWidth =  window.innerWidth/8;
-let barchartHeight = window.innerHeight/2;
+let barchartWidth =  window.innerWidth/11;
+let barchartHeight = window.innerHeight/4;
 
-let margin = {top: 60, right: 140, bottom: 60, left: 90};
+let margin = {top: 60, right: 150, bottom: 60, left: 90};
 
 let svg = d3.select("#electionMap")
     .attr("viewBox", `0 0 ${width} ${height}`)
@@ -51,40 +51,28 @@ function drawMap(error, geoData, resultData) {
     for (element of resultData) {
         let precintWinner = getWinner(element);
 
-        const precinctData = {"winner": precintWinner, "Andrea Campbell": element["Andrea Campbell"], "Annissa Essaibi George": element["Annissa Essaibi George"], "John Barros": element["John Barros"], "Kim Janey": element["Kim Janey"], "Michelle Wu": element["Michelle Wu"], "Unresolved Write-In": element["Unresolved Write-In"]};
+        const precinctData = {"winner": precintWinner, "Annissa Essaibi George": element["Annissa Essaibi George"], "Michelle Wu": element["Michelle Wu"], "Unresolved Write-In": element["Unresolved Write-In"]};
 
         sortedresultData[element['WARD_PRECINCT']] = precinctData;
     }
 
     function mapWinnerToColor(d) {
         if (sortedresultData[d.properties.WARD_PRECINCT].winner === "Michelle Wu") {
-            return "#BBBAFF";
+            return "#1ECBE1";
         } else if (sortedresultData[d.properties.WARD_PRECINCT].winner === "Annissa Essaibi George") {
-            return "#FFC2E2";
-        } else if (sortedresultData[d.properties.WARD_PRECINCT].winner === "Andrea Campbell") {
-            return "#F4FDB1";
-        } else if (sortedresultData[d.properties.WARD_PRECINCT].winner === "Kim Janey") {
-            return "#A4D4B4";
-        } else if (sortedresultData[d.properties.WARD_PRECINCT].winner === "John Barros") {
-            return "#95FFF7";
+            return "#E11ECB";
         } else {
-            return "orange";
+            return "grey";
         }
     }
 
     function mapWinnerToColorBarchart(d) {
         if (d.candidate === "Michelle Wu") {
-            return "#BBBAFF";
+            return "#1ECBE1";
         } else if (d.candidate === "Annissa Essaibi George") {
-            return "#FFC2E2";
-        } else if (d.candidate === "Andrea Campbell") {
-            return "#F4FDB1";
-        } else if (d.candidate === "Kim Janey") {
-            return "#A4D4B4";
-        } else if (d.candidate === "John Barros") {
-            return "#95FFF7";
+            return "#E11ECB";
         } else {
-            return "orange";
+            return "grey";
         }
     };
 
@@ -103,7 +91,7 @@ function drawMap(error, geoData, resultData) {
                 .attr("viewBox", `0 0 ${barchartWidth} ${barchartHeight}`);
                 
     for (element of resultData) {
-        const barchartData = [ {"precinct": element["Precinct"]}, {"candidate": "Andrea Campbell", "votecount": element["Andrea Campbell"], "percent": element["Andrea Campbell Percent"], "photo": "Photo/campbell.png"}, {"candidate": "Annissa Essaibi George", "votecount": element["Annissa Essaibi George"], "percent": element["Annissa Essaibi George Percent"], "photo": "Photo/george.png"}, {"candidate": "John Barros", "votecount": element["John Barros"], "percent": element["John Barros Percent"], "photo": "Photo/barros.png"}, {"candidate": "Kim Janey", "votecount": element["Kim Janey"], "percent": element["Kim Janey Percent"], "photo": "Photo/janey.png"},{"candidate": "Michelle Wu", "votecount": element["Michelle Wu"], "percent": element["Michelle Wu Percent"], "photo": "Photo/wu.png"}, {"candidate": "Write-In", "votecount": element["Unresolved Write-In"], "percent": element["Unresolved Write-In Percent"], "photo": "Photo/writein.png"} ];
+        const barchartData = [ {"precinct": element["Precinct"], "candidate": "Annissa Essaibi George", "votecount": element["Annissa Essaibi George"], "percent": element["Annissa Essaibi George Percent"], "photo": "Photo/george.png"}, {"precinct": element["Precinct"], "candidate": "Michelle Wu", "votecount": element["Michelle Wu"], "percent": element["Michelle Wu Percent"], "photo": "Photo/wu.png"}, {"precinct": element["Precinct"], "candidate": "Write-In", "votecount": element["Unresolved Write-In"], "percent": element["Unresolved Write-In Percent"], "photo": "Photo/writein.png"} ];
 
         filedbarchartData[element['WARD_PRECINCT']] = barchartData;
     }
@@ -112,10 +100,10 @@ function drawMap(error, geoData, resultData) {
         return d3.ascending(a.votecount, b.votecount);
     })
 
-    var x = d3.scaleLinear()
+    let x = d3.scaleLinear()
         .range([0, barchartWidth]);
 
-    var y = d3.scaleBand()
+    let y = d3.scaleBand()
         .range([barchartHeight, 0])
         .padding(0.3)
 
@@ -135,8 +123,8 @@ function drawMap(error, geoData, resultData) {
                 }
             }
         })
-        .attr("height", y.bandwidth() - 15)
-        .attr("y", d => y(d.candidate) + 28)
+        .attr("height", y.bandwidth() - 25)
+        .attr("y", d => y(d.candidate) + 32)
         .attr("x", -8)
         .attr("fill", mapWinnerToColorBarchart);
 
@@ -144,6 +132,7 @@ function drawMap(error, geoData, resultData) {
         .call(d3.axisLeft(y))
         .attr("class", "axis")
         .attr('text-anchor', 'start');
+    console.log
 
     svgBar.append("text")
         .text(`${sortedbarchartData[0].precinct}`)
@@ -195,9 +184,7 @@ function drawMap(error, geoData, resultData) {
     
     let barTick = labelGroup.append("image") 
         .attr("xlink:href", function(d) {
-            if (d.candidate === "Michelle Wu") {
-                return "Photo/tick.png";
-            } else if (d.candidate === "Annissa Essaibi George") {
+            if (d.candidate === "Michelle Wu" || d.candidate === "Annissa Essaibi George") {
                 return "Photo/tick.png";
             } else {
                 return "";
@@ -205,7 +192,7 @@ function drawMap(error, geoData, resultData) {
         })
         .attr("class", "profilePhoto")
         .attr("x", d => x(d.votecount))
-        .attr("y", d => y(d.candidate) + 29)
+        .attr("y", d => y(d.candidate) + 30)
         .attr("width", "20")
         .attr("height", "20")
         .attr("border-radius", "50%")
