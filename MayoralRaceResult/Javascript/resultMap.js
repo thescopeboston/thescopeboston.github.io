@@ -240,8 +240,8 @@ function drawMap(error, geoData, resultData) {
             .enter().append("rect")
                 .attr("class", "bar")
                 .attr("width", d => x(d.votecount))
-                .attr("height", y.bandwidth() - 15)
-                .attr("y", d => y(d.candidate) + 28)
+                .attr("height", y.bandwidth() - 25)
+                .attr("y", d => y(d.candidate) + 32)
                 .attr("x", -8)
                 .attr("fill", mapWinnerToColorBarchart);
             
