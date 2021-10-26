@@ -109,15 +109,15 @@ function drawMap(error, neighborhoodData, districtData) {
     // console.log(data);
     let tooltipInfo = 
     {"1" : 
-        {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
+        {"confines":"East Boston, Charlestown, North End/Waterfront", "First": {"name":"Lydia Edwards (Unopposed)", "img": "Photo/Edwards.jpg", "neighborhood": "East Boston", "issue": "Housing, Environmental Justice, Education", "website": "https://www.lydiaedwards.org/", "interview": "https://thescopeboston.org/6344/2021-boston-elections/city-council-race-lydia-edwards-running-for-reelection-in-district-1/"}
         }, 
     "2" : 
-        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn", "img": "Photo/Flynn.jpg", "neighborhood": "South Boston", "issue": "COVID-19 Recovery, Stand with working families in organized labor, Language Access, Fighting Discrimination Against the AAPI community,", "website": "https://www.edforboston.com/", "interview": "https://thescopeboston.org/7053/2021-boston-elections/city-council-race-edward-flynn-running-for-reelection-for-district-2/"}
+        {"confines":"Beacon Hill, Chinatown, South End, parts of South Boston", "First": {"name":"Edward Flynn (Unopposed)", "img": "Photo/Flynn.jpg", "neighborhood": "South Boston", "issue": "COVID-19 Recovery, Stand with working families in organized labor, Language Access, Fighting Discrimination Against the AAPI community,", "website": "https://www.edforboston.com/", "interview": "https://thescopeboston.org/7053/2021-boston-elections/city-council-race-edward-flynn-running-for-reelection-for-district-2/"}
         }, 
     "3" : 
         {"confines":"Parts of Dorchester, parts of Roxbury, Harbor Islands, parts of South Boston", 
-        "First": {"name":"Frank Baker (non-responsive to interview request)", "img": "Photo/Baker.jpeg", "neighborhood": "Dorchester", "issue": "Education, Public Safety, Substance Abuse Services, Housing and Economic Development", "website": "https://www.boston.gov/departments/city-council/frank-baker", "interview": ""},
-        "Second": {"name":"Stephen McBride", "img": "Photo/McBride.jpeg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery, Education, Public Health, Racial Wealth Gap", "website": "https://www.mcbrideforboston.com/", "interview": "https://thescopeboston.org/6258/2021-boston-elections/city-council-race-stephen-mcbride-running-for-district-3/"}
+        "First": {"name":"Frank Baker (Advanced to Nov. 2 Election)", "img": "Photo/Baker.jpeg", "neighborhood": "Dorchester", "issue": "Education, Public Safety, Substance Abuse Services, Housing and Economic Development", "website": "https://www.boston.gov/departments/city-council/frank-baker", "interview": ""},
+        "Second": {"name":"Stephen McBride (Advanced to Nov. 2 Election)", "img": "Photo/McBride.jpeg", "neighborhood": "Dorchester", "issue": "Covid-19 Recovery, Education, Public Health, Racial Wealth Gap", "website": "https://www.mcbrideforboston.com/", "interview": "https://thescopeboston.org/6258/2021-boston-elections/city-council-race-stephen-mcbride-running-for-district-3/"}
         }, 
     "4" :  
         {"confines":"Parts of Dorchester, Mattapan, Roslindale and Jamaica Plain", 
@@ -147,9 +147,9 @@ function drawMap(error, neighborhoodData, districtData) {
     "5" :
         {"confines":"Hyde Park, parts of Roslindale and Mattapan",
         "First": 
-            {"name":"Ricardo Arroyo (non-responsive to interview request)", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "unknown", "website": "http://votearroyo.com/", "interview": ""},
+            {"name":"Ricardo Arroyo (Advanced to Nov. 2 Election)", "img": "Photo/user.png", "neighborhood": "Hyde Park", "issue": "unknown", "website": "http://votearroyo.com/", "interview": ""},
         "Second": 
-            {"name":"John E. White", "img": "Photo/White.jpeg", "neighborhood": "Roslindale", "issue": "Housing, Public Safety, Jobs, Health Insurance, Pensions", "website": "", "interview": "https://thescopeboston.org/6873/2021-boston-elections/city-council-race-john-e-white-running-for-district-5/"}
+            {"name":"John E. White (Advanced to Nov. 2 Election)", "img": "Photo/White.jpeg", "neighborhood": "Roslindale", "issue": "Housing, Public Safety, Jobs, Health Insurance, Pensions", "website": "", "interview": "https://thescopeboston.org/6873/2021-boston-elections/city-council-race-john-e-white-running-for-district-5/"}
         },
     "6" :
         {"confines":"Parts of Jamaica Plain and West Roxbury",
@@ -163,9 +163,9 @@ function drawMap(error, neighborhoodData, districtData) {
     "7" :
         {"confines":"Parts of Fenway, Roxbury and the South End",
         "First": 
-            {"name":"Tania Fernandes Anderson", "img": "Photo/Anderson.jpeg", "neighborhood": "Roxbury", "issue": "Housing", "website": "https://taniaford7.com/", "interview": "https://thescopeboston.org/6719/2021-boston-elections/city-council-race-tania-fernandes-anderson-for-district-7/"},
+            {"name":"Tania Fernandes Anderson (Advanced to Nov. 2 Election)", "img": "Photo/Anderson.jpeg", "neighborhood": "Roxbury", "issue": "Housing", "website": "https://taniaford7.com/", "interview": "https://thescopeboston.org/6719/2021-boston-elections/city-council-race-tania-fernandes-anderson-for-district-7/"},
         "Second": 
-            {"name":"Roy Owens Sr.", "img": "Photo/user.png", "neighborhood": "Boston", "issue": "Unknown", "website": "http://royowensboston.mysite.com/", "interview": ""},
+            {"name":"Roy Owens Sr. (Advanced to Nov. 2 Election)", "img": "Photo/user.png", "neighborhood": "Boston", "issue": "Unknown", "website": "http://royowensboston.mysite.com/", "interview": ""},
         "Third": 
             {"name":"Brandy Brooks", "img": "Photo/Brooks.jpeg", "neighborhood": "Roxbury", "issue": "Education, Housing, Small Businesses", "website": "https://brandybrooks4d7.com/", "interview": "https://thescopeboston.org/6858/2021-boston-elections/city-council-race-brandy-brooks-running-for-district-7/"},
         "Fourth":
@@ -182,7 +182,7 @@ function drawMap(error, neighborhoodData, districtData) {
     "8" :
         {"confines":"West End, parts of Fenway/Kenmore, Back Bay and Allston ",
         "First": 
-            {"name":"Kenzie Bok", "img": "Photo/Bok.jpg", "neighborhood": "Bay Village", "issue": "Affordable Housing, Transportation Infrastructure, Climate Change, Historic Preservation", "website": "https://www.kenziebok.com/", "interview": "https://thescopeboston.org/6552/2021-boston-elections/city-council-race-kenzie-bok-running-for-reelection-in-district-8/"}
+            {"name":"Kenzie Bok (Unopposed)", "img": "Photo/Bok.jpg", "neighborhood": "Bay Village", "issue": "Affordable Housing, Transportation Infrastructure, Climate Change, Historic Preservation", "website": "https://www.kenziebok.com/", "interview": "https://thescopeboston.org/6552/2021-boston-elections/city-council-race-kenzie-bok-running-for-reelection-in-district-8/"}
         },
     "9" :
         {"confines":"Brighton, parts of Allston",

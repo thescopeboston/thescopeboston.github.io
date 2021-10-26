@@ -557,6 +557,8 @@ hr.menuLine {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    fill: rgb(37, 12, 80);
+
 }
 
 .mapContainer {
@@ -583,6 +585,7 @@ hr.menuLine {
 
 .cityCouncilChartContainer {
     background-color: rgb(250, 246, 240);
+    margin-bottom: 30px;
 }
 
 .scaleAxis {
