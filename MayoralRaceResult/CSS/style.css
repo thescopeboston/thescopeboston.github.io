@@ -512,7 +512,7 @@ hr.menuLine {
 
 .axis {
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;    
     text-align: left;
 }
 
@@ -561,6 +561,14 @@ hr.menuLine {
 
 }
 
+.winner {
+    font-size: 20px;
+    padding-bottom: 4%;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;    
+    text-align: center;
+}
+
 .mapContainer {
     width: 70%;
     margin-left: 15%;
@@ -569,6 +577,7 @@ hr.menuLine {
 
 .g-labels {
     font-size: 13px;
+    font-family: 'Roboto Slab', serif;    
 }
 
 .profilePhoto {

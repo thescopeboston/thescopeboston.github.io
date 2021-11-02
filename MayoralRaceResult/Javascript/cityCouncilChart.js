@@ -1,5 +1,5 @@
 let councilBarchartWidth = window.innerWidth/2;
-let councilBarchartHeight = window.innerHeight/2.2;
+let councilBarchartHeight = window.innerHeight/2.1;
 let barHeight = 25;
 
 let x = d3.scaleLinear()
@@ -93,13 +93,11 @@ d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
 d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
     let svgD1Chart = d3.select("#district1Chart")
                                 .attr("width", councilBarchartWidth + margin.left + margin.right)
-                                .attr("height", councilBarchartHeight + margin.top + margin.bottom)
+                                .attr("height", councilBarchartHeight/8 + margin.top + margin.bottom)
                                 .append("g")
                                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
                                 .attr("viewBox", `0 0 ${councilBarchartWidth} ${councilBarchartHeight}`);
-
-    x.domain([0, d3.max(data, d => d.percentagetotal)]);
-    y.domain(data.map(d => d.winner));
+   
 
     svgD1Chart.append("text")
         .text("District 1")
@@ -107,65 +105,11 @@ d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
         .attr("x", -10)
         .attr("y", 0);
 
-
-    svgD1Chart.selectAll(".bar")
-        .data(data)
-    .enter().append("rect")
-        .attr("class", "bar")
-        .attr("width", d => x(d.percentagetotal))
-        .attr("height", barHeight)
-        .attr("y", d => y(d.winner) + 35)
-        .attr("x", -8)
-        .attr("fill", "#dce2de")
-        .attr("transform", "translate(0,4)");   
-
-    svgD1Chart.selectAll(".bar2")
-        .data(data)
-    .enter().append("rect")
-        .attr("class", "bar2")
-        .attr("width", d => x(d.percentage))
-        .attr("height", barHeight)
-        .attr("y", d => y(d.winner) + 35)
-        .attr("x", -8)
-        .attr("fill", "#1ECBE1")
-        .attr("transform", "translate(0,4)");  
-
-    svgD1Chart.append("g")
-        .call(d3.axisLeft(y))
-        .attr("class", "axis")
-        .attr("id", "axisCouncilChart")
-        .attr('text-anchor', 'start');
-
-    let labelGroupCouncilBarChart = svgD1Chart.selectAll("bar")
-        .data(data)
-        .enter()
-        .append("g")
-        .attr("class", "g-bar");
-
-    let councilBarLabels = labelGroupCouncilBarChart.append("text") 
-        .text(data => data.percentage + "%" + " (" + data.totalvotes + " votes)")
-        .attr("x", data => x(data.percentagetotal) - 8)
-        .attr("y", data => y(data.winner) + 30)
-        .attr("class", "g-labels")
-        .attr("text-anchor", "end");    
-
-    let councilBarTick = labelGroupCouncilBarChart.append("image") 
-        .attr("xlink:href", function(d) {
-            console.log(d.winner.trim());
-            // The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
-            if (d.winner === 'Liz A Breadon') {
-                return "Photo/tick.png";
-            } else {
-                return "";
-            }
-        })         
-        .attr("class", "profilePhoto")
-        .attr("x", d => x(d.percentagetotal) - 30)
-        .attr("y", d => y(d.winner) + 45)
-        .attr("width", "20")
-        .attr("height", "20")
-        .attr("border-radius", "50%")
-        .attr("class", "g-image");  
+    svgD1Chart.append("text")
+        .text("Lydia Edwards (uncontested)")
+        .attr("class", "winner")
+        .attr("x", -10)
+        .attr("y", 50);
 
 });
 
@@ -174,13 +118,10 @@ d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
 d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
     let svgD2Chart = d3.select("#district2Chart")
                                 .attr("width", councilBarchartWidth + margin.left + margin.right)
-                                .attr("height", councilBarchartHeight + margin.top + margin.bottom)
+                                .attr("height", councilBarchartHeight/8 + margin.top + margin.bottom)
                                 .append("g")
                                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
                                 .attr("viewBox", `0 0 ${councilBarchartWidth} ${councilBarchartHeight}`);
-
-    x.domain([0, d3.max(data, d => d.percentagetotal)]);
-    y.domain(data.map(d => d.winner));
 
     svgD2Chart.append("text")
         .text("District 2")
@@ -188,65 +129,11 @@ d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
         .attr("x", -10)
         .attr("y", 0);
 
-
-    svgD2Chart.selectAll(".bar")
-        .data(data)
-    .enter().append("rect")
-        .attr("class", "bar")
-        .attr("width", d => x(d.percentagetotal))
-        .attr("height", barHeight)
-        .attr("y", d => y(d.winner) + 35)
-        .attr("x", -8)
-        .attr("fill", "#dce2de")
-        .attr("transform", "translate(0,4)");   
-
-    svgD2Chart.selectAll(".bar2")
-        .data(data)
-    .enter().append("rect")
-        .attr("class", "bar2")
-        .attr("width", d => x(d.percentage))
-        .attr("height", barHeight)
-        .attr("y", d => y(d.winner) + 35)
-        .attr("x", -8)
-        .attr("fill", "#1ECBE1")
-        .attr("transform", "translate(0,4)");  
-
-    svgD2Chart.append("g")
-        .call(d3.axisLeft(y))
-        .attr("class", "axis")
-        .attr("id", "axisCouncilChart")
-        .attr('text-anchor', 'start');
-
-    let labelGroupCouncilBarChart = svgD2Chart.selectAll("bar")
-        .data(data)
-        .enter()
-        .append("g")
-        .attr("class", "g-bar");
-
-    let councilBarLabels = labelGroupCouncilBarChart.append("text") 
-        .text(data => data.percentage + "%" + " (" + data.totalvotes + " votes)")
-        .attr("x", data => x(data.percentagetotal) - 8)
-        .attr("y", data => y(data.winner) + 30)
-        .attr("class", "g-labels")
-        .attr("text-anchor", "end");    
-
-    let councilBarTick = labelGroupCouncilBarChart.append("image") 
-        .attr("xlink:href", function(d) {
-            console.log(d.winner.trim());
-            // The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
-            if (d.winner === 'Liz A Breadon') {
-                return "Photo/tick.png";
-            } else {
-                return "";
-            }
-        })         
-        .attr("class", "profilePhoto")
-        .attr("x", d => x(d.percentagetotal) - 30)
-        .attr("y", d => y(d.winner) + 45)
-        .attr("width", "20")
-        .attr("height", "20")
-        .attr("border-radius", "50%")
-        .attr("class", "g-image");  
+    svgD2Chart.append("text")
+        .text("Edward Flynn (uncontested)")
+        .attr("class", "winner")
+        .attr("x", -10)
+        .attr("y", 50);
 
 });
 // Draw District 3 Chart
@@ -660,13 +547,10 @@ d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
 d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
     let svgD8Chart = d3.select("#district8Chart")
                                 .attr("width", councilBarchartWidth + margin.left + margin.right)
-                                .attr("height", councilBarchartHeight + margin.top + margin.bottom)
+                                .attr("height", councilBarchartHeight/8 + margin.top + margin.bottom)
                                 .append("g")
                                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
                                 .attr("viewBox", `0 0 ${councilBarchartWidth} ${councilBarchartHeight}`);
-
-    x.domain([0, d3.max(data, d => d.percentagetotal)]);
-    y.domain(data.map(d => d.winner));
 
     svgD8Chart.append("text")
         .text("District 8")
@@ -674,65 +558,11 @@ d3.csv("Data/cityCouncilWinners.csv", function(error, data) {
         .attr("x", -10)
         .attr("y", 0);
 
-
-    svgD8Chart.selectAll(".bar")
-        .data(data)
-    .enter().append("rect")
-        .attr("class", "bar")
-        .attr("width", d => x(d.percentagetotal))
-        .attr("height", barHeight)
-        .attr("y", d => y(d.winner) + 35)
-        .attr("x", -8)
-        .attr("fill", "#dce2de")
-        .attr("transform", "translate(0,4)");   
-
-    svgD8Chart.selectAll(".bar2")
-        .data(data)
-    .enter().append("rect")
-        .attr("class", "bar2")
-        .attr("width", d => x(d.percentage))
-        .attr("height", barHeight)
-        .attr("y", d => y(d.winner) + 35)
-        .attr("x", -8)
-        .attr("fill", "#1ECBE1")
-        .attr("transform", "translate(0,4)");  
-
-    svgD8Chart.append("g")
-        .call(d3.axisLeft(y))
-        .attr("class", "axis")
-        .attr("id", "axisCouncilChart")
-        .attr('text-anchor', 'start');
-
-    let labelGroupCouncilBarChart = svgD8Chart.selectAll("bar")
-        .data(data)
-        .enter()
-        .append("g")
-        .attr("class", "g-bar");
-
-    let councilBarLabels = labelGroupCouncilBarChart.append("text") 
-        .text(data => data.percentage + "%" + " (" + data.totalvotes + " votes)")
-        .attr("x", data => x(data.percentagetotal) - 8)
-        .attr("y", data => y(data.winner) + 30)
-        .attr("class", "g-labels")
-        .attr("text-anchor", "end");    
-
-    let councilBarTick = labelGroupCouncilBarChart.append("image") 
-        .attr("xlink:href", function(d) {
-            console.log(d.winner.trim());
-            // The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
-            if (d.winner === 'Liz A Breadon') {
-                return "Photo/tick.png";
-            } else {
-                return "";
-            }
-        })         
-        .attr("class", "profilePhoto")
-        .attr("x", d => x(d.percentagetotal) - 30)
-        .attr("y", d => y(d.winner) + 45)
-        .attr("width", "20")
-        .attr("height", "20")
-        .attr("border-radius", "50%")
-        .attr("class", "g-image");  
+    svgD8Chart.append("text")
+        .text("Kenzie Bok (uncontested)")
+        .attr("class", "winner")
+        .attr("x", -10)
+        .attr("y", 50);
 
 });
 
