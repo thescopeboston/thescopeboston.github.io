@@ -1,6 +1,6 @@
 let councilBarchartWidth = window.innerWidth/2;
-let councilBarchartHeight = window.innerHeight/2.5;
-let barHeight = 28;
+let councilBarchartHeight = window.innerHeight/2.2;
+let barHeight = 25;
 
 let x = d3.scaleLinear()
 .range([0, councilBarchartWidth]);
