@@ -17,7 +17,7 @@ let map2 = svgTurnout.select("#map2");
 
 d3.queue()
   .defer(d3.json, "Data/[NOWARD1PRECINCT15]precincts.geojson")
-  .defer(d3.json, "Data/voterTurnout.json")
+  .defer(d3.json, "Data/NovVoterTurnoutFinal.json")
   .await(drawVoterTurnoutMap);
 
 function drawVoterTurnoutMap(error, geoData, voterTurnoutData) {
@@ -31,16 +31,17 @@ function drawVoterTurnoutMap(error, geoData, voterTurnoutData) {
 
     for (element of voterTurnoutData) {
 
-        const newVoterTurnoutData = {"Registered Voters": element["Registered Voters"], "Percentage": element["Percentage"], "Precinct": element["Precinct"]};
+        const newVoterTurnoutData = {"Percentage": element["Percentage"], "Precinct": element["Precinct"]};
 
         mappedVoterTurnoutData[element['WARD_PRECINCT']] = newVoterTurnoutData;
 
     }
 
-    let maximumVoterTurnoutPercentage = d3.max(voterTurnoutData, function(d) {
-        return parseFloat(d.Percentage);
-    });
+    // let maximumVoterTurnoutPercentage = d3.max(voterTurnoutData, function(d) {
+    //     return parseFloat(d.Percentage);
+    // });
 
+    let maximumVoterTurnoutPercentage = 71;
     let scaleWidth = 140;
     let scaleHeight = 7;
 
@@ -53,7 +54,7 @@ function drawVoterTurnoutMap(error, geoData, voterTurnoutData) {
 
     let gradientScale = d3.scaleLinear().domain([0, maximumVoterTurnoutPercentage]).range([0, scaleWidth]);
     let gradientAxis = d3.axisBottom(gradientScale).ticks(4).tickFormat(d => d + "%");
-    let colorScale = d3.scaleLinear().domain([0, maximumVoterTurnoutPercentage]).range(["#f0f0f0", "#e300c9"]).interpolate(d3.interpolate);
+    let colorScale = d3.scaleLinear().domain([0, maximumVoterTurnoutPercentage]).range(["#f0f0f0", "#00c5de"]).interpolate(d3.interpolate);
     
     scale.select("#scaleAxis")
         .attr("class", "scaleAxis")

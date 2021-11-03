@@ -1,0 +1,1794 @@
+[
+  {
+    "Precinct": "WARD 1, PRECINCT 1",
+    "Times Cast": 1700,
+    "Registered Voters": 587,
+    "Percentage": 34.53,
+    "WARD_PRECINCT": "0101"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 2",
+    "Times Cast": 1256,
+    "Registered Voters": 329,
+    "Percentage": 26.19,
+    "WARD_PRECINCT": "0110"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 3",
+    "Times Cast": 3429,
+    "Registered Voters": 954,
+    "Percentage": 27.82,
+    "WARD_PRECINCT": "0111"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 4",
+    "Times Cast": 1452,
+    "Registered Voters": 325,
+    "Percentage": 22.38,
+    "WARD_PRECINCT": "0112"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 5",
+    "Times Cast": 1628,
+    "Registered Voters": 408,
+    "Percentage": 25.06,
+    "WARD_PRECINCT": "0113"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 6",
+    "Times Cast": 1427,
+    "Registered Voters": 351,
+    "Percentage": 24.6,
+    "WARD_PRECINCT": "0114"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 7",
+    "Times Cast": 1520,
+    "Registered Voters": 364,
+    "Percentage": 23.95,
+    "WARD_PRECINCT": "0115"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 8",
+    "Times Cast": 2059,
+    "Registered Voters": 482,
+    "Percentage": 23.41,
+    "WARD_PRECINCT": "0102"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 9",
+    "Times Cast": 1304,
+    "Registered Voters": 377,
+    "Percentage": 28.91,
+    "WARD_PRECINCT": "0103"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 10",
+    "Times Cast": 967,
+    "Registered Voters": 214,
+    "Percentage": 22.13,
+    "WARD_PRECINCT": "0104"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 11",
+    "Times Cast": 1540,
+    "Registered Voters": 570,
+    "Percentage": 37.01,
+    "WARD_PRECINCT": "0105"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 12",
+    "Times Cast": 1522,
+    "Registered Voters": 589,
+    "Percentage": 38.7,
+    "WARD_PRECINCT": "0106"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 13",
+    "Times Cast": 2214,
+    "Registered Voters": 681,
+    "Percentage": 30.76,
+    "WARD_PRECINCT": "0107"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 14",
+    "Times Cast": 1055,
+    "Registered Voters": 333,
+    "Percentage": 31.56,
+    "WARD_PRECINCT": "0108"
+  },
+  {
+    "Precinct": "WARD 1, PRECINCT 15",
+    "Times Cast": 1,
+    "Registered Voters": 1,
+    "Percentage": 100,
+    "WARD_PRECINCT": "0109"
+  },
+  {
+    "Precinct": "WARD 2, PRECINCT 1",
+    "Times Cast": 2376,
+    "Registered Voters": 938,
+    "Percentage": 39.48,
+    "WARD_PRECINCT": 1001
+  },
+  {
+    "Precinct": "WARD 2, PRECINCT 2",
+    "Times Cast": 3455,
+    "Registered Voters": 1069,
+    "Percentage": 30.94,
+    "WARD_PRECINCT": 1002
+  },
+  {
+    "Precinct": "WARD 2, PRECINCT 3",
+    "Times Cast": 1664,
+    "Registered Voters": 732,
+    "Percentage": 43.99,
+    "WARD_PRECINCT": 1003
+  },
+  {
+    "Precinct": "WARD 2, PRECINCT 4",
+    "Times Cast": 1775,
+    "Registered Voters": 593,
+    "Percentage": 33.41,
+    "WARD_PRECINCT": 1004
+  },
+  {
+    "Precinct": "WARD 2, PRECINCT 5",
+    "Times Cast": 1775,
+    "Registered Voters": 782,
+    "Percentage": 44.06,
+    "WARD_PRECINCT": 1005
+  },
+  {
+    "Precinct": "WARD 2, PRECINCT 6",
+    "Times Cast": 2172,
+    "Registered Voters": 948,
+    "Percentage": 43.65,
+    "WARD_PRECINCT": 1006
+  },
+  {
+    "Precinct": "WARD 2, PRECINCT 7",
+    "Times Cast": 2152,
+    "Registered Voters": 782,
+    "Percentage": 36.34,
+    "WARD_PRECINCT": 1007
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 1",
+    "Times Cast": 3343,
+    "Registered Voters": 1221,
+    "Percentage": 36.52,
+    "WARD_PRECINCT": 1008
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 2",
+    "Times Cast": 1746,
+    "Registered Voters": 516,
+    "Percentage": 29.55,
+    "WARD_PRECINCT": 1009
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 3",
+    "Times Cast": 1935,
+    "Registered Voters": 558,
+    "Percentage": 28.84,
+    "WARD_PRECINCT": 1101
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 4",
+    "Times Cast": 2340,
+    "Registered Voters": 661,
+    "Percentage": 28.25,
+    "WARD_PRECINCT": 1110
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 5",
+    "Times Cast": 4129,
+    "Registered Voters": 1251,
+    "Percentage": 30.3,
+    "WARD_PRECINCT": 1102
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 6",
+    "Times Cast": 5285,
+    "Registered Voters": 1577,
+    "Percentage": 29.84,
+    "WARD_PRECINCT": 1103
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 7",
+    "Times Cast": 4100,
+    "Registered Voters": 1450,
+    "Percentage": 35.37,
+    "WARD_PRECINCT": 1104
+  },
+  {
+    "Precinct": "WARD 3, PRECINCT 8",
+    "Times Cast": 7347,
+    "Registered Voters": 1895,
+    "Percentage": 25.79,
+    "WARD_PRECINCT": 1105
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 1",
+    "Times Cast": 1984,
+    "Registered Voters": 779,
+    "Percentage": 39.26,
+    "WARD_PRECINCT": 1106
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 2",
+    "Times Cast": 3300,
+    "Registered Voters": 1096,
+    "Percentage": 33.21,
+    "WARD_PRECINCT": 1107
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 3",
+    "Times Cast": 1419,
+    "Registered Voters": 590,
+    "Percentage": 41.58,
+    "WARD_PRECINCT": 1108
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 4",
+    "Times Cast": 1954,
+    "Registered Voters": 667,
+    "Percentage": 34.14,
+    "WARD_PRECINCT": 1109
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 5",
+    "Times Cast": 1567,
+    "Registered Voters": 457,
+    "Percentage": 29.16,
+    "WARD_PRECINCT": 1201
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 6",
+    "Times Cast": 1504,
+    "Registered Voters": 307,
+    "Percentage": 20.41,
+    "WARD_PRECINCT": 1202
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 7",
+    "Times Cast": 1518,
+    "Registered Voters": 349,
+    "Percentage": 22.99,
+    "WARD_PRECINCT": 1203
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 8",
+    "Times Cast": 1567,
+    "Registered Voters": 320,
+    "Percentage": 20.42,
+    "WARD_PRECINCT": 1204
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 9",
+    "Times Cast": 1030,
+    "Registered Voters": 125,
+    "Percentage": 12.14,
+    "WARD_PRECINCT": 1205
+  },
+  {
+    "Precinct": "WARD 4, PRECINCT 10",
+    "Times Cast": 481,
+    "Registered Voters": 57,
+    "Percentage": 11.85,
+    "WARD_PRECINCT": 1206
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 1",
+    "Times Cast": 4734,
+    "Registered Voters": 1602,
+    "Percentage": 33.84,
+    "WARD_PRECINCT": 1207
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 2",
+    "Times Cast": 1670,
+    "Registered Voters": 403,
+    "Percentage": 24.13,
+    "WARD_PRECINCT": 1208
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 3",
+    "Times Cast": 1808,
+    "Registered Voters": 638,
+    "Percentage": 35.29,
+    "WARD_PRECINCT": 1209
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 4",
+    "Times Cast": 2360,
+    "Registered Voters": 626,
+    "Percentage": 26.53,
+    "WARD_PRECINCT": 1301
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 5",
+    "Times Cast": 699,
+    "Registered Voters": 296,
+    "Percentage": 42.35,
+    "WARD_PRECINCT": 1310
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 6",
+    "Times Cast": 1879,
+    "Registered Voters": 623,
+    "Percentage": 33.16,
+    "WARD_PRECINCT": 1302
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 7",
+    "Times Cast": 2368,
+    "Registered Voters": 792,
+    "Percentage": 33.45,
+    "WARD_PRECINCT": 1303
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 8",
+    "Times Cast": 2143,
+    "Registered Voters": 642,
+    "Percentage": 29.96,
+    "WARD_PRECINCT": 1304
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 9",
+    "Times Cast": 2952,
+    "Registered Voters": 781,
+    "Percentage": 26.46,
+    "WARD_PRECINCT": 1305
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 10",
+    "Times Cast": 1887,
+    "Registered Voters": 397,
+    "Percentage": 21.04,
+    "WARD_PRECINCT": 1306
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 11",
+    "Times Cast": 1202,
+    "Registered Voters": 461,
+    "Percentage": 38.35,
+    "WARD_PRECINCT": 1307
+  },
+  {
+    "Precinct": "WARD 5, PRECINCT 2A",
+    "Times Cast": 1189,
+    "Registered Voters": 276,
+    "Percentage": 23.21,
+    "WARD_PRECINCT": 1308
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 1",
+    "Times Cast": 7924,
+    "Registered Voters": 1994,
+    "Percentage": 25.16,
+    "WARD_PRECINCT": 1309
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 2",
+    "Times Cast": 1700,
+    "Registered Voters": 418,
+    "Percentage": 24.59,
+    "WARD_PRECINCT": 1401
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 3",
+    "Times Cast": 2421,
+    "Registered Voters": 645,
+    "Percentage": 26.64,
+    "WARD_PRECINCT": 1410
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 4",
+    "Times Cast": 2216,
+    "Registered Voters": 692,
+    "Percentage": 31.23,
+    "WARD_PRECINCT": 1708
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 5",
+    "Times Cast": 2207,
+    "Registered Voters": 651,
+    "Percentage": 29.5,
+    "WARD_PRECINCT": 1411
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 6",
+    "Times Cast": 1780,
+    "Registered Voters": 618,
+    "Percentage": 34.72,
+    "WARD_PRECINCT": 1709
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 7",
+    "Times Cast": 1995,
+    "Registered Voters": 641,
+    "Percentage": 32.13,
+    "WARD_PRECINCT": 1412
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 8",
+    "Times Cast": 1783,
+    "Registered Voters": 617,
+    "Percentage": 34.6,
+    "WARD_PRECINCT": 1710
+  },
+  {
+    "Precinct": "WARD 6, PRECINCT 9",
+    "Times Cast": 1751,
+    "Registered Voters": 670,
+    "Percentage": 38.26,
+    "WARD_PRECINCT": 1413
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 1",
+    "Times Cast": 1573,
+    "Registered Voters": 583,
+    "Percentage": 37.06,
+    "WARD_PRECINCT": 1711
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 2",
+    "Times Cast": 2020,
+    "Registered Voters": 719,
+    "Percentage": 35.59,
+    "WARD_PRECINCT": 1414
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 3",
+    "Times Cast": 2144,
+    "Registered Voters": 793,
+    "Percentage": 36.99,
+    "WARD_PRECINCT": 1712
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 4",
+    "Times Cast": 1927,
+    "Registered Voters": 525,
+    "Percentage": 27.24,
+    "WARD_PRECINCT": 1402
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 5",
+    "Times Cast": 1787,
+    "Registered Voters": 454,
+    "Percentage": 25.41,
+    "WARD_PRECINCT": 1403
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 6",
+    "Times Cast": 1680,
+    "Registered Voters": 414,
+    "Percentage": 24.64,
+    "WARD_PRECINCT": 1404
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 7",
+    "Times Cast": 1437,
+    "Registered Voters": 300,
+    "Percentage": 20.88,
+    "WARD_PRECINCT": 1405
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 8",
+    "Times Cast": 1607,
+    "Registered Voters": 512,
+    "Percentage": 31.86,
+    "WARD_PRECINCT": 1406
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 9",
+    "Times Cast": 1256,
+    "Registered Voters": 396,
+    "Percentage": 31.53,
+    "WARD_PRECINCT": 1407
+  },
+  {
+    "Precinct": "WARD 7, PRECINCT 10",
+    "Times Cast": 1469,
+    "Registered Voters": 361,
+    "Percentage": 24.57,
+    "WARD_PRECINCT": 1408
+  },
+  {
+    "Precinct": "WARD 8, PRECINCT 1",
+    "Times Cast": 1703,
+    "Registered Voters": 445,
+    "Percentage": 26.13,
+    "WARD_PRECINCT": 1706
+  },
+  {
+    "Precinct": "WARD 8, PRECINCT 2",
+    "Times Cast": 3230,
+    "Registered Voters": 791,
+    "Percentage": 24.49,
+    "WARD_PRECINCT": 1409
+  },
+  {
+    "Precinct": "WARD 8, PRECINCT 3",
+    "Times Cast": 1533,
+    "Registered Voters": 262,
+    "Percentage": 17.09,
+    "WARD_PRECINCT": 1707
+  },
+  {
+    "Precinct": "WARD 8, PRECINCT 4",
+    "Times Cast": 760,
+    "Registered Voters": 169,
+    "Percentage": 22.24,
+    "WARD_PRECINCT": 1501
+  },
+  {
+    "Precinct": "WARD 8, PRECINCT 5",
+    "Times Cast": 1479,
+    "Registered Voters": 360,
+    "Percentage": 24.34,
+    "WARD_PRECINCT": 1713
+  },
+  {
+    "Precinct": "WARD 8, PRECINCT 6",
+    "Times Cast": 574,
+    "Registered Voters": 164,
+    "Percentage": 28.57,
+    "WARD_PRECINCT": 1502
+  },
+  {
+    "Precinct": "WARD 8, PRECINCT 7",
+    "Times Cast": 1141,
+    "Registered Voters": 282,
+    "Percentage": 24.72,
+    "WARD_PRECINCT": 1714
+  },
+  {
+    "Precinct": "WARD 9, PRECINCT 1",
+    "Times Cast": 2040,
+    "Registered Voters": 619,
+    "Percentage": 30.34,
+    "WARD_PRECINCT": 1503
+  },
+  {
+    "Precinct": "WARD 9, PRECINCT 2",
+    "Times Cast": 2471,
+    "Registered Voters": 797,
+    "Percentage": 32.25,
+    "WARD_PRECINCT": 1801
+  },
+  {
+    "Precinct": "WARD 9, PRECINCT 3",
+    "Times Cast": 3333,
+    "Registered Voters": 748,
+    "Percentage": 22.44,
+    "WARD_PRECINCT": 1504
+  },
+  {
+    "Precinct": "WARD 9, PRECINCT 4",
+    "Times Cast": 2332,
+    "Registered Voters": 431,
+    "Percentage": 18.48,
+    "WARD_PRECINCT": 1802
+  },
+  {
+    "Precinct": "WARD 9, PRECINCT 5",
+    "Times Cast": 2229,
+    "Registered Voters": 717,
+    "Percentage": 32.17,
+    "WARD_PRECINCT": 1505
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 1",
+    "Times Cast": 1046,
+    "Registered Voters": 330,
+    "Percentage": 31.55,
+    "WARD_PRECINCT": 1803
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 2",
+    "Times Cast": 1104,
+    "Registered Voters": 236,
+    "Percentage": 21.38,
+    "WARD_PRECINCT": 1506
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 3",
+    "Times Cast": 1084,
+    "Registered Voters": 216,
+    "Percentage": 19.93,
+    "WARD_PRECINCT": 1804
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 4",
+    "Times Cast": 2000,
+    "Registered Voters": 473,
+    "Percentage": 23.65,
+    "WARD_PRECINCT": 1507
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 5",
+    "Times Cast": 1340,
+    "Registered Voters": 319,
+    "Percentage": 23.81,
+    "WARD_PRECINCT": 1805
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 6",
+    "Times Cast": 1465,
+    "Registered Voters": 412,
+    "Percentage": 28.12,
+    "WARD_PRECINCT": 1508
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 7",
+    "Times Cast": 2021,
+    "Registered Voters": 491,
+    "Percentage": 24.29,
+    "WARD_PRECINCT": 1806
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 8",
+    "Times Cast": 2257,
+    "Registered Voters": 743,
+    "Percentage": 32.92,
+    "WARD_PRECINCT": 1509
+  },
+  {
+    "Precinct": "WARD 10, PRECINCT 9",
+    "Times Cast": 2278,
+    "Registered Voters": 885,
+    "Percentage": 38.85,
+    "WARD_PRECINCT": 1807
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 1",
+    "Times Cast": 1041,
+    "Registered Voters": 333,
+    "Percentage": 31.99,
+    "WARD_PRECINCT": 1601
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 2",
+    "Times Cast": 1738,
+    "Registered Voters": 441,
+    "Percentage": 25.37,
+    "WARD_PRECINCT": 1808
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 3",
+    "Times Cast": 1359,
+    "Registered Voters": 328,
+    "Percentage": 24.14,
+    "WARD_PRECINCT": 1610
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 4",
+    "Times Cast": 2265,
+    "Registered Voters": 618,
+    "Percentage": 27.28,
+    "WARD_PRECINCT": 1817
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 5",
+    "Times Cast": 1858,
+    "Registered Voters": 568,
+    "Percentage": 30.57,
+    "WARD_PRECINCT": 1611
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 6",
+    "Times Cast": 1333,
+    "Registered Voters": 551,
+    "Percentage": 41.34,
+    "WARD_PRECINCT": 1818
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 7",
+    "Times Cast": 1787,
+    "Registered Voters": 754,
+    "Percentage": 42.19,
+    "WARD_PRECINCT": 1612
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 8",
+    "Times Cast": 2349,
+    "Registered Voters": 992,
+    "Percentage": 42.23,
+    "WARD_PRECINCT": 1819
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 9",
+    "Times Cast": 1099,
+    "Registered Voters": 540,
+    "Percentage": 49.14,
+    "WARD_PRECINCT": 1602
+  },
+  {
+    "Precinct": "WARD 11, PRECINCT 10",
+    "Times Cast": 1458,
+    "Registered Voters": 631,
+    "Percentage": 43.28,
+    "WARD_PRECINCT": 1809
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 1",
+    "Times Cast": 1822,
+    "Registered Voters": 508,
+    "Percentage": 27.88,
+    "WARD_PRECINCT": 1603
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 2",
+    "Times Cast": 2324,
+    "Registered Voters": 578,
+    "Percentage": 24.87,
+    "WARD_PRECINCT": 1810
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 3",
+    "Times Cast": 999,
+    "Registered Voters": 292,
+    "Percentage": 29.23,
+    "WARD_PRECINCT": 1604
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 4",
+    "Times Cast": 1305,
+    "Registered Voters": 338,
+    "Percentage": 25.9,
+    "WARD_PRECINCT": 1811
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 5",
+    "Times Cast": 757,
+    "Registered Voters": 244,
+    "Percentage": 32.23,
+    "WARD_PRECINCT": 1605
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 6",
+    "Times Cast": 1020,
+    "Registered Voters": 318,
+    "Percentage": 31.18,
+    "WARD_PRECINCT": 1812
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 7",
+    "Times Cast": 2737,
+    "Registered Voters": 581,
+    "Percentage": 21.23,
+    "WARD_PRECINCT": 1606
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 8",
+    "Times Cast": 936,
+    "Registered Voters": 212,
+    "Percentage": 22.65,
+    "WARD_PRECINCT": 1813
+  },
+  {
+    "Precinct": "WARD 12, PRECINCT 9",
+    "Times Cast": 1090,
+    "Registered Voters": 303,
+    "Percentage": 27.8,
+    "WARD_PRECINCT": 1607
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 1",
+    "Times Cast": 1604,
+    "Registered Voters": 359,
+    "Percentage": 22.38,
+    "WARD_PRECINCT": 1814
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 2",
+    "Times Cast": 664,
+    "Registered Voters": 133,
+    "Percentage": 20.03,
+    "WARD_PRECINCT": 1608
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 3",
+    "Times Cast": 1662,
+    "Registered Voters": 318,
+    "Percentage": 19.13,
+    "WARD_PRECINCT": 1815
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 4",
+    "Times Cast": 1154,
+    "Registered Voters": 272,
+    "Percentage": 23.57,
+    "WARD_PRECINCT": 1609
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 5",
+    "Times Cast": 1133,
+    "Registered Voters": 308,
+    "Percentage": 27.18,
+    "WARD_PRECINCT": 1816
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 6",
+    "Times Cast": 1477,
+    "Registered Voters": 438,
+    "Percentage": 29.65,
+    "WARD_PRECINCT": 1701
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 7",
+    "Times Cast": 1628,
+    "Registered Voters": 522,
+    "Percentage": 32.06,
+    "WARD_PRECINCT": 1820
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 8",
+    "Times Cast": 1439,
+    "Registered Voters": 419,
+    "Percentage": 29.12,
+    "WARD_PRECINCT": 1702
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 9",
+    "Times Cast": 1484,
+    "Registered Voters": 507,
+    "Percentage": 34.16,
+    "WARD_PRECINCT": 1821
+  },
+  {
+    "Precinct": "WARD 13, PRECINCT 10",
+    "Times Cast": 1887,
+    "Registered Voters": 922,
+    "Percentage": 48.86,
+    "WARD_PRECINCT": 1703
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 1",
+    "Times Cast": 2874,
+    "Registered Voters": 612,
+    "Percentage": 21.29,
+    "WARD_PRECINCT": "1822"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 2",
+    "Times Cast": 2724,
+    "Registered Voters": 611,
+    "Percentage": 22.43,
+    "WARD_PRECINCT": "1704"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 3",
+    "Times Cast": 1372,
+    "Registered Voters": 273,
+    "Percentage": 19.9,
+    "WARD_PRECINCT": "1823"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 4",
+    "Times Cast": 1666,
+    "Registered Voters": 382,
+    "Percentage": 22.93,
+    "WARD_PRECINCT": "1705"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 5",
+    "Times Cast": 1239,
+    "Registered Voters": 263,
+    "Percentage": 21.23,
+    "WARD_PRECINCT": "1901"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 6",
+    "Times Cast": 1214,
+    "Registered Voters": 283,
+    "Percentage": 23.31,
+    "WARD_PRECINCT": "1910"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 7",
+    "Times Cast": 1273,
+    "Registered Voters": 276,
+    "Percentage": 21.68,
+    "WARD_PRECINCT": "1911"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 8",
+    "Times Cast": 1337,
+    "Registered Voters": 423,
+    "Percentage": 31.64,
+    "WARD_PRECINCT": "1912"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 9",
+    "Times Cast": 1449,
+    "Registered Voters": 265,
+    "Percentage": 18.29,
+    "WARD_PRECINCT": "1913"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 10",
+    "Times Cast": 1531,
+    "Registered Voters": 360,
+    "Percentage": 23.51,
+    "WARD_PRECINCT": "1902"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 11",
+    "Times Cast": 1394,
+    "Registered Voters": 335,
+    "Percentage": 24.03,
+    "WARD_PRECINCT": "1903"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 12",
+    "Times Cast": 751,
+    "Registered Voters": 195,
+    "Percentage": 25.97,
+    "WARD_PRECINCT": "1904"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 13",
+    "Times Cast": 1136,
+    "Registered Voters": 298,
+    "Percentage": 26.23,
+    "WARD_PRECINCT": "1905"
+  },
+  {
+    "Precinct": "WARD 14, PRECINCT 14",
+    "Times Cast": 1319,
+    "Registered Voters": 320,
+    "Percentage": 24.26,
+    "WARD_PRECINCT": "1906"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 1",
+    "Times Cast": 1714,
+    "Registered Voters": 397,
+    "Percentage": 23.16,
+    "WARD_PRECINCT": "1907"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 2",
+    "Times Cast": 1154,
+    "Registered Voters": 247,
+    "Percentage": 21.4,
+    "WARD_PRECINCT": "1908"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 3",
+    "Times Cast": 821,
+    "Registered Voters": 173,
+    "Percentage": 21.07,
+    "WARD_PRECINCT": "1909"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 4",
+    "Times Cast": 2194,
+    "Registered Voters": 470,
+    "Percentage": 21.42,
+    "WARD_PRECINCT": "0201"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 5",
+    "Times Cast": 1421,
+    "Registered Voters": 323,
+    "Percentage": 22.73,
+    "WARD_PRECINCT": "0202"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 6",
+    "Times Cast": 878,
+    "Registered Voters": 265,
+    "Percentage": 30.18,
+    "WARD_PRECINCT": "0203"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 7",
+    "Times Cast": 1191,
+    "Registered Voters": 280,
+    "Percentage": 23.51,
+    "WARD_PRECINCT": "0204"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 8",
+    "Times Cast": 1141,
+    "Registered Voters": 280,
+    "Percentage": 24.54,
+    "WARD_PRECINCT": "0205"
+  },
+  {
+    "Precinct": "WARD 15, PRECINCT 9",
+    "Times Cast": 1177,
+    "Registered Voters": 277,
+    "Percentage": 23.53,
+    "WARD_PRECINCT": "0206"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 1",
+    "Times Cast": 1271,
+    "Registered Voters": 344,
+    "Percentage": 27.07,
+    "WARD_PRECINCT": "0207"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 2",
+    "Times Cast": 1018,
+    "Registered Voters": 410,
+    "Percentage": 40.28,
+    "WARD_PRECINCT": "2001"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 3",
+    "Times Cast": 1611,
+    "Registered Voters": 432,
+    "Percentage": 26.82,
+    "WARD_PRECINCT": "2010"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 4",
+    "Times Cast": 1418,
+    "Registered Voters": 436,
+    "Percentage": 30.75,
+    "WARD_PRECINCT": "2011"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 5",
+    "Times Cast": 1605,
+    "Registered Voters": 578,
+    "Percentage": 36.01,
+    "WARD_PRECINCT": "2012"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 6",
+    "Times Cast": 2142,
+    "Registered Voters": 618,
+    "Percentage": 28.85,
+    "WARD_PRECINCT": "2013"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 7",
+    "Times Cast": 1339,
+    "Registered Voters": 686,
+    "Percentage": 51.23,
+    "WARD_PRECINCT": "2014"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 8",
+    "Times Cast": 1529,
+    "Registered Voters": 771,
+    "Percentage": 50.43,
+    "WARD_PRECINCT": "2015"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 9",
+    "Times Cast": 1599,
+    "Registered Voters": 950,
+    "Percentage": 59.41,
+    "WARD_PRECINCT": 2016
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 10",
+    "Times Cast": 1532,
+    "Registered Voters": 655,
+    "Percentage": 42.75,
+    "WARD_PRECINCT": "2017"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 11",
+    "Times Cast": 1541,
+    "Registered Voters": 744,
+    "Percentage": 48.28,
+    "WARD_PRECINCT": "2018"
+  },
+  {
+    "Precinct": "WARD 16, PRECINCT 12",
+    "Times Cast": 1208,
+    "Registered Voters": 846,
+    "Percentage": 70.03,
+    "WARD_PRECINCT": "2019"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 1",
+    "Times Cast": 1312,
+    "Registered Voters": 313,
+    "Percentage": 23.86,
+    "WARD_PRECINCT": "2002"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 2",
+    "Times Cast": 910,
+    "Registered Voters": 231,
+    "Percentage": 25.38,
+    "WARD_PRECINCT": "2020"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 3",
+    "Times Cast": 1994,
+    "Registered Voters": 620,
+    "Percentage": 31.09,
+    "WARD_PRECINCT": "2003"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 4",
+    "Times Cast": 2115,
+    "Registered Voters": 799,
+    "Percentage": 37.78,
+    "WARD_PRECINCT": "2004"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 5",
+    "Times Cast": 1030,
+    "Registered Voters": 233,
+    "Percentage": 22.62,
+    "WARD_PRECINCT": "2005"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 6",
+    "Times Cast": 1443,
+    "Registered Voters": 473,
+    "Percentage": 32.78,
+    "WARD_PRECINCT": "2006"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 7",
+    "Times Cast": 848,
+    "Registered Voters": 226,
+    "Percentage": 26.65,
+    "WARD_PRECINCT": "2007"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 8",
+    "Times Cast": 1318,
+    "Registered Voters": 367,
+    "Percentage": 27.85,
+    "WARD_PRECINCT": "2008"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 9",
+    "Times Cast": 1012,
+    "Registered Voters": 433,
+    "Percentage": 42.79,
+    "WARD_PRECINCT": "2009"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 10",
+    "Times Cast": 1799,
+    "Registered Voters": 449,
+    "Percentage": 24.96,
+    "WARD_PRECINCT": "2101"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 11",
+    "Times Cast": 772,
+    "Registered Voters": 213,
+    "Percentage": 27.59,
+    "WARD_PRECINCT": "2110"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 12",
+    "Times Cast": 981,
+    "Registered Voters": 372,
+    "Percentage": 37.92,
+    "WARD_PRECINCT": "2111"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 13",
+    "Times Cast": 1422,
+    "Registered Voters": 619,
+    "Percentage": 43.53,
+    "WARD_PRECINCT": "2112"
+  },
+  {
+    "Precinct": "WARD 17, PRECINCT 14",
+    "Times Cast": 1413,
+    "Registered Voters": 609,
+    "Percentage": 43.1,
+    "WARD_PRECINCT": "2113"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 1",
+    "Times Cast": 2405,
+    "Registered Voters": 745,
+    "Percentage": 30.98,
+    "WARD_PRECINCT": "2114"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 2",
+    "Times Cast": 1622,
+    "Registered Voters": 429,
+    "Percentage": 26.45,
+    "WARD_PRECINCT": "2115"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 3",
+    "Times Cast": 1798,
+    "Registered Voters": 570,
+    "Percentage": 31.7,
+    "WARD_PRECINCT": "2116"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 4",
+    "Times Cast": 1901,
+    "Registered Voters": 571,
+    "Percentage": 30.04,
+    "WARD_PRECINCT": "2102"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 5",
+    "Times Cast": 1872,
+    "Registered Voters": 659,
+    "Percentage": 35.2,
+    "WARD_PRECINCT": "2103"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 6",
+    "Times Cast": 2123,
+    "Registered Voters": 768,
+    "Percentage": 36.18,
+    "WARD_PRECINCT": "2104"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 7",
+    "Times Cast": 1650,
+    "Registered Voters": 599,
+    "Percentage": 36.3,
+    "WARD_PRECINCT": "2105"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 8",
+    "Times Cast": 2914,
+    "Registered Voters": 943,
+    "Percentage": 32.36,
+    "WARD_PRECINCT": "2106"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 9",
+    "Times Cast": 1615,
+    "Registered Voters": 752,
+    "Percentage": 46.56,
+    "WARD_PRECINCT": "2107"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 10",
+    "Times Cast": 2342,
+    "Registered Voters": 1164,
+    "Percentage": 49.7,
+    "WARD_PRECINCT": "2108"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 11",
+    "Times Cast": 1564,
+    "Registered Voters": 437,
+    "Percentage": 27.94,
+    "WARD_PRECINCT": "2109"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 12",
+    "Times Cast": 1723,
+    "Registered Voters": 674,
+    "Percentage": 39.12,
+    "WARD_PRECINCT": "2201"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 13",
+    "Times Cast": 1065,
+    "Registered Voters": 367,
+    "Percentage": 34.46,
+    "WARD_PRECINCT": "2210"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 14",
+    "Times Cast": 1212,
+    "Registered Voters": 366,
+    "Percentage": 30.2,
+    "WARD_PRECINCT": "2211"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 15",
+    "Times Cast": 1676,
+    "Registered Voters": 568,
+    "Percentage": 33.89,
+    "WARD_PRECINCT": "2212"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 16",
+    "Times Cast": 1711,
+    "Registered Voters": 906,
+    "Percentage": 52.95,
+    "WARD_PRECINCT": "2213"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 17",
+    "Times Cast": 1752,
+    "Registered Voters": 646,
+    "Percentage": 36.87,
+    "WARD_PRECINCT": "2202"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 18",
+    "Times Cast": 2166,
+    "Registered Voters": 765,
+    "Percentage": 35.32,
+    "WARD_PRECINCT": "2203"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 19",
+    "Times Cast": 2909,
+    "Registered Voters": 1028,
+    "Percentage": 35.34,
+    "WARD_PRECINCT": "2204"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 20",
+    "Times Cast": 2230,
+    "Registered Voters": 993,
+    "Percentage": 44.53,
+    "WARD_PRECINCT": "2205"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 21",
+    "Times Cast": 2190,
+    "Registered Voters": 678,
+    "Percentage": 30.96,
+    "WARD_PRECINCT": "2206"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 22",
+    "Times Cast": 1817,
+    "Registered Voters": 914,
+    "Percentage": 50.3,
+    "WARD_PRECINCT": "2207"
+  },
+  {
+    "Precinct": "WARD 18, PRECINCT 23",
+    "Times Cast": 1554,
+    "Registered Voters": 326,
+    "Percentage": 20.98,
+    "WARD_PRECINCT": "2208"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 1",
+    "Times Cast": 1506,
+    "Registered Voters": 692,
+    "Percentage": 45.95,
+    "WARD_PRECINCT": "2209"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 2",
+    "Times Cast": 1598,
+    "Registered Voters": 953,
+    "Percentage": 59.64,
+    "WARD_PRECINCT": "0301"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 3",
+    "Times Cast": 1239,
+    "Registered Voters": 630,
+    "Percentage": 50.85,
+    "WARD_PRECINCT": "0302"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 4",
+    "Times Cast": 1713,
+    "Registered Voters": 852,
+    "Percentage": 49.74,
+    "WARD_PRECINCT": "0303"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 5",
+    "Times Cast": 1469,
+    "Registered Voters": 695,
+    "Percentage": 47.31,
+    "WARD_PRECINCT": "0304"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 6",
+    "Times Cast": 1922,
+    "Registered Voters": 986,
+    "Percentage": 51.3,
+    "WARD_PRECINCT": "0305"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 7",
+    "Times Cast": 2074,
+    "Registered Voters": 828,
+    "Percentage": 39.92,
+    "WARD_PRECINCT": "0306"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 8",
+    "Times Cast": 928,
+    "Registered Voters": 527,
+    "Percentage": 56.79,
+    "WARD_PRECINCT": "0307"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 9",
+    "Times Cast": 898,
+    "Registered Voters": 481,
+    "Percentage": 53.56,
+    "WARD_PRECINCT": "0308"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 10",
+    "Times Cast": 1856,
+    "Registered Voters": 911,
+    "Percentage": 49.08,
+    "WARD_PRECINCT": "0401"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 11",
+    "Times Cast": 1807,
+    "Registered Voters": 523,
+    "Percentage": 28.94,
+    "WARD_PRECINCT": "0410"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 12",
+    "Times Cast": 1240,
+    "Registered Voters": 655,
+    "Percentage": 52.82,
+    "WARD_PRECINCT": "0402"
+  },
+  {
+    "Precinct": "WARD 19, PRECINCT 13",
+    "Times Cast": 1218,
+    "Registered Voters": 451,
+    "Percentage": 37.03,
+    "WARD_PRECINCT": "0403"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 1",
+    "Times Cast": 1617,
+    "Registered Voters": 847,
+    "Percentage": 52.38,
+    "WARD_PRECINCT": "0404"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 2",
+    "Times Cast": 1802,
+    "Registered Voters": 848,
+    "Percentage": 47.06,
+    "WARD_PRECINCT": "0405"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 3",
+    "Times Cast": 1901,
+    "Registered Voters": 765,
+    "Percentage": 40.24,
+    "WARD_PRECINCT": "0406"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 4",
+    "Times Cast": 1326,
+    "Registered Voters": 769,
+    "Percentage": 57.99,
+    "WARD_PRECINCT": "0407"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 5",
+    "Times Cast": 1795,
+    "Registered Voters": 939,
+    "Percentage": 52.31,
+    "WARD_PRECINCT": "0408"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 6",
+    "Times Cast": 1728,
+    "Registered Voters": 1019,
+    "Percentage": 58.97,
+    "WARD_PRECINCT": "0409"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 7",
+    "Times Cast": 1100,
+    "Registered Voters": 689,
+    "Percentage": 62.64,
+    "WARD_PRECINCT": "0501"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 8",
+    "Times Cast": 1292,
+    "Registered Voters": 659,
+    "Percentage": 51.01,
+    "WARD_PRECINCT": "0510"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 9",
+    "Times Cast": 1433,
+    "Registered Voters": 729,
+    "Percentage": 50.87,
+    "WARD_PRECINCT": "0511"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 10",
+    "Times Cast": 2111,
+    "Registered Voters": 1097,
+    "Percentage": 51.97,
+    "WARD_PRECINCT": "0502"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 11",
+    "Times Cast": 879,
+    "Registered Voters": 539,
+    "Percentage": 61.32,
+    "WARD_PRECINCT": "0502A"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 12",
+    "Times Cast": 1116,
+    "Registered Voters": 718,
+    "Percentage": 64.34,
+    "WARD_PRECINCT": "0503"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 13",
+    "Times Cast": 1034,
+    "Registered Voters": 656,
+    "Percentage": 63.44,
+    "WARD_PRECINCT": "0504"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 14",
+    "Times Cast": 997,
+    "Registered Voters": 689,
+    "Percentage": 69.11,
+    "WARD_PRECINCT": "0505"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 15",
+    "Times Cast": 1957,
+    "Registered Voters": 953,
+    "Percentage": 48.7,
+    "WARD_PRECINCT": "0506"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 16",
+    "Times Cast": 2050,
+    "Registered Voters": 1061,
+    "Percentage": 51.76,
+    "WARD_PRECINCT": "0507"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 17",
+    "Times Cast": 2102,
+    "Registered Voters": 1202,
+    "Percentage": 57.18,
+    "WARD_PRECINCT": "0508"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 18",
+    "Times Cast": 1083,
+    "Registered Voters": 613,
+    "Percentage": 56.6,
+    "WARD_PRECINCT": "0509"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 19",
+    "Times Cast": 1101,
+    "Registered Voters": 651,
+    "Percentage": 59.13,
+    "WARD_PRECINCT": "0601"
+  },
+  {
+    "Precinct": "WARD 20, PRECINCT 20",
+    "Times Cast": 1927,
+    "Registered Voters": 900,
+    "Percentage": 46.7,
+    "WARD_PRECINCT": "0602"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 1",
+    "Times Cast": 2090,
+    "Registered Voters": 437,
+    "Percentage": 20.91,
+    "WARD_PRECINCT": "0603"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 2",
+    "Times Cast": 821,
+    "Registered Voters": 81,
+    "Percentage": 9.87,
+    "WARD_PRECINCT": "0604"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 3",
+    "Times Cast": 1475,
+    "Registered Voters": 233,
+    "Percentage": 15.8,
+    "WARD_PRECINCT": "0605"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 4",
+    "Times Cast": 1220,
+    "Registered Voters": 213,
+    "Percentage": 17.46,
+    "WARD_PRECINCT": "0606"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 5",
+    "Times Cast": 1815,
+    "Registered Voters": 355,
+    "Percentage": 19.56,
+    "WARD_PRECINCT": "0607"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 6",
+    "Times Cast": 1194,
+    "Registered Voters": 352,
+    "Percentage": 29.48,
+    "WARD_PRECINCT": "0608"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 7",
+    "Times Cast": 1730,
+    "Registered Voters": 361,
+    "Percentage": 20.87,
+    "WARD_PRECINCT": "0609"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 8",
+    "Times Cast": 2043,
+    "Registered Voters": 424,
+    "Percentage": 20.75,
+    "WARD_PRECINCT": "0701"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 9",
+    "Times Cast": 2206,
+    "Registered Voters": 437,
+    "Percentage": 19.81,
+    "WARD_PRECINCT": "0710"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 10",
+    "Times Cast": 1581,
+    "Registered Voters": 343,
+    "Percentage": 21.7,
+    "WARD_PRECINCT": "0702"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 11",
+    "Times Cast": 1931,
+    "Registered Voters": 408,
+    "Percentage": 21.13,
+    "WARD_PRECINCT": "0703"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 12",
+    "Times Cast": 1723,
+    "Registered Voters": 443,
+    "Percentage": 25.71,
+    "WARD_PRECINCT": "0704"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 13",
+    "Times Cast": 2228,
+    "Registered Voters": 710,
+    "Percentage": 31.87,
+    "WARD_PRECINCT": "0705"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 14",
+    "Times Cast": 1130,
+    "Registered Voters": 251,
+    "Percentage": 22.21,
+    "WARD_PRECINCT": "0706"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 15",
+    "Times Cast": 1447,
+    "Registered Voters": 345,
+    "Percentage": 23.84,
+    "WARD_PRECINCT": "0707"
+  },
+  {
+    "Precinct": "WARD 21, PRECINCT 16",
+    "Times Cast": 1726,
+    "Registered Voters": 526,
+    "Percentage": 30.48,
+    "WARD_PRECINCT": "0708"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 1",
+    "Times Cast": 2441,
+    "Registered Voters": 546,
+    "Percentage": 22.37,
+    "WARD_PRECINCT": "0709"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 2",
+    "Times Cast": 2703,
+    "Registered Voters": 678,
+    "Percentage": 25.08,
+    "WARD_PRECINCT": "0801"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 3",
+    "Times Cast": 2172,
+    "Registered Voters": 605,
+    "Percentage": 27.85,
+    "WARD_PRECINCT": "0802"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 4",
+    "Times Cast": 1456,
+    "Registered Voters": 544,
+    "Percentage": 37.36,
+    "WARD_PRECINCT": "0803"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 5",
+    "Times Cast": 1556,
+    "Registered Voters": 342,
+    "Percentage": 21.98,
+    "WARD_PRECINCT": "0804"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 6",
+    "Times Cast": 1322,
+    "Registered Voters": 322,
+    "Percentage": 24.36,
+    "WARD_PRECINCT": "0805"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 7",
+    "Times Cast": 1783,
+    "Registered Voters": 559,
+    "Percentage": 31.35,
+    "WARD_PRECINCT": "0806"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 8",
+    "Times Cast": 1351,
+    "Registered Voters": 425,
+    "Percentage": 31.46,
+    "WARD_PRECINCT": "0807"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 9",
+    "Times Cast": 1473,
+    "Registered Voters": 471,
+    "Percentage": 31.98,
+    "WARD_PRECINCT": "0901"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 10",
+    "Times Cast": 1677,
+    "Registered Voters": 541,
+    "Percentage": 32.26,
+    "WARD_PRECINCT": "0902"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 11",
+    "Times Cast": 1173,
+    "Registered Voters": 395,
+    "Percentage": 33.67,
+    "WARD_PRECINCT": "0903"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 12",
+    "Times Cast": 1366,
+    "Registered Voters": 401,
+    "Percentage": 29.36,
+    "WARD_PRECINCT": "0904"
+  },
+  {
+    "Precinct": "WARD 22, PRECINCT 13",
+    "Times Cast": 1045,
+    "Registered Voters": 326,
+    "Percentage": 31.2,
+    "WARD_PRECINCT": "0905"
+  },
+  {
+    "Precinct": "BOSTON - Total",
+    "Times Cast": 442049,
+    "Registered Voters": "143,547",
+    "Percentage": 32.47,
+    "WARD_PRECINCT": ""
+  }
+]

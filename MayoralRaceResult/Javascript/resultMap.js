@@ -22,7 +22,7 @@ let tooltip = d3.select("body")
 
 d3.queue()
   .defer(d3.json, "Data/[NOWARD1PRECINCT15]precincts.geojson")
-  .defer(d3.json, "Data/electionResultPercent.json")
+  .defer(d3.json, "Data/NovElectionResult.json")
   .await(drawMap);
 
 function getWinner(precinctData) {
@@ -184,7 +184,7 @@ function drawMap(error, geoData, resultData) {
     
     let barTick = labelGroup.append("image") 
         .attr("xlink:href", function(d) {
-            if (d.candidate === "Michelle Wu" || d.candidate === "Annissa Essaibi George") {
+            if (d.candidate === "Michelle Wu") {
                 return "Photo/tick.png";
             } else {
                 return "";
@@ -287,8 +287,6 @@ function drawMap(error, geoData, resultData) {
             let winnerTick = labelGroup.append("image") 
                 .attr("xlink:href", function(d) {
                     if (d.candidate === "Michelle Wu") {
-                        return "Photo/tick.png";
-                    } else if (d.candidate === "Annissa Essaibi George") {
                         return "Photo/tick.png";
                     } else {
                         return "";
