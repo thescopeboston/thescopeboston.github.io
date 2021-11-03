@@ -28,10 +28,16 @@ d3.csv("Data/mayoralWinner.csv", function(error, data) {
     x.domain([0, d3.max(data, d => d.percentagetotal)]);
     y.domain(data.map(d => d.winner));
     svgMayoralChart.append("text")
-        .text("Live Results")
+        .text("Results")
         .attr("class", "barchartTitle2")
         .attr("x", -10)
         .attr("y", 0);
+    svgMayoralChart.append("text")
+        .text("(As of 04:11:19, November 3)")
+        .attr("class", "subhead2")
+        .attr("x", -10)
+        .attr("y", 30);
+
 
     svgMayoralChart.selectAll(".bar")
         .data(data)
